@@ -31,3 +31,5 @@ typedef struct s_path {
     char **path;
     int amt;
 }              t_path;
+
+t_path *wc_getPaths(int argc, char *argv[]);
