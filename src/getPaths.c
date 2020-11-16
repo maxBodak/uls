@@ -27,7 +27,7 @@ static inline t_path *CurDirPath() {
     return p;
 }
 static inline t_path *initPaths(int argc, char *argv[], char *status,
-                                            int flags, int fakes) {
+                                                int flags, int fakes) {
     t_path *p = (t_path *)malloc(sizeof(t_path));
 
     p->amt = argc - flags - fakes;
@@ -51,8 +51,9 @@ t_path *wc_getPaths(int argc, char *argv[]) {
     int fakes = 0;
     char *status;
 
-    while (flags < argc && argv[flags][0] == '-')
-        flags++;
+    while (argv[flags][0] == '-')
+        if (argv[flags++][1] == '-')
+            break;
 
     status = (char *)malloc(sizeof(char) * argc - flags);
     for(int i = flags; i < argc; i++) {
