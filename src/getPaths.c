@@ -1,39 +1,55 @@
 #include "uls.h"
 
-static inline bool checkPath(char *path) {
+static char checkPath(char *path) {
     struct stat stats;
-
-    stat(path, &stats);
-    if (S_ISDIR(stats.st_mode))
+    int e = stat(path, &stats);
+    
+    if (!e) {
+        if (S_ISDIR(stats.st_mode))
             return 1;
+        return 2;
+    }
     return 0;
 }
-static inline t_path *initPaths(int amt) {
+static inline void errorNoPath(char *path) {
+    mx_printstr("uls: ");
+    mx_printstr(path);
+    mx_printstr(": No such file or directory exists\n");
+}
+static inline t_path *initPaths(int argc, char *argv[], char *status,
+                                            int flags, int fakes) {
     t_path *p = (t_path *)malloc(sizeof(t_path));
-    p->amt = amt;
-    p->path = (char **)malloc(sizeof(char *) * amt);
+
+    p->amt = argc - flags - fakes;
+    p->path = (char **)malloc(sizeof(char *) * p->amt);
+    p->isdir = (bool *)malloc(sizeof(bool) * p->amt);
+
+    for (int i = 0, j = 0; j < argc - flags; j++) {
+        if (status[j] == 1) {
+            p->isdir[i] = true;
+            p->path[i++] = argv[j + flags];
+        }
+        else if(status[j] == 2)
+            p->path[i++] = argv[j + flags];
+        else
+            errorNoPath(argv[j + flags]);
+    }
     return p;
 }
-
 t_path *wc_getPaths(int argc, char *argv[]) {
-    t_path *p;
-    bool *status;
-    int count = 1;
-    int none_c = 0;
+    char *status;
+    int flags = 1;
+    int fakes = 0;
 
-    while (count < argc && argv[count][0] == '-')
-        count++;
+    while (flags < argc && argv[flags][0] == '-')
+        flags++;
 
-    status = (bool *)malloc(sizeof(bool) * argc - count);
-    for(int i = count; i < argc; i++) {
-        if(checkPath(argv[i]))
-            status[i] = true;
-        else {
-            printf("uls: %s: No such file or directory exists\n",argv[i]);
-            none_c++;
-        }
+    status = (char *)malloc(sizeof(char) * argc - flags);
+    for(int i = flags; i < argc; i++) {
+        status[i - flags] = checkPath(argv[i]);
+        fakes += !status[i - flags];
+        printf("%s = %d\n", argv[i], status[i - flags]);
     }
+    return initPaths(argc, argv, status, flags, fakes);
 
-    p = initPaths(argc - count - none_c);
-    return p;
 }

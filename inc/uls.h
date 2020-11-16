@@ -29,6 +29,7 @@ enum flags {
 
 typedef struct s_path {
     char **path;
+    bool *isdir;
     int amt;
 }              t_path;
 
