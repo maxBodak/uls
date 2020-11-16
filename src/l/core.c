@@ -32,19 +32,20 @@ t_dir *bigPP(char *p, bool rec) {
     if (res) {
         dp = opendir (p);
         for (int i = 0, j = 0; (ep = readdir(dp));) {
+            mx_printstr("st\t");
             if (ep->d_type == DT_DIR) {
-                if (rec && mx_strcmp(ep->d_name, ".") && mx_strcmp(ep->d_name, ".."))
-                    res->dirs[i] = bigPP(mx_strjoin(p, ep->d_name), 1);
-                else
-                    res->dirs[i] = (t_dir *)malloc(sizeof(t_dir));
+                if (rec && mx_strcmp(ep->d_name, ".") && mx_strcmp(ep->d_name, "..")) {
+                    {mx_printstr(ep->d_name);
+                    res->dirs[i] = bigPP(mx_strjoin(p, ep->d_name), 1);}
                 stat(ep->d_name, &(res->dirs[i]->st));
                 res->dirs[i++]->name = ep->d_name;
-                //printf("dir name: %s\n", ep->d_name);
+                }
             }
             else if (ep->d_type == DT_REG) {
                 stat(ep->d_name, &(res->files[i].st));
                 res->files[j++].name = ep->d_name;
             }
+            mx_printstr("\tend\n");
         }
         closedir (dp);
     }

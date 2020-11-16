@@ -28,11 +28,16 @@
 int main(int argc, char ** argv) {
     t_path *p = wc_getPaths(argc, argv);
 
-    t_file *d = bigFF(p->path[0]);
-    printf("%s\n", d->name);
-    // for (int i = 0; i < d->dir_amt; i++)
-    //     printf("%s\n", d->dirs[i].name);
-    // for (int i = 0; i < d->file_amt; i++)
-    //     printf("%s\n", d->files[i].name);
+    t_dir *d = bigPP(p->path[0], 1);
+    for (int i = 0; i < d->file_amt; i++)
+        printf("%s\n", d->files[i].name);
+
+    for (int i = 0; i < d->dir_amt; i++) {
+        printf("%s\n", d->dirs[i]->name);
+        for (int j = 0; j < d->dirs[i]->file_amt; j++)
+            printf("\t%s\n", d->dirs[i]->files[j].name);
+        for (int j = 0; j < d->dirs[i]->dir_amt; j++)
+            printf("\t%s\n", d->dirs[i]->dirs[j]->name);
+    }
     return 0;
 }

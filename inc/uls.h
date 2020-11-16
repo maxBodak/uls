@@ -45,7 +45,7 @@ typedef struct s_file {
     struct stat st;
 }              t_file;
 typedef struct s_dir {
-    struct s_dir *dirs;
+    struct s_dir **dirs;
     t_file *files;
 
     char *name;
@@ -57,8 +57,8 @@ typedef struct s_dir {
 
 
 typedef struct s_result {
-    t_file *files;
     t_dir *dirs;
+    t_file *files;
     int file_amt;
     int dir_amt;
 }              t_result;
