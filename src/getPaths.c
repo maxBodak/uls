@@ -1,5 +1,10 @@
 #include "uls.h"
 
+static inline void errorNoPath(char *path) {
+    mx_printstr("uls: ");
+    mx_printstr(path);
+    mx_printstr(": No such file or directory exists\n");
+}
 static char checkPath(char *path) {
     struct stat stats;
     int e = stat(path, &stats);
@@ -11,10 +16,15 @@ static char checkPath(char *path) {
     }
     return 0;
 }
-static inline void errorNoPath(char *path) {
-    mx_printstr("uls: ");
-    mx_printstr(path);
-    mx_printstr(": No such file or directory exists\n");
+static inline t_path *CurDirPath() {
+    t_path *p = (t_path *)malloc(sizeof(t_path));
+
+    p->amt = 1;
+    p->path = (char **)malloc(sizeof(char *) * p->amt);
+    p->isdir = (bool *)malloc(sizeof(bool) * p->amt);
+    p->path[0] = mx_strdup(".");
+    p->isdir[0] = true;
+    return p;
 }
 static inline t_path *initPaths(int argc, char *argv[], char *status,
                                             int flags, int fakes) {
@@ -37,9 +47,9 @@ static inline t_path *initPaths(int argc, char *argv[], char *status,
     return p;
 }
 t_path *wc_getPaths(int argc, char *argv[]) {
-    char *status;
     int flags = 1;
     int fakes = 0;
+    char *status;
 
     while (flags < argc && argv[flags][0] == '-')
         flags++;
@@ -48,8 +58,12 @@ t_path *wc_getPaths(int argc, char *argv[]) {
     for(int i = flags; i < argc; i++) {
         status[i - flags] = checkPath(argv[i]);
         fakes += !status[i - flags];
-        printf("%s = %d\n", argv[i], status[i - flags]);
+    }
+    if (argc - flags - fakes == 0) {
+        if (fakes == 0)
+            return CurDirPath();
+        else
+            return NULL;
     }
     return initPaths(argc, argv, status, flags, fakes);
-
 }
