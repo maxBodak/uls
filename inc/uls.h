@@ -2,6 +2,7 @@
 
 #include "libmx.h"
 
+#include "cf_uls.h"
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/errno.h>
@@ -15,24 +16,6 @@
 
 #define INT_MAX 2147483647
 #define PATH_MAX 1024
-
-enum flags {
-    R,
-    l,
-    one,
-    m,
-    C,
-    S,
-    t,
-    r,
-    p,
-    u,
-    c,
-    dog,
-    e,
-    h,
-    T
-};
 
 typedef struct s_path {
     char **path;
