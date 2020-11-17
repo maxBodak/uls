@@ -15,7 +15,8 @@ static inline int cpy_args(int j, const char *argv, char *flags_char){
 }
 
 static inline void fill_bool(t_flags *fl, int count_flags) {
-    char flag[ALL_FLAGS] = {'R', 'l', '1', 'm', 'C', 'S', 't', 'r', 'p', 'u', 'c', '@', 'e', 'h', 'T'};
+    char flag[ALL_FLAGS] = {'R', 'l', '1', 'm', 'C', 'S', 't',
+                            'r', 'p', 'u', 'c', '@', 'e', 'h', 'T'};
     for (int i = 0; i < count_flags; i++) {
         for (int j = 0; j < ALL_FLAGS; j++) {
             if (fl->flags_char[i] == flag[j])
