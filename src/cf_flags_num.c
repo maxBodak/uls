@@ -39,9 +39,9 @@ void cf_flags_num (int argc, char *argv[]) {
         j = cpy_args(j, argv[i], fl->flags_char);
     }
     fill_bool(fl, count_flags);
-    for(int i = 0; i < ALL_FLAGS; i++)
-        printf("%d\n", fl->flags[i]);
-    printf("\n%d\n", count);
-    printf("%d\n", count_flags);
-    printf("%s\n", fl->flags_char);
+//    for(int i = 0; i < ALL_FLAGS; i++)
+//        printf("%d\n", fl->flags[i]);
+//    printf("\n%d\n", count);
+//    printf("%d\n", count_flags);
+//    printf("%s\n", fl->flags_char);
 }
