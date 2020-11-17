@@ -1,33 +1,15 @@
 #include "uls.h"
 
-// int main(int argc, char *argv[]) {
-//     t_path *p = wc_getPaths(argc, argv);
-
-//     for (int i = 0; i < p->amt; i++) {
-//         mx_printstr(p->path[i]);
-//         mx_printstr("\n");
-//     }
-
-//     char buf[PATH_MAX];
-//     ssize_t len = readlink("src/", buf, PATH_MAX);
-//     mx_printint((int)len);
-//     if (len != -1) {
-//         buf[len] = '\0';
-//         printf("%s\n", buf);
-//     }
-
-
-//     // if (p)
-//     //     for (int i = 0; i < p->amt; i++)
-//     //         printf("path[%d]: %s\n", i, p->path[i]);
-//     // else
-//     //     printf("no paths exist\n");
-//     return 0;
-// }
-
 int main(int argc, char ** argv) {
+    //cf
+//    bool flags[ALL_FLAGS];
+    t_flags *fl = cf_flags_num (argc, argv);
+    for(int i = 0; i < ALL_FLAGS; i++)
+        printf("%d - %d\n", i+8, fl->flags[i]);
+    printf("cf end\n");
+    system("leaks uls");
+    //eng cf
     t_path *p = wc_getPaths(argc, argv);
-    cf_flags_num (argc, argv);
 
     t_dir *d = bigPP(p->path[0], 1);
     for (int i = 0; i < d->file_amt; i++)

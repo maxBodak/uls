@@ -26,4 +26,4 @@ typedef struct s_flags {
     char *flags_char;
 }              t_flags;
 
-void cf_flags_num (int argc, char *argv[]);
+t_flags *cf_flags_num (int argc, char *argv[]);
