@@ -39,30 +39,25 @@ typedef struct s_path {
     bool *isdir;
     int amt;
 }              t_path;
-
-typedef struct s_file {
-    char *name;
-    struct stat st;
-}              t_file;
-typedef struct s_dir {
-    struct s_dir **dirs;
-    t_file *files;
+typedef struct s_obj {
+    struct s_obj **subdirs;
+    struct s_obj *files;
+    //t_file *files;
 
     char *name;
     struct stat st;
 
     int dir_amt;
     int file_amt;
-}              t_dir;
 
-
-typedef struct s_result {
-    t_dir *dirs;
-    t_file *files;
-    int file_amt;
-    int dir_amt;
-}              t_result;
+    char type;
+}              t_obj;
 
 t_path *wc_getPaths(int argc, char *argv[]);
-t_dir *bigPP(char *p, bool rec);
-t_file *bigFF(char *p);
+t_obj *wc_getDirInfo(char *p, bool rec);
+t_obj *wc_getFileInfo(char *p);
+
+/*-----------Utilities------------*/
+void wc_fetchData(t_path *p, bool rec);
+void printShortName(char *p);
+bool isTrueDir(char *name);

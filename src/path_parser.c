@@ -38,9 +38,13 @@ static inline t_path *initPaths(int argc, char *argv[], char *status,
         if (status[j] == 1) {
             p->isdir[i] = true;
             p->path[i++] = argv[j + flags];
+            if (p->path[i - 1][mx_strlen(p->path[i - 1])] == '/')
+                p->path[i - 1][mx_strlen(p->path[i - 1])] = '\0';
         }
-        else if(status[j] == 2)
+        else if(status[j] == 2) {
+            p->isdir[i] = false;
             p->path[i++] = argv[j + flags];
+        }
         else
             errorNoPath(argv[j + flags]);
     }
