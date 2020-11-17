@@ -25,22 +25,24 @@ typedef struct s_path {
 typedef struct s_obj {
     struct s_obj **subdirs;
     struct s_obj *files;
-    //t_file *files;
 
     char *name;
     struct stat st;
 
-    int dir_amt;
+    int subdir_amt;
     int file_amt;
 
     char type;
 }              t_obj;
-
+typedef struct s_data {
+    t_obj **path;
+    int amt;
+}               t_data;
 t_path *wc_getPaths(int argc, char *argv[]);
 t_obj *wc_getDirInfo(char *p, bool rec);
 t_obj *wc_getFileInfo(char *p);
 
 /*-----------Utilities------------*/
-void wc_fetchData(t_path *p, bool rec);
+t_data *wc_fetchData(t_path *p, bool rec);
 void printShortName(char *p);
 bool isTrueDir(char *name);

@@ -13,7 +13,7 @@ t_obj *wc_getFileInfo(char *p) {
 
     stat(p, &(f->st));
     f->name = getName(p);
-    f->dir_amt = 0;
+    f->subdir_amt = 0;
     f->file_amt = 0;
     f->subdirs = NULL;
     f->files = NULL;

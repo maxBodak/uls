@@ -28,12 +28,14 @@ static inline t_path *CurDirPath() {
 }
 static inline t_path *initPaths(int argc, char *argv[], char *status,
                                                 int flags, int fakes) {
-    t_path *p = (t_path *)malloc(sizeof(t_path));
+    t_path *p = NULL;
 
-    p->amt = argc - flags - fakes;
-    p->path = (char **)malloc(sizeof(char *) * p->amt);
-    p->isdir = (bool *)malloc(sizeof(bool) * p->amt);
-
+    if (argc - flags - fakes) {
+        p = (t_path *)malloc(sizeof(t_path));
+        p->amt = argc - flags - fakes;
+        p->path = (char **)malloc(sizeof(char *) * p->amt);
+        p->isdir = (bool *)malloc(sizeof(bool) * p->amt);
+    }
     for (int i = 0, j = 0; j < argc - flags; j++) {
         if (status[j] == 1) {
             p->isdir[i] = true;
@@ -48,6 +50,7 @@ static inline t_path *initPaths(int argc, char *argv[], char *status,
         else
             errorNoPath(argv[j + flags]);
     }
+    free(status);
     return p;
 }
 t_path *wc_getPaths(int argc, char *argv[]) {
@@ -55,20 +58,18 @@ t_path *wc_getPaths(int argc, char *argv[]) {
     int fakes = 0;
     char *status;
 
-    while (argv[flags][0] == '-')
-        if (argv[flags++][1] == '-')
-            break;
+    if (argc > 1)
+        while (argv[flags][0] == '-')
+            if (argv[flags++][1] == '-')
+                break;
+
+    if (argc - flags == 0)
+            return CurDirPath();
 
     status = (char *)malloc(sizeof(char) * argc - flags);
     for(int i = flags; i < argc; i++) {
         status[i - flags] = checkPath(argv[i]);
         fakes += !status[i - flags];
-    }
-    if (argc - flags - fakes == 0) {
-        if (fakes == 0)
-            return CurDirPath();
-        else
-            return NULL;
     }
     return initPaths(argc, argv, status, flags, fakes);
 }

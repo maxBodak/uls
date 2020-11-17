@@ -15,13 +15,12 @@ static inline t_obj *initDir(char *p) {
             else if (ep->d_type == DT_REG)
                 fcount++;
         }
-        closedir (dp);
+        closedir(dp);
     }
     d = (t_obj *)malloc(sizeof(t_obj));
     d->name = mx_strdup(p);
     d->file_amt = fcount;
-    d->dir_amt = dcount;
-    if (d)
+    d->subdir_amt = dcount;
     d->subdirs = (t_obj **)malloc(sizeof(t_obj *) * dcount);
     d->files = (t_obj *)malloc(sizeof(t_obj) * fcount);
     d->type = 1;
@@ -42,9 +41,9 @@ static inline char *addPrefix(char *prefix, char *str) {
 }/*==========================================================================*/
 t_obj *wc_getDirInfo(char *p, bool rec) {
     DIR *dp;
+    char *buf = NULL;
     struct dirent *ep;
     t_obj *res = initDir(p);
-    char *buf = NULL;
 
     if (res) {
         dp = opendir (p);
@@ -64,11 +63,14 @@ t_obj *wc_getDirInfo(char *p, bool rec) {
             else if (ep->d_type == DT_REG) {
                 stat(ep->d_name, &(res->files[j].st));
                 res->files[j].name = mx_strdup(ep->d_name);
+                res->files[j].subdir_amt = 0;
+                res->files[j].file_amt = 0;
+                res->files[j].subdirs = NULL;
+                res->files[j].files = NULL;
                 res->files[j++].type = 0;
             }
         }
-        closedir (dp);
-        free(ep);
+        closedir(dp);
     }
     return res;
 }

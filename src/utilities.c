@@ -18,12 +18,12 @@ void printInfo(t_obj *obj, bool rec) {
             mx_printstr(obj->files[i].name);
             mx_printstr("\n");
         }
-        for (int i = 0; i < obj->dir_amt; i++) {
+        for (int i = 0; i < obj->subdir_amt; i++) {
             printShortName(obj->subdirs[i]->name);
             mx_printstr("\n");
         }
         if (rec) {
-            for (int i = 0; i < obj->dir_amt; i++) 
+            for (int i = 0; i < obj->subdir_amt; i++) 
                 if (isTrueDir(obj->subdirs[i]->name)) {
                     mx_printstr("\n");
                     mx_printstr(obj->subdirs[i]->name);
@@ -36,26 +36,20 @@ void printInfo(t_obj *obj, bool rec) {
         mx_printstr("\n");
     }
 }/*--------------------------------------------------------------------------*/
-void wc_fetchData(t_path *p, bool rec) {
-    t_obj *d = NULL;
-    int f;
-    for (f = 0; f < p->amt; f++)
-        if (!p->isdir) {
-            d = wc_getFileInfo(p->path[f]);
-            printInfo(d, 0);
-            free(d);
-        }
-    for (int i = 0; i < p->amt; i++) {
-        if (p->isdir) {
-            d = wc_getDirInfo(p->path[i], rec);
-            if (p->amt > 1 && d->type == 1) {
-                if (i > 0 && f > 0)
-                    mx_printstr("\n");
-                mx_printstr(d->name);
-                mx_printstr(":\n");
-            }
-            printInfo(d, rec);
-            free(d);
-        }
+t_data *wc_fetchData(t_path *p, bool rec) {
+    int i = 0;
+    t_data *res = NULL;
+
+    if(p) {
+        res = (t_data *)malloc(sizeof(res));
+        res->amt = p->amt;
+        res->path = (t_obj **)malloc(sizeof(t_obj *) * p->amt);
+        for (int j = 0; j < p->amt; j++)
+            if (!p->isdir[j])
+                res->path[i++] = wc_getFileInfo(p->path[j]);
+        for (int j = 0; j < p->amt; j++)
+            if (p->isdir[j])
+                res->path[i++] = wc_getDirInfo(p->path[j], rec);
     }
+    return res;
 }
