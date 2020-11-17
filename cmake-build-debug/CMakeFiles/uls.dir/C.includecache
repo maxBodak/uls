@@ -52,11 +52,19 @@ sys/ioctl.h
 time.h
 -
 
+/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c
+uls.h
+/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
+
 /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/core.c
 uls.h
 /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
 
 /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/getPaths.c
+uls.h
+/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
+
+/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/main.c
 uls.h
 /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
 

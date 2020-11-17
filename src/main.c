@@ -27,6 +27,7 @@
 
 int main(int argc, char ** argv) {
     t_path *p = wc_getPaths(argc, argv);
+    cf_flags_num (argc, argv);
 
     t_dir *d = bigPP(p->path[0], 1);
     for (int i = 0; i < d->file_amt; i++)

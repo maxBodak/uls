@@ -33,6 +33,8 @@ void cf_flags_num (int argc, char *argv[]) {
                     (argv[i][1] && argv[i][1] != '-'); i++, count++)
         count_flags += mx_strlen(argv[i]) - 1;
     fl = mem_manip(count_flags);
+    for (int i = 0; i < ALL_FLAGS; i++)
+        fl->flags[i] = false;
     for (int i = 1, j = 0; i <= count; i++){
         j = cpy_args(j, argv[i], fl->flags_char);
     }
