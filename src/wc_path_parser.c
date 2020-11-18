@@ -4,8 +4,8 @@ static inline void errorNoPath(char *path) {
     mx_printstr("uls: ");
     mx_printstr(path);
     mx_printstr(": No such file or directory exists\n");
-}
-static char checkPath(char *path) {
+}/*--------------------------------------------------------------------------*/
+static inline char checkPath(char *path) {
     struct stat stats;
     int e = stat(path, &stats);
     
@@ -15,17 +15,19 @@ static char checkPath(char *path) {
         return 2;
     }
     return 0;
-}
+}/*--------------------------------------------------------------------------*/
 static inline t_path *CurDirPath() {
     t_path *p = (t_path *)malloc(sizeof(t_path));
 
     p->amt = 1;
-    p->path = (char **)malloc(sizeof(char *) * p->amt);
-    p->isdir = (bool *)malloc(sizeof(bool) * p->amt);
-    p->path[0] = mx_strdup(".");
+    p->isdir = (bool *)malloc(sizeof(bool));
     p->isdir[0] = true;
+    p->path = (char **)malloc(sizeof(char *));
+    p->path[0] = (char *)malloc(sizeof(char));
+    p->path[0][0] = '.';
+    p->path[0][1] = '\0';
     return p;
-}
+}/*--------------------------------------------------------------------------*/
 static inline t_path *initPaths(int argc, char *argv[], char *status,
                                                 int flags, int fakes) {
     t_path *p = NULL;
@@ -39,24 +41,24 @@ static inline t_path *initPaths(int argc, char *argv[], char *status,
     for (int i = 0, j = 0; j < argc - flags; j++) {
         if (status[j] == 1) {
             p->isdir[i] = true;
-            p->path[i++] = argv[j + flags];
+            p->path[i++] = mx_strdup(argv[j + flags]);
             if (p->path[i - 1][mx_strlen(p->path[i - 1])] == '/')
                 p->path[i - 1][mx_strlen(p->path[i - 1])] = '\0';
         }
         else if(status[j] == 2) {
             p->isdir[i] = false;
-            p->path[i++] = argv[j + flags];
+            p->path[i++] = mx_strdup(argv[j + flags]);
         }
         else
             errorNoPath(argv[j + flags]);
     }
     free(status);
     return p;
-}
+}/*==========================================================================*/
 t_path *wc_getPaths(int argc, char *argv[]) {
-    int flags = 1;
     int fakes = 0;
-    char *status;
+    int flags = 1;
+    char *status = NULL;
 
     if (argc > 1)
         while (argv[flags][0] == '-')

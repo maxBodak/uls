@@ -23,15 +23,10 @@ typedef struct s_path {
     int amt;
 }              t_path;
 typedef struct s_obj {
-    struct s_obj **subdirs;
-    struct s_obj *files;
-
+    struct s_obj **kids;
     char *name;
     struct stat st;
-
-    int subdir_amt;
-    int file_amt;
-
+    int kids_amt;
     char type;
 }              t_obj;
 typedef struct s_data {
@@ -44,5 +39,10 @@ t_obj *wc_getFileInfo(char *p);
 
 /*-----------Utilities------------*/
 t_data *wc_fetchData(t_path *p, bool rec);
+void wc_printInfo(t_obj *obj, bool rec);
 void printShortName(char *p);
-bool isTrueDir(char *name);
+bool isNotDots(char *name);
+/*-----------Cleaners------------*/
+void wc_freePath(t_path *p);
+void wc_freeObj(t_obj *o);
+void wc_freeData(t_data *d);

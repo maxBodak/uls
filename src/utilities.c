@@ -1,4 +1,5 @@
 #include "uls.h"
+
 void printShortName(char *p) {
     int l = mx_strlen(p) - 1;
 
@@ -7,28 +8,24 @@ void printShortName(char *p) {
     p += l;
     mx_printstr(p);
 }/*--------------------------------------------------------------------------*/
-bool isTrueDir(char *name) {
+bool isNotDots(char *name) {
     if (mx_strcmp(name, ".") && mx_strcmp(name, ".."))
         return true;
     return false;
 }/*--------------------------------------------------------------------------*/
-void printInfo(t_obj *obj, bool rec) {
+void wc_printInfo(t_obj *obj, bool rec) {
     if (obj->type != 0) {
-        for (int i = 0; i < obj->file_amt; i++) {
-            mx_printstr(obj->files[i].name);
-            mx_printstr("\n");
-        }
-        for (int i = 0; i < obj->subdir_amt; i++) {
-            printShortName(obj->subdirs[i]->name);
+        for (int i = 0; i < obj->kids_amt; i++) {
+            printShortName(obj->kids[i]->name);
             mx_printstr("\n");
         }
         if (rec) {
-            for (int i = 0; i < obj->subdir_amt; i++) 
-                if (isTrueDir(obj->subdirs[i]->name)) {
+            for (int i = 0; i < obj->kids_amt; i++) 
+                if (obj->kids[i]->type == 1) {
                     mx_printstr("\n");
-                    mx_printstr(obj->subdirs[i]->name);
+                    mx_printstr(obj->kids[i]->name);
                     mx_printstr(":\n");
-                    printInfo(obj->subdirs[i], 1);
+                    wc_printInfo(obj->kids[i], 1);
                 }
         }
     } else {
