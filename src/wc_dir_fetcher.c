@@ -19,6 +19,11 @@ static inline t_obj *initDir(char *p) {
     d->type = 1;
     return d;
 }/*--------------------------------------------------------------------------*/
+static inline bool isNotDots(char *name) {
+    if (mx_strcmp(name, ".") && mx_strcmp(name, ".."))
+        return true;
+    return false;
+}/*--------------------------------------------------------------------------*/
 static inline char *addPrefix(char *prefix, char *str) {
     char *t1 = NULL;
     char *t2 = NULL;

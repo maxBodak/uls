@@ -41,7 +41,6 @@ t_obj *wc_getFileInfo(char *p);
 t_data *wc_fetchData(t_path *p, bool rec);
 void wc_printInfo(t_obj *obj, bool rec);
 void printShortName(char *p);
-bool isNotDots(char *name);
 /*-----------Cleaners------------*/
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
