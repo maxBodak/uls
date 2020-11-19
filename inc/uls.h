@@ -55,3 +55,4 @@ void wc_freeData(t_data *d);
 void wc_printWithC(t_obj **fp, int fp_amt);
 void wc_printWithOne(t_obj **fp, int fp_amt);
 void wc_printWithM(t_obj **fp, int fp_amt);
+void wc_printWithL(t_obj **fp, int fp_amt);

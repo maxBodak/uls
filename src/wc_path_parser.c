@@ -23,7 +23,7 @@ static inline t_path *CurDirPath() {
     p->isdir = (bool *)malloc(sizeof(bool));
     p->isdir[0] = true;
     p->path = (char **)malloc(sizeof(char *));
-    p->path[0] = (char *)malloc(sizeof(char));
+    p->path[0] = (char *)malloc(sizeof(char) * 2);
     p->path[0][0] = '.';
     p->path[0][1] = '\0';
     return p;
@@ -61,7 +61,7 @@ t_path *wc_getPaths(int argc, char *argv[]) {
     char *status = NULL;
 
     if (argc > 1)
-        while (argv[flags][0] == '-')
+        while (argv [flags] && argv[flags][0] == '-')
             if (argv[flags++][1] == '-')
                 break;
 

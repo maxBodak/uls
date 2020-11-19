@@ -8,33 +8,16 @@ void printShortName(char *p) {
     p += l;
     mx_printstr(p);
 }/*--------------------------------------------------------------------------*/
-void printPermsUtil(struct stat st) {
-    mx_printstr((S_ISDIR(st.st_mode)) ? "d" : "-");
-    mx_printstr((st.st_mode & S_IRUSR) ? "r" : "-");
-    mx_printstr((st.st_mode & S_IWUSR) ? "w" : "-");
-    mx_printstr((st.st_mode & S_IXUSR) ? "x" : "-");
-    mx_printstr((st.st_mode& S_IRGRP) ? "r" : "-");
-    mx_printstr((st.st_mode & S_IWGRP) ? "w" : "-");
-    mx_printstr((st.st_mode & S_IXGRP) ? "x" : "-");
-    mx_printstr((st.st_mode& S_IROTH) ? "r" : "-");
-    mx_printstr((st.st_mode & S_IWOTH) ? "w" : "-");
-    mx_printstr((st.st_mode & S_IXOTH) ? "x" : "-");
-}/*--------------------------------------------------------------------------*/
+
 void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl) {
     if (!fp_amt)
         return;
     if (fl[one])
         wc_printWithOne(fp, fp_amt);
     else if (fl[m])
-         wc_printWithM(fp, fp_amt);
+        wc_printWithM(fp, fp_amt);
     else if (fl[l]) {
-        for(int i = 0; i < fp_amt; i++) {
-            printPermsUtil(fp[i]->st);
-            mx_printstr("\t");
-            printShortName(fp[i]->name);
-            mx_printstr("\n");
-        }
-         mx_printstr("\n");
+        wc_printWithL(fp, fp_amt);
     } else {
         wc_printWithC(fp, fp_amt);
     }
