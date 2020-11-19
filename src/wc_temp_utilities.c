@@ -9,7 +9,6 @@ void printShortName(char *p) {
     mx_printstr(p);
 }/*--------------------------------------------------------------------------*/
 void wc_printInfo(t_obj *obj, bool *fl) {
-    mx_printint(obj->type);
     if (obj->type != 0) {
         for (int i = 0; i < obj->kids_amt; i++) {
             printShortName(obj->kids[i]->name);

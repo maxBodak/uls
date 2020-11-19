@@ -46,11 +46,10 @@ t_obj *wc_getDirInfo(char *p, bool rec) {
     if (res) {
         dp = opendir (p);
         for (int i = 0; (ep = readdir(dp)); i++) {
-            if (rec && ep->d_type == DT_DIR && isNotDots(ep->d_name)) {
+           if (rec && ep->d_type == DT_DIR && isNotDots(ep->d_name)) {
                 buf = addPrefix(p, ep->d_name);
                 res->kids[i] = wc_getDirInfo(buf, 1);
                 free(buf);
-                mx_printstr("test\n");
             } else {
                 res->kids[i] = (t_obj *)malloc(sizeof(t_obj));
                 res->kids[i]->name = mx_strdup(ep->d_name);

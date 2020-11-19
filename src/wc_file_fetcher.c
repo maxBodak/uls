@@ -10,7 +10,6 @@ static inline char *getName(char *p) {
 }/*==========================================================================*/
 t_obj *wc_getFileInfo(char *p) {
     t_obj *f = (t_obj *)malloc(sizeof(t_obj));
-
     stat(p, &(f->st));
     f->name = getName(p);
     f->kids_amt = 0;
