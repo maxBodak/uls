@@ -51,3 +51,7 @@ void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
 void wc_freeData(t_data *d);
+/*-----------Printers------------*/
+void wc_printWithC(t_obj **fp, int fp_amt);
+void wc_printWithOne(t_obj **fp, int fp_amt);
+void wc_printWithM(t_obj **fp, int fp_amt);

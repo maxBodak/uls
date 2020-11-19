@@ -23,19 +23,11 @@ void printPermsUtil(struct stat st) {
 void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl) {
     if (!fp_amt)
         return;
-    if (fl[one]) {
-        for(int i = 0; i < fp_amt; i++) {
-            printShortName(fp[i]->name);
-            mx_printstr("\n");
-        }
-    } else if (fl[m]) {
-        for(int i = 0; i < fp_amt; i++) {
-            if(i)
-                mx_printstr(", ");
-            printShortName(fp[i]->name);
-        }
-         mx_printstr("\n");
-    } else if (fl[l]) {
+    if (fl[one])
+        wc_printWithOne(fp, fp_amt);
+    else if (fl[m])
+         wc_printWithM(fp, fp_amt);
+    else if (fl[l]) {
         for(int i = 0; i < fp_amt; i++) {
             printPermsUtil(fp[i]->st);
             mx_printstr("\t");
@@ -44,13 +36,7 @@ void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl) {
         }
          mx_printstr("\n");
     } else {
-        for(int i = 0; i < fp_amt; i++) {
-            printShortName(fp[i]->name);
-            if (i % 2)
-                mx_printstr("\n");
-            else
-                mx_printstr("\t");
-        }
+        wc_printWithC(fp, fp_amt);
     }
 }/*--------------------------------------------------------------------------*/
 void wc_printDir(t_obj *obj, bool *fl) {
