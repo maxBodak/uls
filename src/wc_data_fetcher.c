@@ -1,6 +1,6 @@
 #include "uls.h"
 
-t_data *wc_fetchData(t_path *p, bool rec) {
+t_data *wc_fetchData(t_path *p, bool *fl) {
     int dcount = 0;
     t_data *res = NULL;
 
@@ -20,7 +20,7 @@ t_data *wc_fetchData(t_path *p, bool rec) {
         
         for (int i = 0, j = 0, k = 0; k < p->amt; k++) {
             if (p->isdir[k])
-                res->dirs_path[j++] = wc_getDirInfo(p->path[k], rec);
+                res->dirs_path[j++] = wc_getDirInfo(p->path[k], fl);
             else
                 res->files_path[i++] = wc_getFileInfo(p->path[k]);
         }

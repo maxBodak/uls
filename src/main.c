@@ -14,17 +14,19 @@ int main(int argc, char ** argv) {
     //         mx_printstr(p->path[f]);
     //         mx_printstr("\n");
     // }
-    t_data *d = wc_fetchData(p, fl[R]);
-    for (int i = 0; i < d->files_amt; i++) {
-        wc_printInfo(d->files_path[0], fl);
-        mx_printstr("\n");
-    }
-    for (int i = 0; i < d->dirs_amt; i++) {
-        wc_printInfo(d->dirs_path[0], fl);
-        mx_printstr("\n");
-    }
+    t_data *d = wc_fetchData(p, fl);
+    // for (int i = 0; i < d->files_amt; i++) {
+    //     wc_printInfo(d->files_path[0], fl);
+    //     mx_printstr("\n");
+    // }
+    // for (int i = 0; i < d->dirs_amt; i++) {
+    //     wc_printInfo(d->dirs_path[0], fl);
+    //     mx_printstr("\n");
+    // }
+    wc_printResult(d, fl);
     wc_freePath(p);
     wc_freeData(d);
+    free(fl);
     //system("leaks -q uls");
 //end of wd
     return 0;

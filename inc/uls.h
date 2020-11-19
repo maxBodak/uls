@@ -28,6 +28,7 @@ typedef struct s_obj {
     struct stat st;
     int kids_amt;
     char type;
+    char hidden;
 }              t_obj;
 typedef struct s_data {
     t_obj **dirs_path;
@@ -37,13 +38,15 @@ typedef struct s_data {
 }               t_data;
 t_path *wc_getPaths(int argc, char *argv[]);
 /*-----------Fetchers-------------*/
-t_data *wc_fetchData(t_path *p, bool rec);
-t_obj *wc_getDirInfo(char *p, bool rec);
+t_data *wc_fetchData(t_path *p, bool *fl);
+t_obj *wc_getDirInfo(char *p, bool *fl);
 t_obj *wc_getFileInfo(char *p);
 /*-----------Utilities------------*/
-void wc_printInfo(t_obj *obj, bool *fl);
+void wc_printDir(t_obj *obj, bool *fl);
 void wc_printResult(t_data *d, bool *flocktimeout);
 void printShortName(char *p);
+
+void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);
 /*-----------Cleaners------------*/
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
