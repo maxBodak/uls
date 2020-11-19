@@ -50,6 +50,7 @@ t_obj *wc_getDirInfo(char *p, bool rec) {
                 buf = addPrefix(p, ep->d_name);
                 res->kids[i] = wc_getDirInfo(buf, 1);
                 free(buf);
+                mx_printstr("test\n");
             } else {
                 res->kids[i] = (t_obj *)malloc(sizeof(t_obj));
                 res->kids[i]->name = mx_strdup(ep->d_name);

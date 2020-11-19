@@ -1,19 +1,29 @@
 #include "uls.h"
 
 t_data *wc_fetchData(t_path *p, bool rec) {
-    int i = 0;
+    int dcount = 0;
     t_data *res = NULL;
 
     if(p) {
-        res = (t_data *)malloc(sizeof(res));
-        res->amt = p->amt;
-        res->path = (t_obj **)malloc(sizeof(t_obj *) * p->amt);
-        for (int j = 0; j < p->amt; j++)
-            if (!p->isdir[j])
-                res->path[i++] = wc_getFileInfo(p->path[j]);
-        for (int j = 0; j < p->amt; j++)
-            if (p->isdir[j])
-                res->path[i++] = wc_getDirInfo(p->path[j], rec);
+        for (int i = 0; i < p->amt; i++)
+            dcount += p->isdir[i];
+        res = (t_data *)malloc(sizeof(t_data));
+
+        res->dirs_amt = dcount;
+        res->files_amt = p->amt - dcount;
+        res->dirs_path = NULL;
+        res->files_path = NULL;
+        if (res->dirs_amt)
+            res->dirs_path = (t_obj **)malloc(sizeof(t_obj *) * res->dirs_amt);
+        if (res->files_amt)
+            res->files_path = (t_obj **)malloc(sizeof(t_obj *) * res->files_amt);
+        
+        for (int i = 0, j = 0, k = 0; k < p->amt; k++) {
+            if (p->isdir[k])
+                res->dirs_path[i] = wc_getFileInfo(p->path[k]);
+            else
+                res->files_path[j++] = wc_getDirInfo(p->path[k], rec);
+        }
     }
     return res;
 }

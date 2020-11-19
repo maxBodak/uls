@@ -30,16 +30,19 @@ typedef struct s_obj {
     char type;
 }              t_obj;
 typedef struct s_data {
-    t_obj **path;
-    int amt;
+    t_obj **dirs_path;
+    t_obj **files_path;
+    int dirs_amt;
+    int files_amt;
 }               t_data;
 t_path *wc_getPaths(int argc, char *argv[]);
+/*-----------Fetchers-------------*/
+t_data *wc_fetchData(t_path *p, bool rec);
 t_obj *wc_getDirInfo(char *p, bool rec);
 t_obj *wc_getFileInfo(char *p);
-
 /*-----------Utilities------------*/
-t_data *wc_fetchData(t_path *p, bool rec);
-void wc_printInfo(t_obj *obj, bool rec);
+void wc_printInfo(t_obj *obj, bool *fl);
+void wc_printResult(t_data *d, bool *flocktimeout);
 void printShortName(char *p);
 /*-----------Cleaners------------*/
 void wc_freePath(t_path *p);

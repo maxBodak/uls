@@ -2,9 +2,11 @@
 
 #include "uls.h"
 
-#define ALL_FLAGS 15
+#define ALL_FLAGS 17
 
 enum flags {
+    a,
+    A,
     R,
     l,
     one,
@@ -21,9 +23,5 @@ enum flags {
     h,
     T
 };
-typedef struct s_flags {
-    bool *flags;
-    char *flags_char;
-}              t_flags;
 
-t_flags *cf_flags_num (int argc, char *argv[]);
+bool *cf_flags_num (int argc, char *argv[]);

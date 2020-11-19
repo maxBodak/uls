@@ -21,9 +21,12 @@ void wc_freeData(t_data *d) {
     if(d == NULL)
         return;
 
-    for (int i = 0; i < d->amt; i++)
-        wc_freeObj(d->path[i]);
-    free(d->path);
+    for (int i = 0; i < d->files_amt; i++)
+        wc_freeObj(d->files_path[i]);
+    for (int i = 0; i < d->dirs_amt; i++)
+        wc_freeObj(d->dirs_path[i]);
+    free(d->files_path);
+    free(d->dirs_path);
     free(d);
 }
 

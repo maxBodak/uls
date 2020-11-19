@@ -1,76 +1,74 @@
 #include "uls.h"
 
-static inline t_flags *mem_manip(int count_flags) {
-    t_flags *fl = (t_flags *)malloc(sizeof(t_flags));
-    fl->flags_char = mx_strnew(count_flags - 1);
-    fl->flags = (bool *)malloc(sizeof(bool) * ALL_FLAGS);
-    return fl;
-}
-
-static inline void fill_bool(t_flags *fl, int count_flags) {
-    char flag[ALL_FLAGS] = {'R', 'l', '1', 'm', 'C', 'S', 't',
+static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
+    char flag[ALL_FLAGS] = {'a', 'A', 'R', 'l', '1', 'm', 'C', 'S', 't',
                             'r', 'p', 'u', 'c', '@', 'e', 'h', 'T'};
-    for (int i = 0; i < count_flags; i++)
-        for (int j = 0; j < ALL_FLAGS; j++)
-            if (fl->flags_char[i] == flag[j])
-                fl->flags[j] = true;
+
+    for (int i = 0; i < ALL_FLAGS; i++)//обнулить буловый массив
+        flags[i] = false;
+    for (int i = 0; i < count_flags; i++)//убрать дубликаты в строке флагов
+        for (int j = i + 1; j < count_flags; j++)
+            if (flags_char[i] == flags_char[j] && flags_char[i] != '-')
+                flags_char[j] = '-';
+    for (int i = 0, j = 0; i < count_flags; i++) //дать превдивое значение флага в буловом массиве
+        for (j = 0; j < ALL_FLAGS; j++)
+            if (flags_char[i] == flag[j])
+                flags[j] = true;
 }
 
-static inline void cmp_flags(t_flags *fl, int i) {
+static void char_cmp(int i, int j, char *flags_char, bool *flags) {
+    flags_char[j] = '-';
+    flags[i] = false;
+}
+
+static inline void cmp_flags(char *flags_char, bool *flags, int i) {
     for (int j = i - 1; j >= 0; j--) {
-        if (fl->flags_char[j] == 'l') {
-            fl->flags_char[j] = '-';
-            fl->flags[l] = false;
-        }
-        else if (fl->flags_char[j] == 'm') {
-            fl->flags_char[j] = '-';
-            fl->flags[m] = false;
-        }
-        else if (fl->flags_char[j] == 'C') {
-            fl->flags_char[j] = '-';
-            fl->flags[C] = false;
-        }
-        else if (fl->flags_char[j] == '1') {
-            fl->flags_char[j] = '-';
-            fl->flags[one] = false;
-        }
+        if (flags_char[j] == 'l')
+            char_cmp(l, j, flags_char, flags);
+        else if (flags_char[j] == 'm')
+            char_cmp(m, j, flags_char, flags);
+        else if (flags_char[j] == 'C')
+            char_cmp(C, j, flags_char, flags);
+        else if (flags_char[j] == '1')
+            char_cmp(one, j, flags_char, flags);
     }
 }
 
-static inline void check_perm(t_flags *fl, int count_flags) {
-    for (int i = count_flags - 1; i > 0; i--) {
-        if (fl->flags_char[i] == 'S') {
-            for (int j = i - 1; j >= 0; j--)
-                if (fl->flags_char[j] == 't' || fl->flags_char[j] == 'S') {
-                    fl->flags_char[j] = '-';
-                    fl->flags[t] = false;
+static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
+    for (int i = count_flags - 1; i >= 0; i--) {
+        if(flags_char[i] == 'l' || flags_char[i] == 'm' ||
+                flags_char[i] == 'C' || flags_char[i] == '1' )
+            cmp_flags(flags_char, flags, i);
+        else if(flags_char[i] == 'u' || flags_char[i] == 'c')
+            for (int j = i - 1; j >= 0; j--) {
+                if (flags_char[j] == 'u') {
+                    char_cmp(u, j, flags_char, flags);
                 }
-        }
-        else if(fl->flags_char[i] == 'l' || fl->flags_char[i] == 'm' ||
-                fl->flags_char[i] == 'C' || fl->flags_char[i] == '1' )
-            cmp_flags(fl, i);
+                else if (flags_char[j] == 'c')
+                    char_cmp(c, j, flags_char, flags);
+            }
     }
-    if (fl->flags[S] == true)
-        fl->flags[t] = false;
+    if (flags[S] == true)
+        flags[t] = false;
+    if (flags[a] == true)
+        flags[A] = false;
 }
 
-t_flags *cf_flags_num (int argc, char *argv[]) {
+bool *cf_flags_num (int argc, char *argv[]) {
     int count = 0;
     int count_flags = 0;
-    t_flags *fl;
+    bool *flags = NULL;
+    char *flags_char;
 
-    for (int i = 1; i < argc && argv[i][0] == '-' &&
-                    (argv[i][1] && argv[i][1] != '-'); i++, count++)
+    for (int i = 1; i < argc && argv[i][0] == '-' && argv[i][1] != '-'; i++, count++)
         count_flags += mx_strlen(argv[i]) - 1;
-    fl = mem_manip(count_flags);
-    for (int i = 0; i < ALL_FLAGS; i++)
-        fl->flags[i] = false;
-    for (int i = 1, j = 0; i <= count; i++){
+    flags_char = mx_strnew(count_flags);
+    flags = (bool *)malloc(sizeof(bool) * ALL_FLAGS);
+    for (int i = 1, j = 0; i <= count; i++)
         for (int k = 1; argv[i][k] != '\0'; k++, j++)
-            fl->flags_char[j] = argv[i][k];
-    }
-    fill_bool(fl, count_flags);
-    check_perm(fl, count_flags);
-    free(fl->flags_char);
-    return fl;
+            flags_char[j] = argv[i][k];
+    fill_bool(flags_char, flags, count_flags);
+    check_perm(flags_char, flags, count_flags);
+    free(flags_char);
+    return flags;
 }

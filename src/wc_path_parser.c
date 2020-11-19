@@ -68,7 +68,7 @@ t_path *wc_getPaths(int argc, char *argv[]) {
     if (argc - flags == 0)
             return CurDirPath();
 
-    status = (char *)malloc(sizeof(char) * argc - flags);
+    status = (char *)malloc(sizeof(char) * (argc - flags));
     for(int i = flags; i < argc; i++) {
         status[i - flags] = checkPath(argv[i]);
         fakes += !status[i - flags];
