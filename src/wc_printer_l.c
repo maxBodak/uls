@@ -1,8 +1,44 @@
 #include "uls.h"
+char *mx_substr(const char *str, int a, int b) {
+    char *tmp;
+    int j = 0;
 
+    tmp = mx_strnew(b - a + 1);
+    for (int i = a; i < b && str[i] != '\0'; i++) {
+        tmp[j] = str[i];
+        j++;
+    }
+    return tmp;
+}
+static char *flag_T (time_t time) {
+    char *str;
 
+        str = mx_substr(ctime(&(time)), 4, 16);
+    return str;
+}
+char *mx_flag_time(struct stat buff) {
+    time_t sec = time(NULL);
+    time_t time = 0;
+    char *sub;
+    char *tmp;
+    char *tmp_2;
+
+    time = buff.st_mtime;
+    if (((sec - (time)) > 15778368)) {
+        sub = mx_substr(ctime(&(time)), 4, 10);
+        tmp = mx_strjoin(sub, "  ");
+        free(sub);
+        tmp_2 = mx_substr(ctime(&(time)), 20, 24);
+        sub = mx_strjoin(tmp, tmp_2);
+        free(tmp_2);
+        free(tmp);
+        return sub;
+    }
+
+    return flag_T(time);
+}
 static inline void printPermsUtil(struct stat st, char *p) {
-    //char * str;
+    char * str;
     struct passwd* tmp = getpwuid(st.st_uid);
     struct group *tmp_g = getgrgid(st.st_gid);
     mx_printstr((S_ISDIR(st.st_mode)) ? "d" : "-");
@@ -33,14 +69,15 @@ static inline void printPermsUtil(struct stat st, char *p) {
     mx_printstr(st.st_size < 100000 ? " " : "");
     mx_printstr(" ");
     mx_printint(st.st_size);
-    //mx_printstr(" ");
-    //mx_printint(st.st_mtimespec.tv_sec);
+    mx_printstr(" ");
+    str = mx_flag_time(st);
+    mx_printstr(str);
     // str = mx_itoa(st.st_uid);
     // mx_printstr(str);
     // free(str);
     // str = mx_itoa(st.st_gid);
     // mx_printstr(str);
-    //free(str);
+    free(str);
 }/*--------------------------------------------------------------------------*/
 void wc_printWithL(t_obj **fp, int fp_amt) {
         for(int i = 0; i < fp_amt; i++) {
