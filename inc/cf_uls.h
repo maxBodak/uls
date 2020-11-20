@@ -2,9 +2,11 @@
 
 #include "uls.h"
 
-#define ALL_FLAGS 17
+#define ALL_FLAGS 19
 
 enum flags {
+    F,
+    f,
     a,
     A,
     R,

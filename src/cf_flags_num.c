@@ -1,8 +1,8 @@
 #include "uls.h"
 
 static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
-    char flag[ALL_FLAGS] = {'a', 'A', 'R', 'l', '1', 'm', 'C', 'S', 't',
-                            'r', 'p', 'u', 'c', '@', 'e', 'h', 'T'};
+    char flag[ALL_FLAGS] = {'F', 'f', 'a', 'A', 'R', 'l', '1', 'm', 'C',
+                            'S', 't','r', 'p', 'u', 'c', '@', 'e', 'h', 'T'};
 
     for (int i = 0; i < ALL_FLAGS; i++)//обнулить буловый массив
         flags[i] = false;
@@ -52,6 +52,8 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
         flags[t] = false;
     if (flags[a] == true)
         flags[A] = false;
+    if (flags[f] == true)
+        flags[a] = true;
 }
 
 bool *cf_flags_num (int argc, char *argv[]) {
