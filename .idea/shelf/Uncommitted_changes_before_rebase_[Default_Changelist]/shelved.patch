@@ -1,0 +1,64 @@
+Index: src/main.c
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#include \"uls.h\"\n\nint main(int argc, char ** argv) {\n//cf\n     bool *fl = cf_flags_num (argc, argv);\n    // for(int i = 0; i < ALL_FLAGS; i++)\n    //     printf(\"%d - %d\\n\", i+8, fl->flags[i]);\n    // printf(\"cf end\\n\");\n    // system(\"leaks uls\");\n//end of cf\n//wc\n    t_path *p = wc_getPaths(argc, argv);\n    // for (int f = 0; f < p->amt; f++) {\n    //         mx_printstr(p->path[f]);\n    //         mx_printstr(\"\\n\");\n    // }\n    t_data *d = wc_fetchData(p, fl);\n    // for (int i = 0; i < d->files_amt; i++) {\n    //     wc_printInfo(d->files_path[0], fl);\n    //     mx_printstr(\"\\n\");\n    // }\n    // for (int i = 0; i < d->dirs_amt; i++) {\n    //     wc_printInfo(d->dirs_path[0], fl);\n    //     mx_printstr(\"\\n\");\n    // }\n    wc_printResult(d, fl);\n    wc_freePath(p);\n    wc_freeData(d);\n    free(fl);\n    //system(\"leaks -q uls\");\n//end of wd\n    return 0;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main.c	(revision 30776d8f07e2129612fff3da7f64c3ff7cbe1dbe)
++++ src/main.c	(date 1605895251000)
+@@ -23,6 +23,9 @@
+     //     wc_printInfo(d->dirs_path[0], fl);
+     //     mx_printstr("\n");
+     // }
++    printf("%d\n", d->dirs_path[0]->kids_amt);
++    cf_not_flag_f(d->dirs_path, d->dirs_amt, fl);
++//    cf_flag_r(d, d->dirs_amt, fl);
+     wc_printResult(d, fl);
+     wc_freePath(p);
+     wc_freeData(d);
+Index: inc/uls.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#pragma once\n\n#include \"libmx.h\"\n\n#include \"cf_uls.h\"\n#include <sys/stat.h>\n#include <sys/types.h>\n#include <sys/errno.h>\n#include <dirent.h>\n#include <pwd.h>\n#include <grp.h>\n#include <sys/xattr.h>\n#include <sys/acl.h>\n#include <sys/ioctl.h>\n#include <time.h>\n\n#define INT_MAX 2147483647\n#define PATH_MAX 1024\n\ntypedef struct s_path {\n    char **path;\n    bool *isdir;\n    int amt;\n}              t_path;\ntypedef struct s_obj {\n    struct s_obj **kids;\n    char *name;\n    struct stat st;\n    int kids_amt;\n    char type;\n    char hidden;\n}              t_obj;\ntypedef struct s_data {\n    t_obj **dirs_path;\n    t_obj **files_path;\n    int dirs_amt;\n    int files_amt;\n}               t_data;\nt_path *wc_getPaths(int argc, char *argv[]);\n/*-----------Fetchers-------------*/\nt_data *wc_fetchData(t_path *p, bool *fl);\nt_obj *wc_getDirInfo(char *p, bool *fl);\nt_obj *wc_getFileInfo(char *p);\n/*-----------Utilities------------*/\nvoid wc_printDir(t_obj *obj, bool *fl);\nvoid wc_printResult(t_data *d, bool *flocktimeout);\nvoid printShortName(char *p);\n\nvoid wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);\n/*-----------Cleaners------------*/\nvoid wc_freePath(t_path *p);\nvoid wc_freeObj(t_obj *o);\nvoid wc_freeData(t_data *d);\n/*-----------Printers------------*/\nvoid wc_printWithC(t_obj **fp, int fp_amt);\nvoid wc_printWithOne(t_obj **fp, int fp_amt);\nvoid wc_printWithM(t_obj **fp, int fp_amt);\nvoid wc_printWithL(t_obj **fp, int fp_amt);\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- inc/uls.h	(revision 30776d8f07e2129612fff3da7f64c3ff7cbe1dbe)
++++ inc/uls.h	(date 1605895251000)
+@@ -51,6 +51,9 @@
+ void wc_freePath(t_path *p);
+ void wc_freeObj(t_obj *o);
+ void wc_freeData(t_data *d);
++/*-----------Reorder-------------*/
++void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
++void cf_flag_r(t_obj **d, int d_amt, const bool *fl);
+ /*-----------Printers------------*/
+ void wc_printWithC(t_obj **fp, int fp_amt);
+ void wc_printWithOne(t_obj **fp, int fp_amt);
+Index: src/cf_flag_r.c
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/cf_flag_r.c	(date 1605893841000)
++++ src/cf_flag_r.c	(date 1605893841000)
+@@ -0,0 +1,18 @@
++#include"uls.h"
++
++void cf_flag_r(t_obj **d, int d_amt, const bool *fl) {
++    char *buf = NULL;
++
++    if (!fl[f]) {
++        for (int j = 0; j < d_amt; j++) {
++            for (int i = 0; d[j]->kids[i + 1] != NULL; i++) {
++                if (mx_strcmp(d[j]->kids[i]->name, d[j]->kids[i + 1]->name) > 0) {
++                    buf = d[j]->kids[i]->name;
++                    d[j]->kids[i]->name = d[j]->kids[i + 1]->name;
++                    d[j]->kids[i + 1]->name = buf;
++                    i = 0;
++                }
++            }
++        }
++    }
++}
