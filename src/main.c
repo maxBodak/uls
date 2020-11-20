@@ -10,19 +10,12 @@ int main(int argc, char ** argv) {
 //end of cf
 //wc
     t_path *p = wc_getPaths(argc, argv);
-    // for (int f = 0; f < p->amt; f++) {
-    //         mx_printstr(p->path[f]);
-    //         mx_printstr("\n");
-    // }
     t_data *d = wc_fetchData(p, fl);
-    // for (int i = 0; i < d->files_amt; i++) {
-    //     wc_printInfo(d->files_path[0], fl);
-    //     mx_printstr("\n");
-    // }
-    // for (int i = 0; i < d->dirs_amt; i++) {
-    //     wc_printInfo(d->dirs_path[0], fl);
-    //     mx_printstr("\n");
-    // }
+
+    if (d) {
+        cf_not_flag_f(d->files_path, d->files_amt, fl);
+        cf_not_flag_f(d->dirs_path, d->dirs_amt, fl);
+    }
     wc_printResult(d, fl);
     wc_freePath(p);
     wc_freeData(d);

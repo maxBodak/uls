@@ -7,6 +7,7 @@ t_lout getSizesForL(t_obj **fp, int fp_amt) {
     int link = fp[0]->st.st_nlink;
     int size = fp[0]->st.st_size;
 
+    r.total = fp[0]->st.st_blocks;
     r.b_owner = mx_strlen(tmp->pw_name);
     r.c_group = mx_strlen(tmp_g->gr_name);
     for (int i = 1; i < fp_amt; i++) {
@@ -20,6 +21,7 @@ t_lout getSizesForL(t_obj **fp, int fp_amt) {
             r.c_group = mx_strlen(tmp_g->gr_name);
         if (size < fp[i]->st.st_size)
             size = fp[i]->st.st_size;
+        r.total += fp[i]->st.st_blocks;
     }
     r.a_link = wc_getBitDepth(link);
     r.d_size = wc_getBitDepth(size);

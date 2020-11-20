@@ -8,7 +8,7 @@ void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl) {
     else if (fl[m])
         wc_printWithM(fp, fp_amt);
     else if (fl[l]) {
-        wc_printWithL(fp, fp_amt);
+        wc_printWithL(fp, fp_amt, fl);
     } else {
         wc_printWithC(fp, fp_amt);
     }

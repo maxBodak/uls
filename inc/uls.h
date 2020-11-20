@@ -37,6 +37,7 @@ typedef struct s_data {
     int files_amt;
 }               t_data;
 typedef struct s_lout {
+    int total;
     short a_link;
     short b_owner;
     short c_group;
@@ -52,6 +53,7 @@ t_data *wc_fetchData(t_path *p, bool *fl);
 void wc_printShortName(char *p);
 char *wc_getShortName(char *p);
 short wc_getBitDepth(int a);
+//char *getStatName(char *name);
 /*-----------Cleaners------------*/
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
@@ -60,9 +62,12 @@ void wc_freeData(t_data *d);
 void wc_printWithC(t_obj **fp, int fp_amt);
 void wc_printWithOne(t_obj **fp, int fp_amt);
 void wc_printWithM(t_obj **fp, int fp_amt);
-void wc_printWithL(t_obj **fp, int fp_amt);
+void wc_printWithL(t_obj **fp, int fp_amt, bool *fl);
 t_lout getSizesForL(t_obj **fp, int fp_amt);
 /*-----------Temp-----------------*/
 void wc_printResult(t_data *d, bool *flocktimeout);
 void wc_printDir(t_obj *obj, bool *fl);
 void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);
+
+/*----------CKiff-----------------*/
+void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);

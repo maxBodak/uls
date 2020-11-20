@@ -1,4 +1,5 @@
 #include "uls.h"
+
 short wc_getBitDepth(int a) {
     short r = 0;
 
@@ -22,4 +23,10 @@ char *wc_getShortName(char *p) {
     l += (l != 0);
     p += l;
     return p;
-}
+}/*--------------------------------------------------------------------------*/
+// char *getStatName(char *name) {
+//     int l = mx_strlen_safe(name) - 1;
+
+//     for (;l > 0 && name[l] != '.'; l--);
+//     return l ? mx_strndup(name, l) : mx_strdup(name);
+// }

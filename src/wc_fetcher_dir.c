@@ -60,7 +60,9 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                     res->kids[i]->kids = NULL;
                     res->kids[i]->type = 2 * (isDot(ep->d_name));
                 }
-                stat(ep->d_name, &(res->kids[i++]->st));
+                buf = addPrefix(p, ep->d_name);
+                stat(buf, &(res->kids[i++]->st));
+                free(buf);
             }
         }
         closedir(dp);
