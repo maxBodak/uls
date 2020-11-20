@@ -1,6 +1,9 @@
 #include "uls.h"
 
 void wc_freePath(t_path *p) {
+    if(p == NULL)
+        return;
+
     free(p->isdir);
     for (int i = 0; i < p->amt; i++)
         free(p->path[i]);
@@ -10,6 +13,7 @@ void wc_freePath(t_path *p) {
 void wc_freeObj(t_obj *o) {
     if(o == NULL)
         return;
+
     free(o->name);
     for (int i = 0; i < o->kids_amt; i++)
         wc_freeObj(o->kids[i]);

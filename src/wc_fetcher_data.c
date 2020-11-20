@@ -20,9 +20,9 @@ t_data *wc_fetchData(t_path *p, bool *fl) {
         
         for (int i = 0, j = 0, k = 0; k < p->amt; k++) {
             if (p->isdir[k])
-                res->dirs_path[j++] = wc_getDirInfo(p->path[k], fl);
+                res->dirs_path[j++] = wc_fetchDirInfo(p->path[k], fl);
             else
-                res->files_path[i++] = wc_getFileInfo(p->path[k]);
+                res->files_path[i++] = wc_fetchFileInfo(p->path[k]);
         }
     }
     return res;

@@ -2,7 +2,6 @@
 
 static inline bool isDot(char *name) {
     return !mx_strcmp(name, ".") || !mx_strcmp(name, "..");
-
 }/*--------------------------------------------------------------------------*/
 static inline bool isHidden(char *name) {
     return name[0] == '.';
@@ -40,7 +39,7 @@ static inline char *addPrefix(char *prefix, char *str) {
         t2 = mx_strjoin(prefix, str);
     return t2;
 }/*==========================================================================*/
-t_obj *wc_getDirInfo(char *p, bool *fl) {
+t_obj *wc_fetchDirInfo(char *p, bool *fl) {
     DIR *dp;
     char *buf = NULL;
     struct dirent *ep;
@@ -52,7 +51,7 @@ t_obj *wc_getDirInfo(char *p, bool *fl) {
             if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name))) {
                 if (fl[R] && ep->d_type == DT_DIR && !isDot(ep->d_name)) {
                         buf = addPrefix(p, ep->d_name);
-                        res->kids[i] = wc_getDirInfo(buf, fl);
+                        res->kids[i] = wc_fetchDirInfo(buf, fl);
                         free(buf);
                 } else {
                     res->kids[i] = (t_obj *)malloc(sizeof(t_obj));

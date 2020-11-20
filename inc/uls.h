@@ -36,17 +36,22 @@ typedef struct s_data {
     int dirs_amt;
     int files_amt;
 }               t_data;
-t_path *wc_getPaths(int argc, char *argv[]);
-/*-----------Fetchers-------------*/
-t_data *wc_fetchData(t_path *p, bool *fl);
-t_obj *wc_getDirInfo(char *p, bool *fl);
-t_obj *wc_getFileInfo(char *p);
-/*-----------Utilities------------*/
-void wc_printDir(t_obj *obj, bool *fl);
-void wc_printResult(t_data *d, bool *flocktimeout);
-void printShortName(char *p);
+typedef struct s_lout {
+    short a_link;
+    short b_owner;
+    short c_group;
+    short d_size;
+}               t_lout;
 
-void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);
+/*-----------Fetchers-------------*/
+t_path *wc_getPaths(int argc, char *argv[]);
+t_obj *wc_fetchDirInfo(char *p, bool *fl);
+t_obj *wc_fetchFileInfo(char *p);
+t_data *wc_fetchData(t_path *p, bool *fl);
+/*-----------Utilities------------*/
+void wc_printShortName(char *p);
+char *wc_getShortName(char *p);
+short wc_getBitDepth(int a);
 /*-----------Cleaners------------*/
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
@@ -56,3 +61,8 @@ void wc_printWithC(t_obj **fp, int fp_amt);
 void wc_printWithOne(t_obj **fp, int fp_amt);
 void wc_printWithM(t_obj **fp, int fp_amt);
 void wc_printWithL(t_obj **fp, int fp_amt);
+t_lout getSizesForL(t_obj **fp, int fp_amt);
+/*-----------Temp-----------------*/
+void wc_printResult(t_data *d, bool *flocktimeout);
+void wc_printDir(t_obj *obj, bool *fl);
+void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);

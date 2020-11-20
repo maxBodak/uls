@@ -1,14 +1,5 @@
 #include "uls.h"
 
-void printShortName(char *p) {
-    int l = mx_strlen_safe(p) - 1;
-
-    for (;l > 0 && p[l] != '/'; l--);
-    l += (l != 0);
-    p += l;
-    mx_printstr(p);
-}/*--------------------------------------------------------------------------*/
-
 void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl) {
     if (!fp_amt)
         return;
@@ -35,6 +26,9 @@ void wc_printDir(t_obj *obj, bool *fl) {
     }
 }/*--------------------------------------------------------------------------*/
 void wc_printResult(t_data *d, bool *fl) {
+    if (d == NULL)
+        return;
+
     wc_printObjArr(d->files_path, d->files_amt, fl);
     if (d->dirs_amt > 1 || d->files_amt)
         for (int i = 0; i < d->dirs_amt; i++) {

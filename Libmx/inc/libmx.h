@@ -115,3 +115,4 @@ bool mx_isspace(char c);
 char *mx_strchr(const char *s, int c);
 void mx_printerr(const char *s);
 long mx_atol(const char *str);
+char *mx_substr(const char *str, int a, int b);
