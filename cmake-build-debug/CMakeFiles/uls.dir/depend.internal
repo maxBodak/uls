@@ -193,6 +193,9 @@ CMakeFiles/uls.dir/Libmx/src/mx_strstr.c.o
 CMakeFiles/uls.dir/Libmx/src/mx_strtrim.c.o
  ../Libmx/inc/libmx.h
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_strtrim.c
+CMakeFiles/uls.dir/Libmx/src/mx_substr.c.o
+ ../Libmx/inc/libmx.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_substr.c
 CMakeFiles/uls.dir/Libmx/src/mx_swap_char.c.o
  ../Libmx/inc/libmx.h
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_swap_char.c
@@ -202,6 +205,16 @@ CMakeFiles/uls.dir/Libmx/src/mx_tolower.c.o
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_tolower.c
 CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.o
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_toupper.c
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.o
+ ../Libmx/inc/libmx.h
+ ../inc/cf_uls.h
+ ../inc/uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c
+CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o
+ ../Libmx/inc/libmx.h
+ ../inc/cf_uls.h
+ ../inc/uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_err_illegal_option.c
 CMakeFiles/uls.dir/src/cf_flag_r.c.o
  ../Libmx/inc/libmx.h
  ../inc/cf_uls.h
@@ -212,6 +225,11 @@ CMakeFiles/uls.dir/src/cf_flags_num.c.o
  ../inc/cf_uls.h
  ../inc/uls.h
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.o
+ ../Libmx/inc/libmx.h
+ ../inc/cf_uls.h
+ ../inc/uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c
 CMakeFiles/uls.dir/src/main.c.o
  ../Libmx/inc/libmx.h
  ../inc/cf_uls.h
@@ -252,6 +270,11 @@ CMakeFiles/uls.dir/src/wc_printer_l.c.o
  ../inc/cf_uls.h
  ../inc/uls.h
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l.c
+CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o
+ ../Libmx/inc/libmx.h
+ ../inc/cf_uls.h
+ ../inc/uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l_sizer.c
 CMakeFiles/uls.dir/src/wc_printer_m.c.o
  ../Libmx/inc/libmx.h
  ../inc/cf_uls.h
@@ -262,8 +285,18 @@ CMakeFiles/uls.dir/src/wc_printer_one.c.o
  ../inc/cf_uls.h
  ../inc/uls.h
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_one.c
-CMakeFiles/uls.dir/src/wc_temp_utilities.c.o
+CMakeFiles/uls.dir/src/wc_quicksortObj.c.o
  ../Libmx/inc/libmx.h
  ../inc/cf_uls.h
  ../inc/uls.h
- /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp_utilities.c
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_quicksortObj.c
+CMakeFiles/uls.dir/src/wc_temp.c.o
+ ../Libmx/inc/libmx.h
+ ../inc/cf_uls.h
+ ../inc/uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp.c
+CMakeFiles/uls.dir/src/wc_utilities.c.o
+ ../Libmx/inc/libmx.h
+ ../inc/cf_uls.h
+ ../inc/uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c

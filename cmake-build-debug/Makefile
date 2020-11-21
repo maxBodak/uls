@@ -1979,6 +1979,33 @@ Libmx/src/mx_strtrim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/Libmx/src/mx_strtrim.c.s
 .PHONY : Libmx/src/mx_strtrim.c.s
 
+Libmx/src/mx_substr.o: Libmx/src/mx_substr.c.o
+
+.PHONY : Libmx/src/mx_substr.o
+
+# target to build an object file
+Libmx/src/mx_substr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/Libmx/src/mx_substr.c.o
+.PHONY : Libmx/src/mx_substr.c.o
+
+Libmx/src/mx_substr.i: Libmx/src/mx_substr.c.i
+
+.PHONY : Libmx/src/mx_substr.i
+
+# target to preprocess a source file
+Libmx/src/mx_substr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/Libmx/src/mx_substr.c.i
+.PHONY : Libmx/src/mx_substr.c.i
+
+Libmx/src/mx_substr.s: Libmx/src/mx_substr.c.s
+
+.PHONY : Libmx/src/mx_substr.s
+
+# target to generate assembly for a file
+Libmx/src/mx_substr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/Libmx/src/mx_substr.c.s
+.PHONY : Libmx/src/mx_substr.c.s
+
 Libmx/src/mx_swap_char.o: Libmx/src/mx_swap_char.c.o
 
 .PHONY : Libmx/src/mx_swap_char.o
@@ -2086,6 +2113,60 @@ Libmx/src/mx_toupper.s: Libmx/src/mx_toupper.c.s
 Libmx/src/mx_toupper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.s
 .PHONY : Libmx/src/mx_toupper.c.s
+
+src/cf_cmp_flags.o: src/cf_cmp_flags.c.o
+
+.PHONY : src/cf_cmp_flags.o
+
+# target to build an object file
+src/cf_cmp_flags.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_cmp_flags.c.o
+.PHONY : src/cf_cmp_flags.c.o
+
+src/cf_cmp_flags.i: src/cf_cmp_flags.c.i
+
+.PHONY : src/cf_cmp_flags.i
+
+# target to preprocess a source file
+src/cf_cmp_flags.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_cmp_flags.c.i
+.PHONY : src/cf_cmp_flags.c.i
+
+src/cf_cmp_flags.s: src/cf_cmp_flags.c.s
+
+.PHONY : src/cf_cmp_flags.s
+
+# target to generate assembly for a file
+src/cf_cmp_flags.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_cmp_flags.c.s
+.PHONY : src/cf_cmp_flags.c.s
+
+src/cf_err_illegal_option.o: src/cf_err_illegal_option.c.o
+
+.PHONY : src/cf_err_illegal_option.o
+
+# target to build an object file
+src/cf_err_illegal_option.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o
+.PHONY : src/cf_err_illegal_option.c.o
+
+src/cf_err_illegal_option.i: src/cf_err_illegal_option.c.i
+
+.PHONY : src/cf_err_illegal_option.i
+
+# target to preprocess a source file
+src/cf_err_illegal_option.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_err_illegal_option.c.i
+.PHONY : src/cf_err_illegal_option.c.i
+
+src/cf_err_illegal_option.s: src/cf_err_illegal_option.c.s
+
+.PHONY : src/cf_err_illegal_option.s
+
+# target to generate assembly for a file
+src/cf_err_illegal_option.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_err_illegal_option.c.s
+.PHONY : src/cf_err_illegal_option.c.s
 
 src/cf_flag_r.o: src/cf_flag_r.c.o
 
@@ -2384,6 +2465,33 @@ src/wc_printer_l.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l.c.s
 .PHONY : src/wc_printer_l.c.s
 
+src/wc_printer_l_sizer.o: src/wc_printer_l_sizer.c.o
+
+.PHONY : src/wc_printer_l_sizer.o
+
+# target to build an object file
+src/wc_printer_l_sizer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o
+.PHONY : src/wc_printer_l_sizer.c.o
+
+src/wc_printer_l_sizer.i: src/wc_printer_l_sizer.c.i
+
+.PHONY : src/wc_printer_l_sizer.i
+
+# target to preprocess a source file
+src/wc_printer_l_sizer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.i
+.PHONY : src/wc_printer_l_sizer.c.i
+
+src/wc_printer_l_sizer.s: src/wc_printer_l_sizer.c.s
+
+.PHONY : src/wc_printer_l_sizer.s
+
+# target to generate assembly for a file
+src/wc_printer_l_sizer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.s
+.PHONY : src/wc_printer_l_sizer.c.s
+
 src/wc_printer_m.o: src/wc_printer_m.c.o
 
 .PHONY : src/wc_printer_m.o
@@ -2438,32 +2546,86 @@ src/wc_printer_one.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_one.c.s
 .PHONY : src/wc_printer_one.c.s
 
-src/wc_temp_utilities.o: src/wc_temp_utilities.c.o
+src/wc_quicksortObj.o: src/wc_quicksortObj.c.o
 
-.PHONY : src/wc_temp_utilities.o
+.PHONY : src/wc_quicksortObj.o
 
 # target to build an object file
-src/wc_temp_utilities.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp_utilities.c.o
-.PHONY : src/wc_temp_utilities.c.o
+src/wc_quicksortObj.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_quicksortObj.c.o
+.PHONY : src/wc_quicksortObj.c.o
 
-src/wc_temp_utilities.i: src/wc_temp_utilities.c.i
+src/wc_quicksortObj.i: src/wc_quicksortObj.c.i
 
-.PHONY : src/wc_temp_utilities.i
+.PHONY : src/wc_quicksortObj.i
 
 # target to preprocess a source file
-src/wc_temp_utilities.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp_utilities.c.i
-.PHONY : src/wc_temp_utilities.c.i
+src/wc_quicksortObj.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_quicksortObj.c.i
+.PHONY : src/wc_quicksortObj.c.i
 
-src/wc_temp_utilities.s: src/wc_temp_utilities.c.s
+src/wc_quicksortObj.s: src/wc_quicksortObj.c.s
 
-.PHONY : src/wc_temp_utilities.s
+.PHONY : src/wc_quicksortObj.s
 
 # target to generate assembly for a file
-src/wc_temp_utilities.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp_utilities.c.s
-.PHONY : src/wc_temp_utilities.c.s
+src/wc_quicksortObj.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_quicksortObj.c.s
+.PHONY : src/wc_quicksortObj.c.s
+
+src/wc_temp.o: src/wc_temp.c.o
+
+.PHONY : src/wc_temp.o
+
+# target to build an object file
+src/wc_temp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp.c.o
+.PHONY : src/wc_temp.c.o
+
+src/wc_temp.i: src/wc_temp.c.i
+
+.PHONY : src/wc_temp.i
+
+# target to preprocess a source file
+src/wc_temp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp.c.i
+.PHONY : src/wc_temp.c.i
+
+src/wc_temp.s: src/wc_temp.c.s
+
+.PHONY : src/wc_temp.s
+
+# target to generate assembly for a file
+src/wc_temp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp.c.s
+.PHONY : src/wc_temp.c.s
+
+src/wc_utilities.o: src/wc_utilities.c.o
+
+.PHONY : src/wc_utilities.o
+
+# target to build an object file
+src/wc_utilities.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_utilities.c.o
+.PHONY : src/wc_utilities.c.o
+
+src/wc_utilities.i: src/wc_utilities.c.i
+
+.PHONY : src/wc_utilities.i
+
+# target to preprocess a source file
+src/wc_utilities.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_utilities.c.i
+.PHONY : src/wc_utilities.c.i
+
+src/wc_utilities.s: src/wc_utilities.c.s
+
+.PHONY : src/wc_utilities.s
+
+# target to generate assembly for a file
+src/wc_utilities.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_utilities.c.s
+.PHONY : src/wc_utilities.c.s
 
 # Help Target
 help:
@@ -2678,6 +2840,9 @@ help:
 	@echo "... Libmx/src/mx_strtrim.o"
 	@echo "... Libmx/src/mx_strtrim.i"
 	@echo "... Libmx/src/mx_strtrim.s"
+	@echo "... Libmx/src/mx_substr.o"
+	@echo "... Libmx/src/mx_substr.i"
+	@echo "... Libmx/src/mx_substr.s"
 	@echo "... Libmx/src/mx_swap_char.o"
 	@echo "... Libmx/src/mx_swap_char.i"
 	@echo "... Libmx/src/mx_swap_char.s"
@@ -2690,6 +2855,12 @@ help:
 	@echo "... Libmx/src/mx_toupper.o"
 	@echo "... Libmx/src/mx_toupper.i"
 	@echo "... Libmx/src/mx_toupper.s"
+	@echo "... src/cf_cmp_flags.o"
+	@echo "... src/cf_cmp_flags.i"
+	@echo "... src/cf_cmp_flags.s"
+	@echo "... src/cf_err_illegal_option.o"
+	@echo "... src/cf_err_illegal_option.i"
+	@echo "... src/cf_err_illegal_option.s"
 	@echo "... src/cf_flag_r.o"
 	@echo "... src/cf_flag_r.i"
 	@echo "... src/cf_flag_r.s"
@@ -2723,15 +2894,24 @@ help:
 	@echo "... src/wc_printer_l.o"
 	@echo "... src/wc_printer_l.i"
 	@echo "... src/wc_printer_l.s"
+	@echo "... src/wc_printer_l_sizer.o"
+	@echo "... src/wc_printer_l_sizer.i"
+	@echo "... src/wc_printer_l_sizer.s"
 	@echo "... src/wc_printer_m.o"
 	@echo "... src/wc_printer_m.i"
 	@echo "... src/wc_printer_m.s"
 	@echo "... src/wc_printer_one.o"
 	@echo "... src/wc_printer_one.i"
 	@echo "... src/wc_printer_one.s"
-	@echo "... src/wc_temp_utilities.o"
-	@echo "... src/wc_temp_utilities.i"
-	@echo "... src/wc_temp_utilities.s"
+	@echo "... src/wc_quicksortObj.o"
+	@echo "... src/wc_quicksortObj.i"
+	@echo "... src/wc_quicksortObj.s"
+	@echo "... src/wc_temp.o"
+	@echo "... src/wc_temp.i"
+	@echo "... src/wc_temp.s"
+	@echo "... src/wc_utilities.o"
+	@echo "... src/wc_utilities.i"
+	@echo "... src/wc_utilities.s"
 .PHONY : help
 
 

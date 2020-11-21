@@ -193,6 +193,9 @@ CMakeFiles/uls.dir/Libmx/src/mx_strstr.c.o: ../Libmx/src/mx_strstr.c
 CMakeFiles/uls.dir/Libmx/src/mx_strtrim.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/Libmx/src/mx_strtrim.c.o: ../Libmx/src/mx_strtrim.c
 
+CMakeFiles/uls.dir/Libmx/src/mx_substr.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/Libmx/src/mx_substr.c.o: ../Libmx/src/mx_substr.c
+
 CMakeFiles/uls.dir/Libmx/src/mx_swap_char.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/Libmx/src/mx_swap_char.c.o: ../Libmx/src/mx_swap_char.c
 
@@ -201,6 +204,16 @@ CMakeFiles/uls.dir/Libmx/src/mx_swap_str.c.o: ../Libmx/src/mx_swap_str.c
 CMakeFiles/uls.dir/Libmx/src/mx_tolower.c.o: ../Libmx/src/mx_tolower.c
 
 CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.o: ../Libmx/src/mx_toupper.c
+
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../src/cf_cmp_flags.c
+
+CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../src/cf_err_illegal_option.c
 
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../inc/cf_uls.h
@@ -211,6 +224,11 @@ CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../src/cf_flags_num.c
+
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../src/cf_not_flag_f.c
 
 CMakeFiles/uls.dir/src/main.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/main.c.o: ../inc/cf_uls.h
@@ -252,6 +270,11 @@ CMakeFiles/uls.dir/src/wc_printer_l.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/wc_printer_l.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/wc_printer_l.c.o: ../src/wc_printer_l.c
 
+CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o: ../src/wc_printer_l_sizer.c
+
 CMakeFiles/uls.dir/src/wc_printer_m.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/wc_printer_m.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/wc_printer_m.c.o: ../inc/uls.h
@@ -262,8 +285,18 @@ CMakeFiles/uls.dir/src/wc_printer_one.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/wc_printer_one.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/wc_printer_one.c.o: ../src/wc_printer_one.c
 
-CMakeFiles/uls.dir/src/wc_temp_utilities.c.o: ../Libmx/inc/libmx.h
-CMakeFiles/uls.dir/src/wc_temp_utilities.c.o: ../inc/cf_uls.h
-CMakeFiles/uls.dir/src/wc_temp_utilities.c.o: ../inc/uls.h
-CMakeFiles/uls.dir/src/wc_temp_utilities.c.o: ../src/wc_temp_utilities.c
+CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../src/wc_quicksortObj.c
+
+CMakeFiles/uls.dir/src/wc_temp.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/wc_temp.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/wc_temp.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/wc_temp.c.o: ../src/wc_temp.c
+
+CMakeFiles/uls.dir/src/wc_utilities.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/wc_utilities.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/wc_utilities.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/wc_utilities.c.o: ../src/wc_utilities.c
 
