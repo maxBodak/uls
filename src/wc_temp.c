@@ -19,7 +19,7 @@ void wc_printDir(t_obj *obj, bool *fl) {
         for (int i = 0; i < obj->kids_amt; i++) 
             if (obj->kids[i]->type == 1) {
                 mx_printstr("\n");
-                mx_printstr(obj->kids[i]->name);
+                mx_printstr(obj->kids[i]->path_name);
                 mx_printstr(":\n");
                 wc_printDir(obj->kids[i], fl);
             }
@@ -32,7 +32,7 @@ void wc_printResult(t_data *d, bool *fl) {
     wc_printObjArr(d->files_path, d->files_amt, fl);
     if (d->dirs_amt > 1 || d->files_amt)
         for (int i = 0; i < d->dirs_amt; i++) {
-            mx_printstr(d->dirs_path[i]->name);
+            mx_printstr(d->dirs_path[i]->path_name);
             mx_printstr(": \n");
             wc_printDir(d->dirs_path[i], fl);
         }

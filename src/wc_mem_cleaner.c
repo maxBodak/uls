@@ -13,8 +13,7 @@ void wc_freePath(t_path *p) {
 void wc_freeObj(t_obj *o) {
     if(o == NULL)
         return;
-
-    free(o->name);
+    free(o->path_name);
     for (int i = 0; i < o->kids_amt; i++)
         wc_freeObj(o->kids[i]);
     if(o->kids_amt)

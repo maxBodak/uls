@@ -6,19 +6,19 @@ static void mx_swapObj(t_obj **a, t_obj **b) {
     *a = *b;
     *b = temp;
 }
+
 static int partition(t_obj **arr, int l, int r) {
     int p = (r + l) / 2;
 
-    for (l--, r++;;) {
-        for (l++;mx_strcmp(wc_getShortName(arr[l]->name), 
-                            wc_getShortName(arr[p]->name)) < 0; l++);
-        for (r--;mx_strcmp(wc_getShortName(arr[r]->name), 
-                            wc_getShortName(arr[p]->name)) > 0; r--);
-        if (l >= r)
-            return r;
-        if (mx_strcmp(wc_getShortName(arr[l]->name), 
-                        wc_getShortName(arr[r]->name)) > 0)
+    while (l < r) {
+        for (;mx_strcmp(arr[l]->s_name,arr[p]->s_name) < 0 && l < p; l++);
+        for (;mx_strcmp(arr[l]->s_name,arr[p]->s_name) > 0 && r > p; r--);
+        if (l < r && mx_strcmp(arr[l]->s_name,arr[r]->s_name) > 0) {
+            p = l * (p == r) + r * (p == l) + p * (p != l && p != r);
             mx_swapObj(&arr[l], &arr[r]);
+        }
+        l += 1 * (l != p);
+        r -= 1 * (r != p);
     }
     return p;
 }

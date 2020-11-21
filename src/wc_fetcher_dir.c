@@ -20,7 +20,8 @@ static inline t_obj *initDir(char *p, bool *fl) {
         closedir(dp);
     }
     d = (t_obj *)malloc(sizeof(t_obj));
-    d->name = mx_strdup(p);
+    d->path_name = mx_strdup(p);
+    d->s_name = wc_getShortName(d->path_name);
     d->kids_amt = count;
     d->kids = (t_obj **)malloc(sizeof(t_obj *) * count);
     d->type = 1;
@@ -55,14 +56,13 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                         free(buf);
                 } else {
                     res->kids[i] = (t_obj *)malloc(sizeof(t_obj));
-                    res->kids[i]->name = mx_strdup(ep->d_name);
+                    res->kids[i]->path_name = addPrefix(p, ep->d_name);
+                    res->kids[i]->s_name = wc_getShortName(res->kids[i]->path_name);
                     res->kids[i]->kids_amt = 0;
                     res->kids[i]->kids = NULL;
                     res->kids[i]->type = 2 * (isDot(ep->d_name));
                 }
-                buf = addPrefix(p, ep->d_name);
                 stat(buf, &(res->kids[i++]->st));
-                free(buf);
             }
         }
         closedir(dp);

@@ -24,7 +24,8 @@ typedef struct s_path {
 }              t_path;
 typedef struct s_obj {
     struct s_obj **kids;
-    char *name;
+    char *path_name;
+    char *s_name;
     struct stat st;
     int kids_amt;
     char type;

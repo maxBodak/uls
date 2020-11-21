@@ -14,17 +14,15 @@ static void printDelimiter(int *len, char *name, int win_col) {
 void wc_printWithM(t_obj **fp, int fp_amt) {
     struct winsize w;
     int len = 0;
-    char *name;
 
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
-    if (mx_strlen(fp[0]->name) >= w.ws_col)
+    if (mx_strlen(fp[0]->s_name) >= w.ws_col)
         mx_printchar('\n');
     for (int i = 0; i < fp_amt; i++) {
-        name = wc_getShortName(fp[i]->name);
         if (i != 0)
-            printDelimiter(&len, name, w.ws_col);
-        mx_printstr(name);
-        len += mx_strlen(name);
+            printDelimiter(&len, fp[i]->s_name, w.ws_col);
+        mx_printstr(fp[i]->s_name);
+        len += mx_strlen(fp[i]->s_name);
     }
     mx_printstr("\n");
 }

@@ -108,12 +108,11 @@ static inline void printStats(struct stat st, t_lout l) {
     mx_printint(spaces.total);
     mx_printchar('\n');
         for(int i = 0; i < fp_amt; i++) {
-            printPerms(fp[i]->st, fp[i]->name);
+            printPerms(fp[i]->st, fp[i]->path_name);
             printStats(fp[i]->st, spaces);
             printTime(fp[i]->st, fl);
             mx_printstr(" ");
-            wc_printShortName(fp[i]->name);
+            mx_printstr(fp[i]->s_name);
             mx_printstr("\n");
         }
-         mx_printstr("\n");
 }

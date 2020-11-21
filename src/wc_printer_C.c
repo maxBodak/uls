@@ -1,35 +1,30 @@
 #include "uls.h"
 
 static inline int findMaxLenName(t_obj **fp, int fp_amt) {
-    char *str = wc_getShortName(fp[0]->name);
-    int l = mx_strlen(str);
+    int l = mx_strlen(fp[0]->s_name);
 
-    for(int i = 1; i < fp_amt; i++) {
-        str = wc_getShortName(fp[i]->name);
-        l = l < mx_strlen(str) ? mx_strlen(str) : l;
-    }
+    for(int i = 1; i < fp_amt; i++)
+        l = l < mx_strlen(fp[i]->s_name) ? mx_strlen(fp[i]->s_name) : l;
     return l - l % 8 + 8;
 }/*--------------------------------------------------------------------------*/
 static inline void printMultiCuls(t_obj **fp, int fp_amt, 
                                     int max_len, int cols) {
     int rows = !(fp_amt % cols) ? fp_amt / cols : fp_amt / cols + 1;
-    char * str;
     int tmp;
 
     for (int i = 0; i < rows; mx_printchar(10)) {
         for (int j = i++; j < fp_amt; j += rows) {
-            str = wc_getShortName(fp[j]->name);
-            mx_printstr(str);
-            tmp = (max_len - mx_strlen(str)) / 8;
-            (max_len - mx_strlen(str)) % 8 != 0 ? tmp++ : tmp;
+            mx_printstr(fp[j]->s_name);
+            tmp = (max_len - mx_strlen(fp[j]->s_name)) / 8;
+            (max_len - mx_strlen(fp[j]->s_name)) % 8 != 0 ? tmp++ : tmp;
             for (int k = 0; k++ < tmp; mx_printchar('\t'));
         }
     }
 }/*--------------------------------------------------------------------------*/
 static inline void printInOneRow(t_obj **fp, int fp_amt, int max_len) {
     for (int i = 0; i < fp_amt; i++) {
-            wc_printShortName(fp[i]->name);
-        for (int j = mx_strlen(fp[i]->name); j < max_len; j++)
+            mx_printstr(fp[i]->s_name);
+        for (int j = mx_strlen(fp[i]->s_name); j < max_len; j++)
             mx_printchar(' ');
     }
     fp_amt > 0 ? mx_printchar(10) : mx_printstr("");
