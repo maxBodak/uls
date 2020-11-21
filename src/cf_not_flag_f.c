@@ -7,7 +7,7 @@ bool cmpLexographical(t_obj *obj1, t_obj *obj2) {
     for (; *s1 == *s2; s1++, s2++)
         if (*s1 == '\0')
             return 0;
-    return (bool)(*s1 - *s2);
+    return (*s1 - *s2) > 0 ? true : false;
 }
 
 void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl) {

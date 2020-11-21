@@ -10,8 +10,8 @@ static int partition(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *)) {
     int p = (r + l) / 2;
 
     while (l < r) {
-        for (;cmp(arr[l], arr[p]) && l < p; l++);
-        for (;cmp(arr[p], arr[r]) && r > p; r--);
+        for (;cmp(arr[p], arr[l]) && l < p; l++);
+        for (;cmp(arr[r], arr[p]) && r > p; r--);
         if (l < r && cmp(arr[l], arr[r])) {
             p = l * (p == r) + r * (p == l) + p * (p != l && p != r);
             mx_swapObj(&arr[l], &arr[r]);
