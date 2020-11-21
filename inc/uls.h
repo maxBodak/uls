@@ -88,5 +88,6 @@ void mx_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
 /*-----------Errors---------------*/
 void wc_errorNoPath(char *path);
 void wc_errorPermDenied(char *name_of_dir);
-    /*-----------CKiff----------------*/
+/*-----------Ckif----------------*/
 void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
+void cf_flag_r(t_obj **d, int d_amt, const bool *fl);
