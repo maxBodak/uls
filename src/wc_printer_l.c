@@ -8,8 +8,8 @@ static inline void printTime(struct stat st, bool *fl) {
     char *tmp_2;
 
     time = fl[c] ? st.st_ctime : 
-                    fl[u] ? st.st_atime : 
-                            fl[U] ? st.st_birthtime : st.st_mtime;
+            fl[u] ? st.st_atime : 
+            fl[U] ? st.st_birthtime : st.st_mtime;
     if (((sec - (time)) > 15778368)) {
         sub = mx_substr(ctime(&(time)), 4, 10);
         tmp = mx_strjoin(sub, "  ");
@@ -29,57 +29,40 @@ static inline void printTime(struct stat st, bool *fl) {
     }
 }/*--------------------------------------------------------------------------*/
 static inline void printPerms_firstChar(struct stat st) {
-    if ((st.st_mode & S_IFSOCK) == S_IFSOCK)
-        mx_printchar('s');
-    else if ((st.st_mode & S_IFIFO) == S_IFIFO)
-        mx_printchar('p');
-    else if ((st.st_mode & S_IFCHR) == S_IFCHR)
-        mx_printchar('c');
-    else if ((st.st_mode & S_IFBLK) == S_IFBLK)
-        mx_printchar('b');
-    else if ((st.st_mode & S_IFLNK) == S_IFLNK)
-        mx_printchar('l');
-    else if ((st.st_mode & S_IFDIR) == S_IFDIR)
-        mx_printchar('d');
-    else
-        mx_printchar('-');
+    mx_printchar(S_ISBLK(st.st_mode) ? 'b' :
+                    S_ISCHR(st.st_mode) ? 'c' :
+                    S_ISDIR(st.st_mode) ? 'd' :
+                    S_ISSOCK(st.st_mode) ? 's' :
+                    S_ISFIFO(st.st_mode) ? 'p' :
+                    S_ISLNK(st.st_mode) ? 'l' : '-');
 }/*--------------------------------------------------------------------------*/
 static inline void printPerms_lastChar(char *p) {
-    if (listxattr(p, NULL, 0, XATTR_NOFOLLOW) > 0)
-        mx_printstr("@");
-    else if (acl_get_file(p, ACL_TYPE_EXTENDED) != NULL)
-        mx_printstr("+");
-    else
-        mx_printstr(" ");
+    mx_printchar(listxattr(p, NULL, 0, XATTR_NOFOLLOW) > 0 ? ('@') :
+                    acl_get_file(p, ACL_TYPE_EXTENDED) != NULL ? '+' : ' ');
 }/*--------------------------------------------------------------------------*/
 static inline void printPerms(struct stat st, char *p) {
     printPerms_firstChar(st);
-
-    mx_printstr((st.st_mode & S_IRUSR) ? "r" : "-");
-    mx_printstr((st.st_mode & S_IWUSR) ? "w" : "-");
-    char t = '-';
-    if ((st.st_mode & S_IXUSR) == S_IXUSR)
-        t = 'x';
-    if ((st.st_mode & S_ISUID) == S_ISUID)
-        t = (t = 'x') ? 's' : 'S';
-    mx_printchar(t);
-    mx_printstr((st.st_mode& S_IRGRP) ? "r" : "-");
-    mx_printstr((st.st_mode & S_IWGRP) ? "w" : "-");
-    t = '-';
-    if ((st.st_mode & S_IXGRP) == S_IXGRP)
-        t = 'x';
-    if ((st.st_mode & S_ISGID) == S_ISGID)
-        t = (t = 'x') ? 's' : 'S';
-    mx_printchar(t);
-    mx_printstr((st.st_mode& S_IROTH) ? "r" : "-");
-    mx_printstr((st.st_mode & S_IWOTH) ? "w" : "-");
-    t = '-';
-    if ((st.st_mode & S_IXOTH) == S_IXOTH)
-        t = 'x';
-    if ((st.st_mode & S_ISVTX) == S_ISVTX)
-        t = (t = 'x') ? 't' : 'T';
-    mx_printchar(t);
-
+    //Chars 2 & 3
+    mx_printchar((st.st_mode & S_IRUSR) ? 'r' : '-');
+    mx_printchar((st.st_mode & S_IWUSR) ? 'w' : '-');
+    //Char 4
+    mx_printchar((st.st_mode & S_IXUSR) ?
+             ((st.st_mode & S_ISUID) ? 's' : 'x') :
+             ((st.st_mode & S_ISUID) ? 'S' : '-'));
+    //Chars 5 & 6
+    mx_printchar((st.st_mode& S_IRGRP) ? 'r' : '-');
+    mx_printchar((st.st_mode & S_IWGRP) ? 'w' : '-');
+    //Char 7
+    mx_printchar((st.st_mode & S_IXGRP) ?
+             ((st.st_mode & S_ISGID) ? 's' : 'x') :
+             ((st.st_mode & S_ISGID) ? 'S' : '-'));
+    //char 8 & 9
+    mx_printchar((st.st_mode& S_IROTH) ? 'r' : '-');
+    mx_printchar((st.st_mode & S_IWOTH) ? 'w' : '-');
+    //Char 10
+    mx_printchar((st.st_mode & S_IXOTH) ?
+             ((st.st_mode & S_ISTXT) ? 't' : 'x') :
+             ((st.st_mode & S_ISTXT) ? 'T' : '-'));
     printPerms_lastChar(p);
 }/*--------------------------------------------------------------------------*/
 static inline void printStats(struct stat st, t_lout l) {
@@ -101,7 +84,7 @@ static inline void printStats(struct stat st, t_lout l) {
     for (int i = l.d_size - wc_getBitDepth(st.st_size); i >= -1; i--)
         mx_printchar(' ');
     mx_printint(st.st_size);
-    mx_printstr(" ");
+    mx_printchar(' ');
 }/*==========================================================================*/
  void wc_printWithL(t_obj **fp, int fp_amt, bool *fl) {
     t_lout spaces = getSizesForL(fp, fp_amt);

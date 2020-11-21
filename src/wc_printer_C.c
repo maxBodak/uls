@@ -7,8 +7,7 @@ static inline int findMaxLenName(t_obj **fp, int fp_amt, bool *fl) {
         l = l < mx_strlen(fp[i]->s_name) ? mx_strlen(fp[i]->s_name) : l;
     return fl[G] ? l : l - l % 8 + 8;
 }/*--------------------------------------------------------------------------*/
-
-static inline void printMultiCuls(t_obj **fp, int fp_amt, int max_len, int win,
+static inline void printMultiCols(t_obj **fp, int fp_amt, int max_len, int win,
                                                                     bool *fl) {
     char tab = fl[G] ? ' ' : '\t';
     int cols = win / (max_len + fl[G]);
@@ -47,5 +46,5 @@ void wc_printWithC(t_obj **fp, int fp_amt, bool *fl) {
     else if (w.ws_col >= max_len * fp_amt)
         printInOneRow(fp, fp_amt, max_len, fl);
     else
-        printMultiCuls(fp, fp_amt, max_len, w.ws_col, fl);
+        printMultiCols(fp, fp_amt, max_len, w.ws_col, fl);
 }

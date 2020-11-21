@@ -56,6 +56,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                         buf = addPrefix(p, ep->d_name);
                         res->kids[i] = wc_fetchDirInfo(buf, fl);
                         free(buf);
+                        
                 } else {
                     res->kids[i] = (t_obj *)malloc(sizeof(t_obj));
                     res->kids[i]->path_name = addPrefix(p, ep->d_name);
@@ -64,7 +65,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                     res->kids[i]->kids = NULL;
                     res->kids[i]->type = 2 * (isDot(ep->d_name));
                 }
-                stat(res->kids[i]->path_name, &(res->kids[i]->st));
+                lstat(res->kids[i]->path_name, &(res->kids[i]->st));
                 i++;
             }
         }
