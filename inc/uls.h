@@ -71,5 +71,6 @@ void wc_printDir(t_obj *obj, bool *fl);
 void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);
 /*-----------Sorting--------------*/
 void mx_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
-/*----------CKiff-----------------*/
+/*----------Ckif-----------------*/
 void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
+void cf_flag_r(t_obj **d, int d_amt, const bool *fl);

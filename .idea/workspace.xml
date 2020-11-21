@@ -32,7 +32,29 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="add -f&#10;added if -f make -a positive&#10;Cf" />
+    <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="add -f&#10;added if -f make -a positive&#10;Cf">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/cf_uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/cf_uls.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/uls.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_flags_num.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_num.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_not_flag_f.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_not_flag_f.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wc_quicksortObj.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/wc_quicksortObj.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,12 +120,12 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uls" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="uls" TARGET_NAME="uls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="uls" RUN_TARGET_NAME="uls">
+    <configuration name="uls" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="uls" TARGET_NAME="uls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="uls" RUN_TARGET_NAME="uls">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -127,6 +149,9 @@
       <workItem from="1605885960328" duration="2099000" />
       <workItem from="1605888815791" duration="3785000" />
       <workItem from="1605893331745" duration="3248000" />
+      <workItem from="1605971004033" duration="66000" />
+      <workItem from="1605971082991" duration="4379000" />
+      <workItem from="1605978731350" duration="5166000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -158,14 +183,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="add -f&#10;added if -f make -a positive&#10;Cf" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605979435740">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="740" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1605979435740" />
+    <state x="1039" y="402" key="#xdebugger.evaluate" timestamp="1605986415809">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1039" y="402" key="#xdebugger.evaluate/0.23.2560.1337@0.23.2560.1337" timestamp="1605986415809" />
+    <state width="2510" height="460" key="GridCell.Tab.0.bottom" timestamp="1605986469730">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469730" />
+    <state width="2510" height="460" key="GridCell.Tab.0.center" timestamp="1605986469729">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469729" />
+    <state width="2510" height="460" key="GridCell.Tab.0.left" timestamp="1605986469729">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469729" />
+    <state width="2510" height="460" key="GridCell.Tab.0.right" timestamp="1605986469729">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469729" />
+    <state width="2510" height="460" key="GridCell.Tab.1.bottom" timestamp="1605986469730">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469730" />
+    <state width="2510" height="460" key="GridCell.Tab.1.center" timestamp="1605986469730">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469730" />
+    <state width="2510" height="460" key="GridCell.Tab.1.left" timestamp="1605986469730">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469730" />
+    <state width="2510" height="460" key="GridCell.Tab.1.right" timestamp="1605986469730">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state width="2510" height="460" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469730" />
     <state x="876" y="431" key="Vcs.Push.Dialog.v2" timestamp="1605886091593">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="876" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605886091593" />
-    <state width="600" height="428" key="javadoc.popup" timestamp="1605894783790">
+    <state width="600" height="428" key="javadoc.popup" timestamp="1605987098180">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1605894783790" />
+    <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1605987098180" />
     <state x="978" y="602" width="596" height="192" key="makefile.clean.confirm.dialog" timestamp="1605888817887">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>

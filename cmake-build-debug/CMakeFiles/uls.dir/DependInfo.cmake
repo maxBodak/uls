@@ -72,10 +72,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_strsplit.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_strsplit.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_strstr.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_strstr.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_strtrim.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_strtrim.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_substr.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_substr.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_swap_char.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_swap_char.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_swap_str.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_swap_str.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_tolower.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_tolower.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_toupper.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_cmp_flags.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_err_illegal_option.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_r.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flag_r.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flags_num.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_not_flag_f.c.o"
@@ -87,9 +90,12 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_path_parser.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_path_parser.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_C.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_printer_C.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_printer_l.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l_sizer.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_m.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_printer_m.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_one.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_printer_one.c.o"
-  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp_utilities.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_temp_utilities.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_quicksortObj.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_quicksortObj.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_temp.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/wc_utilities.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

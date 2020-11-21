@@ -2,9 +2,11 @@
 
 #include "uls.h"
 
-#define ALL_FLAGS 19
+#define ALL_FLAGS 21
 
 enum flags {
+    G,
+    U,
     F,
     f,
     a,
@@ -27,3 +29,5 @@ enum flags {
 };
 
 bool *cf_flags_num (int argc, char *argv[]);
+bool * cf_cmp_flags(bool *fls);
+void cf_arr_illegal_option(char *flags_char);

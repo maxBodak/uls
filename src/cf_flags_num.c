@@ -1,7 +1,7 @@
 #include "uls.h"
 
 static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
-    char flag[ALL_FLAGS] = {'F', 'f', 'a', 'A', 'R', 'l', '1', 'm', 'C',
+    char flag[ALL_FLAGS] = {'G', 'U', 'F', 'f', 'a', 'A', 'R', 'l', '1', 'm', 'C',
                             'S', 't','r', 'p', 'u', 'c', '@', 'e', 'h', 'T'};
 
     for (int i = 0; i < ALL_FLAGS; i++)//обнулить буловый массив
@@ -48,12 +48,6 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
                     char_cmp(c, j, flags_char, flags);
             }
     }
-    if (flags[S] == true)
-        flags[t] = false;
-    if (flags[a] == true)
-        flags[A] = false;
-    if (flags[f] == true)
-        flags[a] = true;
 }
 
 bool *cf_flags_num (int argc, char *argv[]) {
@@ -61,6 +55,7 @@ bool *cf_flags_num (int argc, char *argv[]) {
     int count_flags = 0;
     bool *flags = NULL;
     char *flags_char;
+
 
     for (int i = 1; i < argc && argv[i][0] == '-' && argv[i][1] != '-'; i++, count++)
         count_flags += mx_strlen(argv[i]) - 1;
@@ -70,6 +65,7 @@ bool *cf_flags_num (int argc, char *argv[]) {
         for (int k = 1; argv[i][k] != '\0'; k++, j++)
             flags_char[j] = argv[i][k];
     fill_bool(flags_char, flags, count_flags);
+    cf_arr_illegal_option(flags_char);
     check_perm(flags_char, flags, count_flags);
     free(flags_char);
     return flags;
