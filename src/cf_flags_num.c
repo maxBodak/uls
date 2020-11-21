@@ -1,7 +1,7 @@
 #include "uls.h"
 
 static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
-    char flag[ALL_FLAGS] = {'F', 'f', 'a', 'A', 'R', 'l', '1', 'm', 'C',
+    char flag[ALL_FLAGS] = {'G', 'U', 'F', 'f', 'a', 'A', 'R', 'l', '1', 'm', 'C',
                             'S', 't','r', 'p', 'u', 'c', '@', 'e', 'h', 'T'};
 
     for (int i = 0; i < ALL_FLAGS; i++)//обнулить буловый массив

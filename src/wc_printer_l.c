@@ -7,7 +7,9 @@ static inline void printTime(struct stat st, bool *fl) {
     char *tmp;
     char *tmp_2;
 
-    time = fl[c] ? st.st_ctime : fl[u] ? st.st_atime : st.st_mtime;
+    time = fl[c] ? st.st_ctime : 
+                    fl[u] ? st.st_atime : 
+                            fl[U] ? st.st_birthtime : st.st_mtime;
     if (((sec - (time)) > 15778368)) {
         sub = mx_substr(ctime(&(time)), 4, 10);
         tmp = mx_strjoin(sub, "  ");
@@ -19,7 +21,7 @@ static inline void printTime(struct stat st, bool *fl) {
         mx_printstr(sub);
     }
     else {
-        sub = mx_substr(ctime(&(time)), 4, 16);
+        sub = mx_substr(ctime(&(time)), 4, 16); 
         mx_printstr(sub);
         free(sub);
         if (fl[t])
@@ -27,8 +29,8 @@ static inline void printTime(struct stat st, bool *fl) {
     }
 }/*--------------------------------------------------------------------------*/
 static inline void printPerms_firstChar(struct stat st) {
-    if ((st.st_mode & S_IFDIR) == S_IFDIR)
-        mx_printchar('d');
+    if ((st.st_mode & S_IFSOCK) == S_IFSOCK)
+        mx_printchar('s');
     else if ((st.st_mode & S_IFIFO) == S_IFIFO)
         mx_printchar('p');
     else if ((st.st_mode & S_IFCHR) == S_IFCHR)
@@ -37,8 +39,8 @@ static inline void printPerms_firstChar(struct stat st) {
         mx_printchar('b');
     else if ((st.st_mode & S_IFLNK) == S_IFLNK)
         mx_printchar('l');
-    else if ((st.st_mode & S_IFSOCK) == S_IFSOCK)
-        mx_printchar('s');
+    else if ((st.st_mode & S_IFDIR) == S_IFDIR)
+        mx_printchar('d');
     else
         mx_printchar('-');
 }/*--------------------------------------------------------------------------*/
@@ -112,7 +114,7 @@ static inline void printStats(struct stat st, t_lout l) {
             printStats(fp[i]->st, spaces);
             printTime(fp[i]->st, fl);
             mx_printstr(" ");
-            mx_printstr(fp[i]->s_name);
+            wc_printName(fp[i], fl);
             mx_printstr("\n");
         }
 }

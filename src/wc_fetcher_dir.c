@@ -13,12 +13,14 @@ static inline t_obj *initDir(char *p, bool *fl) {
     t_obj *d = NULL;
 
     dp = opendir (p);
-    if (dp != NULL) {
-        while ((ep = readdir(dp)))
-            if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name)))
-                count++;
-        closedir(dp);
+    if (dp == NULL) {
+        wc_errorPermDenied(p);
+        return NULL;
     }
+    while ((ep = readdir(dp)))
+        if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name)))
+            count++;
+    closedir(dp);
     d = (t_obj *)malloc(sizeof(t_obj));
     d->path_name = mx_strdup(p);
     d->s_name = wc_getShortName(d->path_name);
