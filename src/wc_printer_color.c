@@ -23,7 +23,7 @@ static void colorFile(struct stat sb) {
 }
 
 void wc_printName(t_obj *obj, bool *fl) {
-     if (fl[G]) {
+    if (fl[G]) {
         if (S_ISFIFO(obj->st.st_mode))
             mx_printstr(YEL);
         else if (S_ISCHR(obj->st.st_mode))
@@ -38,7 +38,8 @@ void wc_printName(t_obj *obj, bool *fl) {
             colorDir(obj->st);
         else if (S_ISREG(obj->st.st_mode))
             colorFile(obj->st);
-     }
+        mx_printstr(obj->s_name);
+        mx_printstr(RESET);
+    }
     mx_printstr(obj->s_name);
-    mx_printstr(RESET);
 }
