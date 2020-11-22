@@ -31,3 +31,4 @@ enum flags {
 bool *cf_flags_num (int argc, char *argv[]);
 bool * cf_cmp_flags(bool *fls);
 void cf_err_illegal_option(char *flags_char);
+void cf_isatty(bool *fls);

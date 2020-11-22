@@ -24,8 +24,6 @@ static inline void printTime(struct stat st, bool *fl) {
         sub = mx_substr(ctime(&(time)), 4, 16); 
         mx_printstr(sub);
         free(sub);
-        if (fl[t])
-            return;
     }
 }/*--------------------------------------------------------------------------*/
 static inline void printPerms_firstChar(struct stat st) {
