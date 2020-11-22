@@ -23,6 +23,10 @@ int main(int argc, char ** argv) {
         cf_flag_r(d->files_path, d->files_amt, fl);
         cf_flag_r(d->dirs_path, d->dirs_amt, fl);
     }
+    if (d) {
+        cf_flag_S(d->files_path, d->files_amt, fl);
+        cf_flag_S(d->dirs_path, d->dirs_amt, fl);
+    }
     wc_printResult(d, fl);
     wc_freePath(p);
     wc_freeData(d);

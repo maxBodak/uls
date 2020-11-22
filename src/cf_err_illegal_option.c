@@ -1,6 +1,6 @@
 #include"uls.h"
 
-void cf_arr_illegal_option(char *flags_char) {
+void cf_err_illegal_option(char *flags_char) {
     char all_flags[38] = "ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1";
 
     for (int i = 0; flags_char[i]; i++) {

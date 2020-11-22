@@ -215,6 +215,11 @@ CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../src/cf_err_illegal_option.c
 
+CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../src/cf_flag_S.c
+
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../inc/uls.h
@@ -234,6 +239,11 @@ CMakeFiles/uls.dir/src/main.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/main.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/main.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/main.c.o: ../src/main.c
+
+CMakeFiles/uls.dir/src/wc_errors.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/wc_errors.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/wc_errors.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/wc_errors.c.o: ../src/wc_errors.c
 
 CMakeFiles/uls.dir/src/wc_fetcher_data.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/wc_fetcher_data.c.o: ../inc/cf_uls.h
@@ -265,6 +275,11 @@ CMakeFiles/uls.dir/src/wc_printer_C.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/wc_printer_C.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/wc_printer_C.c.o: ../src/wc_printer_C.c
 
+CMakeFiles/uls.dir/src/wc_printer_color.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/wc_printer_color.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/wc_printer_color.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/wc_printer_color.c.o: ../src/wc_printer_color.c
+
 CMakeFiles/uls.dir/src/wc_printer_l.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/wc_printer_l.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/wc_printer_l.c.o: ../inc/uls.h
@@ -285,10 +300,10 @@ CMakeFiles/uls.dir/src/wc_printer_one.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/wc_printer_one.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/wc_printer_one.c.o: ../src/wc_printer_one.c
 
-CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../Libmx/inc/libmx.h
-CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../inc/cf_uls.h
-CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../inc/uls.h
-CMakeFiles/uls.dir/src/wc_quicksortObj.c.o: ../src/wc_quicksortObj.c
+CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o: ../src/wc_quicksort_obj.c
 
 CMakeFiles/uls.dir/src/wc_temp.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/wc_temp.c.o: ../inc/cf_uls.h
