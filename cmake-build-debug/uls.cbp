@@ -325,6 +325,9 @@
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c">
 			<Option target="uls"/>
 		</Unit>

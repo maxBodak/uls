@@ -230,6 +230,11 @@ CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../src/cf_flags_num.c
 
+CMakeFiles/uls.dir/src/cf_isatty.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_isatty.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_isatty.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_isatty.c.o: ../src/cf_isatty.c
+
 CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../inc/uls.h

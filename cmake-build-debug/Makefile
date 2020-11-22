@@ -2249,6 +2249,33 @@ src/cf_flags_num.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flags_num.c.s
 .PHONY : src/cf_flags_num.c.s
 
+src/cf_isatty.o: src/cf_isatty.c.o
+
+.PHONY : src/cf_isatty.o
+
+# target to build an object file
+src/cf_isatty.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_isatty.c.o
+.PHONY : src/cf_isatty.c.o
+
+src/cf_isatty.i: src/cf_isatty.c.i
+
+.PHONY : src/cf_isatty.i
+
+# target to preprocess a source file
+src/cf_isatty.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_isatty.c.i
+.PHONY : src/cf_isatty.c.i
+
+src/cf_isatty.s: src/cf_isatty.c.s
+
+.PHONY : src/cf_isatty.s
+
+# target to generate assembly for a file
+src/cf_isatty.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_isatty.c.s
+.PHONY : src/cf_isatty.c.s
+
 src/cf_not_flag_f.o: src/cf_not_flag_f.c.o
 
 .PHONY : src/cf_not_flag_f.o
@@ -2951,6 +2978,9 @@ help:
 	@echo "... src/cf_flags_num.o"
 	@echo "... src/cf_flags_num.i"
 	@echo "... src/cf_flags_num.s"
+	@echo "... src/cf_isatty.o"
+	@echo "... src/cf_isatty.i"
+	@echo "... src/cf_isatty.s"
 	@echo "... src/cf_not_flag_f.o"
 	@echo "... src/cf_not_flag_f.i"
 	@echo "... src/cf_not_flag_f.s"
