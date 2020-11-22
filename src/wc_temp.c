@@ -4,13 +4,13 @@ void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl) {
     if (!fp_amt)
         return;
     if (fl[one])
-        wc_printWithOne(fp, fp_amt);
+        wc_printWithOne(fp, fp_amt, fl);
     else if (fl[m])
-        wc_printWithM(fp, fp_amt);
+        wc_printWithM(fp, fp_amt, fl);
     else if (fl[l]) {
         wc_printWithL(fp, fp_amt, fl);
     } else {
-        wc_printWithC(fp, fp_amt);
+        wc_printWithC(fp, fp_amt, fl);
     }
 }/*--------------------------------------------------------------------------*/
 void wc_printDir(t_obj *obj, bool *fl) {

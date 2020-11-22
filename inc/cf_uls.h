@@ -25,7 +25,7 @@ enum flags {
     dog,
     e,
     h,
-    T
+    T,
 };
 
 bool *cf_flags_num (int argc, char *argv[]);

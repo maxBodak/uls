@@ -2,7 +2,7 @@
 
 t_obj *wc_fetchFileInfo(char *p) {
     t_obj *f = (t_obj *)malloc(sizeof(t_obj));
-    stat(p, &(f->st));
+    lstat(p, &(f->st));
     f->path_name = mx_strdup(p);
     f->s_name = wc_getShortName(p);
     f->kids_amt = 0;

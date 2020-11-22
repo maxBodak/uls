@@ -13,12 +13,14 @@ static inline t_obj *initDir(char *p, bool *fl) {
     t_obj *d = NULL;
 
     dp = opendir (p);
-    if (dp != NULL) {
-        while ((ep = readdir(dp)))
-            if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name)))
-                count++;
-        closedir(dp);
+    if (dp == NULL) {
+        wc_errorPermDenied(p);
+        return NULL;
     }
+    while ((ep = readdir(dp)))
+        if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name)))
+            count++;
+    closedir(dp);
     d = (t_obj *)malloc(sizeof(t_obj));
     d->path_name = mx_strdup(p);
     d->s_name = wc_getShortName(d->path_name);
@@ -54,6 +56,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                         buf = addPrefix(p, ep->d_name);
                         res->kids[i] = wc_fetchDirInfo(buf, fl);
                         free(buf);
+                        
                 } else {
                     res->kids[i] = (t_obj *)malloc(sizeof(t_obj));
                     res->kids[i]->path_name = addPrefix(p, ep->d_name);
@@ -62,7 +65,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                     res->kids[i]->kids = NULL;
                     res->kids[i]->type = 2 * (isDot(ep->d_name));
                 }
-                stat(res->kids[i]->path_name, &(res->kids[i]->st));
+                lstat(res->kids[i]->path_name, &(res->kids[i]->st));
                 i++;
             }
         }
