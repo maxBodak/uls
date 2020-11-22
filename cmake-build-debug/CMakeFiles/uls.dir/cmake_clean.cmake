@@ -77,6 +77,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/uls.dir/src/cf_flag_S.c.o"
   "CMakeFiles/uls.dir/src/cf_flag_r.c.o"
   "CMakeFiles/uls.dir/src/cf_flags_num.c.o"
+  "CMakeFiles/uls.dir/src/cf_isatty.c.o"
   "CMakeFiles/uls.dir/src/cf_not_flag_f.c.o"
   "CMakeFiles/uls.dir/src/main.c.o"
   "CMakeFiles/uls.dir/src/wc_errors.c.o"

@@ -4,7 +4,7 @@ int main(int argc, char ** argv) {
 //cf
     bool *fl = cf_flags_num (argc, argv);
     fl = cf_cmp_flags(fl);
-//    cf_isatty(fl);
+    fl = cf_isatty(fl);
     // for(int i = 0; i < ALL_FLAGS; i++)
     //     printf("%d - %d\n", i+8, fl->flags[i]);
     // printf("cf end\n");
