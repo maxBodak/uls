@@ -65,7 +65,7 @@ bool *cf_flags_num (int argc, char *argv[]) {
         for (int k = 1; argv[i][k] != '\0'; k++, j++)
             flags_char[j] = argv[i][k];
     fill_bool(flags_char, flags, count_flags);
-    cf_arr_illegal_option(flags_char);
+    cf_err_illegal_option(flags_char);
     check_perm(flags_char, flags, count_flags);
     free(flags_char);
     return flags;

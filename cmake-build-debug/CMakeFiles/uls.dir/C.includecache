@@ -52,11 +52,7 @@ sys/ioctl.h
 time.h
 -
 
-/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_r.c
-uls.h
-/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
-
-/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/main.c
+/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_color.c
 uls.h
 /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
 

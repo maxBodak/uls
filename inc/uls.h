@@ -91,3 +91,5 @@ void wc_errorPermDenied(char *name_of_dir);
 /*-----------Ckif----------------*/
 void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_r(t_obj **d, int d_amt, const bool *fl);
+void cf_flag_S(t_obj **d, int d_amt, const bool *fl);
+
