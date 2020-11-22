@@ -26,7 +26,7 @@ static inline t_obj *initDir(char *p, bool *fl) {
     d->s_name = wc_getShortName(d->path_name);
     d->kids_amt = count;
     d->kids = (t_obj **)malloc(sizeof(t_obj *) * count);
-    d->type = 1;
+    d->type = 'd';
     return d;
 }/*--------------------------------------------------------------------------*/
 static inline char *addPrefix(char *prefix, char *str) {
@@ -41,6 +41,7 @@ static inline char *addPrefix(char *prefix, char *str) {
     else
         t2 = mx_strjoin(prefix, str);
     return t2;
+
 }/*==========================================================================*/
 t_obj *wc_fetchDirInfo(char *p, bool *fl) {
     DIR *dp;

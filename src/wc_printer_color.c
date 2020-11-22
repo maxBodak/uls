@@ -40,6 +40,6 @@ void wc_printName(t_obj *obj, bool *fl) {
             colorFile(obj->st);
         mx_printstr(obj->s_name);
         mx_printstr(RESET);
-    }
-    mx_printstr(obj->s_name);
+    } else
+        mx_printstr(obj->s_name);
 }

@@ -41,6 +41,8 @@ void wc_printWithC(t_obj **fp, int fp_amt, bool *fl) {
     int max_len = findMaxLenName(fp, fp_amt, fl);
 
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
+    w.ws_col = fl[tty] ? 79 : w.ws_col;
+
     if (w.ws_col < max_len)
         wc_printWithOne(fp, fp_amt, fl);
     else if (w.ws_col >= max_len * fp_amt)
@@ -48,3 +50,4 @@ void wc_printWithC(t_obj **fp, int fp_amt, bool *fl) {
     else
         printMultiCols(fp, fp_amt, max_len, w.ws_col, fl);
 }
+
