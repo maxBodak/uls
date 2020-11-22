@@ -12,7 +12,9 @@ int main(int argc, char ** argv) {
 //wc
     t_path *p = wc_getPaths(argc, argv);
     t_data *d = wc_fetchData(p, fl);
-
+    // if (isatty(fileno(stdout))
+    //       ? "stdout is tty"
+    //       : "stdout is not tty");
     if (d) {
         cf_not_flag_f(d->files_path, d->files_amt, fl);
         cf_not_flag_f(d->dirs_path, d->dirs_amt, fl);

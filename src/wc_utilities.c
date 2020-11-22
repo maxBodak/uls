@@ -8,22 +8,22 @@ short wc_getBitDepth(int a) {
         r++;
     return r;
 }/*--------------------------------------------------------------------------*/
-void wc_printShortName(char *p) {
-    int l = mx_strlen_safe(p) - 1;
-
-    for (;l > 0 && p[l] != '/'; l--);
-    l += (l != 0);
-    p += l;
-    mx_printstr(p);
-}/*--------------------------------------------------------------------------*/
 char *wc_getShortName(char *p) {
     int l = mx_strlen_safe(p) - 1;
 
     for (;l > 0 && p[l] != '/'; l--);
-    l += (l != 0);
+    l += (p[l] == '/');
     p += l;
     return p;
 }/*--------------------------------------------------------------------------*/
+// void wc_printShortName(char *p) {
+//     int l = mx_strlen_safe(p) - 1;
+
+//     for (;l > 0 && p[l] != '/'; l--);
+//     l += (l != 0);
+//     p += l;
+//     mx_printstr(p);
+// }/*--------------------------------------------------------------------------*/
 // char *getStatName(char *name) {
 //     int l = mx_strlen_safe(name) - 1;
 

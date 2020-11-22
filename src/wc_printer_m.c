@@ -11,7 +11,7 @@ static void printDelimiter(int *len, char *name, int win_col) {
         mx_printchar('\n');
     }
 }/*==========================================================================*/
-void wc_printWithM(t_obj **fp, int fp_amt) {
+void wc_printWithM(t_obj **fp, int fp_amt, bool *fl) {
     struct winsize w;
     int len = 0;
 
@@ -21,7 +21,7 @@ void wc_printWithM(t_obj **fp, int fp_amt) {
     for (int i = 0; i < fp_amt; i++) {
         if (i != 0)
             printDelimiter(&len, fp[i]->s_name, w.ws_col);
-        mx_printstr(fp[i]->s_name);
+        wc_printName(fp[i], fl);
         len += mx_strlen(fp[i]->s_name);
     }
     mx_printstr("\n");

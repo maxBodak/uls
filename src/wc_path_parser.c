@@ -1,10 +1,5 @@
 #include "uls.h"
 
-static inline void errorNoPath(char *path) {
-    mx_printstr("uls: ");
-    mx_printstr(path);
-    mx_printstr(": No such file or directory exists\n");
-}/*--------------------------------------------------------------------------*/
 static inline char checkPath(char *path) {
     struct stat stats;
     int e = stat(path, &stats);
@@ -50,7 +45,7 @@ static inline t_path *initPaths(int argc, char *argv[], char *status,
             p->path[i++] = mx_strdup(argv[j + flags]);
         }
         else
-            errorNoPath(argv[j + flags]);
+            wc_errorNoPath(argv[j + flags]);
     }
     free(status);
     return p;
