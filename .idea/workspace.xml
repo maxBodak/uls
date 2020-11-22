@@ -32,25 +32,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="add -f&#10;added if -f make -a positive&#10;Cf">
+    <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flag -S Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/cf_uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/cf_uls.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/uls.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cf_err_illegal_option.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_err_illegal_option.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cf_flags_num.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_num.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wc_printer_l.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/wc_printer_l.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +136,7 @@
       <workItem from="1605971004033" duration="66000" />
       <workItem from="1605971082991" duration="4379000" />
       <workItem from="1605978731350" duration="5166000" />
-      <workItem from="1606059409714" duration="1966000" />
+      <workItem from="1606059409714" duration="5720000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -159,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605886056505</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="flag -S Done">
+      <created>1606062129661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606062129661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +172,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add -f&#10;added if -f make -a positive&#10;Cf" />
-    <option name="LAST_COMMIT_MESSAGE" value="add -f&#10;added if -f make -a positive&#10;Cf" />
+    <MESSAGE value="flag -S Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="flag -S Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605979435740">
@@ -222,10 +216,11 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2510" height="460" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469730" />
-    <state x="876" y="431" key="Vcs.Push.Dialog.v2" timestamp="1605886091593">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="876" y="439" key="Vcs.Push.Dialog.v2" timestamp="1606068502426">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="876" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1605886091593" />
+    <state x="876" y="439" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606068502426" />
+    <state x="876" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1606062141122" />
     <state width="600" height="428" key="javadoc.popup" timestamp="1606061004973">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
