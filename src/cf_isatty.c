@@ -13,11 +13,3 @@ bool *cf_isatty(bool *fls) {
     }
     return flags;
 }
-
-
-//{
-//puts(isatty(fileno(stdin))
-//? "stdin is tty"
-//: "stdin is not tty");
-//return 0;
-//}

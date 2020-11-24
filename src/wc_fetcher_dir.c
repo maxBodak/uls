@@ -64,7 +64,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                     res->kids[i]->s_name = wc_getShortName(res->kids[i]->path_name);
                     res->kids[i]->kids_amt = 0;
                     res->kids[i]->kids = NULL;
-                    res->kids[i]->type = 2 * (isDot(ep->d_name));
+                    res->kids[i]->type = isDot(ep->d_name) ? 'x' : 'f';
                 }
                 lstat(res->kids[i]->path_name, &(res->kids[i]->st));
                 i++;

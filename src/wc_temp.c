@@ -17,7 +17,7 @@ void wc_printDir(t_obj *obj, bool *fl) {
     wc_printObjArr(obj->kids, obj->kids_amt, fl);
     if (fl[R]) {
         for (int i = 0; i < obj->kids_amt; i++) 
-            if (obj->kids[i]->type == 1) {
+            if (obj->kids[i]->type == 'd') {
                 mx_printstr("\n");
                 mx_printstr(obj->kids[i]->path_name);
                 mx_printstr(":\n");

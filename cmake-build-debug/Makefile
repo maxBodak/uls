@@ -2195,6 +2195,60 @@ src/cf_flag_S.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_S.c.s
 .PHONY : src/cf_flag_S.c.s
 
+src/cf_flag_Uu.o: src/cf_flag_Uu.c.o
+
+.PHONY : src/cf_flag_Uu.o
+
+# target to build an object file
+src/cf_flag_Uu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_Uu.c.o
+.PHONY : src/cf_flag_Uu.c.o
+
+src/cf_flag_Uu.i: src/cf_flag_Uu.c.i
+
+.PHONY : src/cf_flag_Uu.i
+
+# target to preprocess a source file
+src/cf_flag_Uu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_Uu.c.i
+.PHONY : src/cf_flag_Uu.c.i
+
+src/cf_flag_Uu.s: src/cf_flag_Uu.c.s
+
+.PHONY : src/cf_flag_Uu.s
+
+# target to generate assembly for a file
+src/cf_flag_Uu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_Uu.c.s
+.PHONY : src/cf_flag_Uu.c.s
+
+src/cf_flag_c.o: src/cf_flag_c.c.o
+
+.PHONY : src/cf_flag_c.o
+
+# target to build an object file
+src/cf_flag_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_c.c.o
+.PHONY : src/cf_flag_c.c.o
+
+src/cf_flag_c.i: src/cf_flag_c.c.i
+
+.PHONY : src/cf_flag_c.i
+
+# target to preprocess a source file
+src/cf_flag_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_c.c.i
+.PHONY : src/cf_flag_c.c.i
+
+src/cf_flag_c.s: src/cf_flag_c.c.s
+
+.PHONY : src/cf_flag_c.s
+
+# target to generate assembly for a file
+src/cf_flag_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_c.c.s
+.PHONY : src/cf_flag_c.c.s
+
 src/cf_flag_r.o: src/cf_flag_r.c.o
 
 .PHONY : src/cf_flag_r.o
@@ -2221,6 +2275,60 @@ src/cf_flag_r.s: src/cf_flag_r.c.s
 src/cf_flag_r.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_r.c.s
 .PHONY : src/cf_flag_r.c.s
+
+src/cf_flag_t.o: src/cf_flag_t.c.o
+
+.PHONY : src/cf_flag_t.o
+
+# target to build an object file
+src/cf_flag_t.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_t.c.o
+.PHONY : src/cf_flag_t.c.o
+
+src/cf_flag_t.i: src/cf_flag_t.c.i
+
+.PHONY : src/cf_flag_t.i
+
+# target to preprocess a source file
+src/cf_flag_t.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_t.c.i
+.PHONY : src/cf_flag_t.c.i
+
+src/cf_flag_t.s: src/cf_flag_t.c.s
+
+.PHONY : src/cf_flag_t.s
+
+# target to generate assembly for a file
+src/cf_flag_t.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_t.c.s
+.PHONY : src/cf_flag_t.c.s
+
+src/cf_flag_u.o: src/cf_flag_u.c.o
+
+.PHONY : src/cf_flag_u.o
+
+# target to build an object file
+src/cf_flag_u.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_u.c.o
+.PHONY : src/cf_flag_u.c.o
+
+src/cf_flag_u.i: src/cf_flag_u.c.i
+
+.PHONY : src/cf_flag_u.i
+
+# target to preprocess a source file
+src/cf_flag_u.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_u.c.i
+.PHONY : src/cf_flag_u.c.i
+
+src/cf_flag_u.s: src/cf_flag_u.c.s
+
+.PHONY : src/cf_flag_u.s
+
+# target to generate assembly for a file
+src/cf_flag_u.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_u.c.s
+.PHONY : src/cf_flag_u.c.s
 
 src/cf_flags_num.o: src/cf_flags_num.c.o
 
@@ -2972,9 +3080,21 @@ help:
 	@echo "... src/cf_flag_S.o"
 	@echo "... src/cf_flag_S.i"
 	@echo "... src/cf_flag_S.s"
+	@echo "... src/cf_flag_Uu.o"
+	@echo "... src/cf_flag_Uu.i"
+	@echo "... src/cf_flag_Uu.s"
+	@echo "... src/cf_flag_c.o"
+	@echo "... src/cf_flag_c.i"
+	@echo "... src/cf_flag_c.s"
 	@echo "... src/cf_flag_r.o"
 	@echo "... src/cf_flag_r.i"
 	@echo "... src/cf_flag_r.s"
+	@echo "... src/cf_flag_t.o"
+	@echo "... src/cf_flag_t.i"
+	@echo "... src/cf_flag_t.s"
+	@echo "... src/cf_flag_u.o"
+	@echo "... src/cf_flag_u.i"
+	@echo "... src/cf_flag_u.s"
 	@echo "... src/cf_flags_num.o"
 	@echo "... src/cf_flags_num.i"
 	@echo "... src/cf_flags_num.s"

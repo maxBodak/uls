@@ -319,7 +319,19 @@
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_S.c">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_r.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_t.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c">

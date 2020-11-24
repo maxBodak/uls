@@ -10,7 +10,7 @@ static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
         for (int j = i + 1; j < count_flags; j++)
             if (flags_char[i] == flags_char[j] && flags_char[i] != '-')
                 flags_char[j] = '-';
-    for (int i = 0, j = 0; i < count_flags; i++) //дать превдивое значение флага в буловом массиве
+    for (int i = 0, j = 0; i < count_flags; i++) //дать прaвдивое значение флага в буловом массиве
         for (j = 0; j < ALL_FLAGS; j++)
             if (flags_char[i] == flag[j])
                 flags[j] = true;
@@ -64,8 +64,8 @@ bool *cf_flags_num (int argc, char *argv[]) {
     for (int i = 1, j = 0; i <= count; i++)
         for (int k = 1; argv[i][k] != '\0'; k++, j++)
             flags_char[j] = argv[i][k];
-    fill_bool(flags_char, flags, count_flags);
     cf_err_illegal_option(flags_char);
+    fill_bool(flags_char, flags, count_flags);
     check_perm(flags_char, flags, count_flags);
     free(flags_char);
     return flags;
