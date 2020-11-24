@@ -30,6 +30,12 @@
 #define DIR_T "\x1B[0;30;42m"
 #define DIR_X "\033[0;30;43m"
 
+enum types {
+    dir,
+    file,
+    dots,
+    perm_denied
+};
 typedef struct s_path {
     char **path;
     bool *isdir;

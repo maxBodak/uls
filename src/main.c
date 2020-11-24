@@ -5,10 +5,6 @@ int main(int argc, char ** argv) {
     bool *fl = cf_flags_num (argc, argv);
     fl = cf_cmp_flags(fl);
     fl = cf_isatty(fl);
-    if(fl[tty] == true)
-        printf("is not tty\n");
-    if(!fl[tty] == true)
-        printf("is tty\n");
     // for(int i = 0; i < ALL_FLAGS; i++)
     //     printf("%d - %d\n", i+8, fl->flags[i]);
     // printf("cf end\n");
