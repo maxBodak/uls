@@ -34,9 +34,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="start isatty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cf_isatty.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_isatty.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,19 +101,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="uls" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="uls" TARGET_NAME="uls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="uls" RUN_TARGET_NAME="uls">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -136,7 +124,8 @@
       <workItem from="1605971082991" duration="4379000" />
       <workItem from="1605978731350" duration="5166000" />
       <workItem from="1606059409714" duration="6162000" />
-      <workItem from="1606072251091" duration="3040000" />
+      <workItem from="1606072251091" duration="3124000" />
+      <workItem from="1606238036362" duration="133000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -241,9 +230,10 @@
     </state>
     <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606073384406" />
     <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
-    <state x="978" y="602" width="596" height="192" key="makefile.clean.confirm.dialog" timestamp="1605888817887">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="978" y="624" width="596" height="192" key="makefile.clean.confirm.dialog" timestamp="1606238328264">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
+    <state x="978" y="624" key="makefile.clean.confirm.dialog/0.0.2560.1440@0.0.2560.1440" timestamp="1606238328264" />
     <state x="978" y="602" width="596" height="192" key="makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337" timestamp="1605888817887" />
   </component>
 </project>
