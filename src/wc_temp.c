@@ -39,14 +39,17 @@ void wc_printResult(t_data *d, bool *fl) {
     wc_printObjArr(d->files_path, d->files_amt, fl);
     mx_printstr(d->files_amt ? "\n" : "");
     if (d->dirs_amt > 1 || d->files_amt) {
-        for (int i = 0; i < d->dirs_amt; i++)
+        for (int i = 0, j = 0; i < d->dirs_amt; i++)
             if (d->dirs_path[i]->type == perm_denied) {
+                j++;
                 mx_printstr(d->dirs_path[i]->path_name);
                 mx_printstr(": \n");
                 wc_errorPermDenied(d->dirs_path[i]->path_name);
+                mx_printstr(d->dirs_amt - j ? "\n" : "");
             }
         for (int i = 0; i < d->dirs_amt; i++)
             if (d->dirs_path[i]->type != perm_denied) {
+                mx_printstr(d->files_amt ? "\n" : "");
                 mx_printstr(d->dirs_path[i]->path_name);
                 mx_printstr(": \n");
                 wc_printDir(d->dirs_path[i], fl);
