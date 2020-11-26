@@ -95,3 +95,6 @@ void cf_flag_t(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_u(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_c(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_Uu(t_obj **d, int d_amt, const bool *fl);
+void cf_flags_check (t_data *d, bool *fl);
+void cf_flag_F_and_p(t_obj *obj, bool *fl);
+

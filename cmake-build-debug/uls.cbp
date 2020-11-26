@@ -310,10 +310,16 @@
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/inc/uls.h">
 			<Option target="uls"/>
 		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c">
+			<Option target="uls"/>
+		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_err_illegal_option.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_F.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_S.c">
@@ -332,6 +338,9 @@
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_check.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c">

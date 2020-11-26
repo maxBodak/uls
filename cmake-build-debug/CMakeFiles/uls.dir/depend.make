@@ -205,6 +205,11 @@ CMakeFiles/uls.dir/Libmx/src/mx_tolower.c.o: ../Libmx/src/mx_tolower.c
 
 CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.o: ../Libmx/src/mx_toupper.c
 
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: ../src/cf_bool_mainp.c
+
 CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../inc/uls.h
@@ -215,15 +220,45 @@ CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../src/cf_err_illegal_option.c
 
+CMakeFiles/uls.dir/src/cf_flag_F.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_flag_F.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_flag_F.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_flag_F.c.o: ../src/cf_flag_F.c
+
 CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../src/cf_flag_S.c
 
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: ../src/cf_flag_Uu.c
+
+CMakeFiles/uls.dir/src/cf_flag_c.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_flag_c.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_flag_c.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_flag_c.c.o: ../src/cf_flag_c.c
+
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../inc/cf_uls.h
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../inc/uls.h
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../src/cf_flag_r.c
+
+CMakeFiles/uls.dir/src/cf_flag_t.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_flag_t.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_flag_t.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_flag_t.c.o: ../src/cf_flag_t.c
+
+CMakeFiles/uls.dir/src/cf_flag_u.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_flag_u.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_flag_u.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_flag_u.c.o: ../src/cf_flag_u.c
+
+CMakeFiles/uls.dir/src/cf_flags_check.c.o: ../Libmx/inc/libmx.h
+CMakeFiles/uls.dir/src/cf_flags_check.c.o: ../inc/cf_uls.h
+CMakeFiles/uls.dir/src/cf_flags_check.c.o: ../inc/uls.h
+CMakeFiles/uls.dir/src/cf_flags_check.c.o: ../src/cf_flags_check.c
 
 CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../Libmx/inc/libmx.h
 CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../inc/cf_uls.h
