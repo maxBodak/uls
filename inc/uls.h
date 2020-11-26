@@ -31,9 +31,13 @@
 #define DIR_X "\033[0;30;43m"
 
 enum types {
+    fifo,
+    chr,
+    blk,
+    lnk,
+    sock,
     dir,
     file,
-    dots,
     perm_denied
 };
 typedef struct s_path {
@@ -84,16 +88,20 @@ void wc_printWithC(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithOne(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithM(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithL(t_obj **fp, int fp_amt, bool *fl);
-t_lout getSizesForL(t_obj **fp, int fp_amt);
+t_lout wc_getSizesForL(t_obj **fp, int fp_amt);
+void wc_printPerms(struct stat st, char *p);
+void wc_printStats(struct stat st, t_lout l);
+void wc_printTime(struct stat st, bool *fl);
 /*-----------Temp-----------------*/
 void wc_printResult(t_data *d, bool *flocktimeout);
 void wc_printDir(t_obj *obj, bool *fl);
 void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);
 /*-----------Sorting--------------*/
-void mx_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
+void wc_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
 /*-----------Errors---------------*/
 void wc_errorNoPath(char *path);
 void wc_errorPermDenied(char *name_of_dir);
+void wc_printTime(struct stat st, bool *fl);
 /*-----------Ckif----------------*/
 void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_r(t_obj **d, int d_amt, const bool *fl);

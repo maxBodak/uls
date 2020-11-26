@@ -15,22 +15,20 @@ void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl) {
 }/*--------------------------------------------------------------------------*/
 void wc_printDir(t_obj *obj, bool *fl) {
     wc_printObjArr(obj->kids, obj->kids_amt, fl); 
-    if (fl[R]) {
-        for (int i = 0; i < obj->kids_amt; i++)
+    if (fl[R])
+        for (int i = 0; i < obj->kids_amt; i++) {
             if (obj->kids[i]->type == dir) {
                 mx_printstr("\n");
                 mx_printstr(obj->kids[i]->path_name);
                 mx_printstr(":\n");
                 wc_printDir(obj->kids[i], fl);
-            }
-        for (int i = 0; i < obj->kids_amt; i++)
-            if (obj->kids[i]->type == perm_denied) {
+            } else if (obj->kids[i]->type == perm_denied) {
                 mx_printstr("\n");
                 mx_printstr(obj->kids[i]->path_name);
                 mx_printstr(":\n");
                 wc_errorPermDenied(obj->kids[i]->path_name);
             }
-    }
+        }
 }/*--------------------------------------------------------------------------*/
 void wc_printResult(t_data *d, bool *fl) {
     if (d == NULL)
@@ -39,20 +37,15 @@ void wc_printResult(t_data *d, bool *fl) {
     wc_printObjArr(d->files_path, d->files_amt, fl);
     mx_printstr(d->files_amt ? "\n" : "");
     if (d->dirs_amt > 1 || d->files_amt) {
-        for (int i = 0, j = 0; i < d->dirs_amt; i++)
-            if (d->dirs_path[i]->type == perm_denied) {
-                j++;
-                mx_printstr(d->dirs_path[i]->path_name);
-                mx_printstr(": \n");
-                wc_errorPermDenied(d->dirs_path[i]->path_name);
-                mx_printstr(d->dirs_amt - j ? "\n" : "");
-            }
-        for (int i = 0; i < d->dirs_amt; i++)
-            if (d->dirs_path[i]->type != perm_denied) {
-                mx_printstr(d->files_amt ? "\n" : "");
-                mx_printstr(d->dirs_path[i]->path_name);
-                mx_printstr(": \n");
+        for (int i = 0; i < d->dirs_amt; i++) {
+            mx_printstr(d->files_amt ? "\n" : "");
+            mx_printstr(d->dirs_path[i]->path_name);
+            mx_printstr(": \n");
+            if (d->dirs_path[i]->type != perm_denied)
                 wc_printDir(d->dirs_path[i], fl);
+            else
+                wc_errorPermDenied(d->dirs_path[i]->path_name);
+            mx_printstr(i + 1 < d->dirs_amt ? "\n" : "");
         }
     }
     else {

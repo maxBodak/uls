@@ -19,6 +19,7 @@ void wc_printWithM(t_obj **fp, int fp_amt, bool *fl) {
     w.ws_col = fl[tty] ? 79 : w.ws_col;
     if (mx_strlen(fp[0]->s_name) >= w.ws_col)
         mx_printchar('\n');
+
     for (int i = 0; i < fp_amt; i++) {
         if (i != 0)
             printDelimiter(&len, fp[i]->s_name, w.ws_col);

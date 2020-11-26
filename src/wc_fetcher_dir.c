@@ -6,11 +6,20 @@ static inline bool isDot(char *name) {
 static inline bool isHidden(char *name) {
     return name[0] == '.';
 }/*--------------------------------------------------------------------------*/
+static inline char getType(struct stat st) {
+    return S_ISFIFO(st.st_mode) ? fifo :
+            S_ISCHR(st.st_mode) ? chr :
+            S_ISBLK(st.st_mode) ? blk : 
+            S_ISLNK(st.st_mode) ? lnk : 
+            S_ISSOCK(st.st_mode) ? sock :
+            S_ISDIR(st.st_mode) ? dir : file;
+}/*--------------------------------------------------------------------------*/
 static inline t_obj *initDir(char *p, bool *fl) {
     DIR *dp;
     struct dirent *ep;
     int count = 0;
     t_obj *d = NULL;
+    struct stat stats;
 
     d = (t_obj *)malloc(sizeof(t_obj));
     d->path_name = mx_strdup(p);
@@ -27,7 +36,8 @@ static inline t_obj *initDir(char *p, bool *fl) {
                 count++;
         d->kids = (t_obj **)malloc(sizeof(t_obj *) * count);
         d->kids_amt = count;
-        d->type = dir;
+        lstat(p, &stats);
+        d->type = getType(stats);
         closedir(dp);
     }
     return d;
@@ -36,7 +46,7 @@ static inline char *addPrefix(char *prefix, char *str) {
     char *t1 = NULL;
     char *t2 = NULL;
 
-    if (prefix[mx_strlen_safe(prefix) -1] != '/') {
+    if (prefix[mx_strlen_safe(prefix) - 1] != '/') {
         t1 = mx_strjoin(prefix, "/");
         t2 = mx_strjoin(t1, str);
         free(t1);
@@ -68,13 +78,14 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                     res->kids[i]->s_name = wc_getShortName(res->kids[i]->path_name);
                     res->kids[i]->kids_amt = 0;
                     res->kids[i]->kids = NULL;
-                    res->kids[i]->type = isDot(ep->d_name) ? dots : file;
                 }
                 lstat(res->kids[i]->path_name, &(res->kids[i]->st));
+                if (res->kids[i]->type != perm_denied)
+                    res->kids[i]->type = getType(res->kids[i]->st);
                 i++;
             }
         }
         closedir(dp);
-    }
+    } 
     return res;
 }

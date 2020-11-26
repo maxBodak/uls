@@ -1,6 +1,6 @@
 #include "uls.h"
 
-t_lout getSizesForL(t_obj **fp, int fp_amt) {
+t_lout wc_getSizesForL(t_obj **fp, int fp_amt) {
     t_lout r;
     struct passwd* tmp = getpwuid(fp[0]->st.st_uid);
     struct group *tmp_g = getgrgid(fp[0]->st.st_gid);

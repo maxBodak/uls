@@ -4,7 +4,7 @@ t_data *wc_fetchData(t_path *p, bool *fl) {
     int dcount = 0;
     t_data *res = NULL;
 
-    if(p) {
+    if (p) {
         for (int i = 0; i < p->amt; i++)
             dcount += p->isdir[i];
         res = (t_data *)malloc(sizeof(t_data));
