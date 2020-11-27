@@ -2114,6 +2114,33 @@ Libmx/src/mx_toupper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.s
 .PHONY : Libmx/src/mx_toupper.c.s
 
+src/cf_bool_mainp.o: src/cf_bool_mainp.c.o
+
+.PHONY : src/cf_bool_mainp.o
+
+# target to build an object file
+src/cf_bool_mainp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_bool_mainp.c.o
+.PHONY : src/cf_bool_mainp.c.o
+
+src/cf_bool_mainp.i: src/cf_bool_mainp.c.i
+
+.PHONY : src/cf_bool_mainp.i
+
+# target to preprocess a source file
+src/cf_bool_mainp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_bool_mainp.c.i
+.PHONY : src/cf_bool_mainp.c.i
+
+src/cf_bool_mainp.s: src/cf_bool_mainp.c.s
+
+.PHONY : src/cf_bool_mainp.s
+
+# target to generate assembly for a file
+src/cf_bool_mainp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_bool_mainp.c.s
+.PHONY : src/cf_bool_mainp.c.s
+
 src/cf_cmp_flags.o: src/cf_cmp_flags.c.o
 
 .PHONY : src/cf_cmp_flags.o
@@ -2168,6 +2195,33 @@ src/cf_err_illegal_option.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_err_illegal_option.c.s
 .PHONY : src/cf_err_illegal_option.c.s
 
+src/cf_flag_F.o: src/cf_flag_F.c.o
+
+.PHONY : src/cf_flag_F.o
+
+# target to build an object file
+src/cf_flag_F.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_F.c.o
+.PHONY : src/cf_flag_F.c.o
+
+src/cf_flag_F.i: src/cf_flag_F.c.i
+
+.PHONY : src/cf_flag_F.i
+
+# target to preprocess a source file
+src/cf_flag_F.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_F.c.i
+.PHONY : src/cf_flag_F.c.i
+
+src/cf_flag_F.s: src/cf_flag_F.c.s
+
+.PHONY : src/cf_flag_F.s
+
+# target to generate assembly for a file
+src/cf_flag_F.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_F.c.s
+.PHONY : src/cf_flag_F.c.s
+
 src/cf_flag_S.o: src/cf_flag_S.c.o
 
 .PHONY : src/cf_flag_S.o
@@ -2195,6 +2249,60 @@ src/cf_flag_S.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_S.c.s
 .PHONY : src/cf_flag_S.c.s
 
+src/cf_flag_Uu.o: src/cf_flag_Uu.c.o
+
+.PHONY : src/cf_flag_Uu.o
+
+# target to build an object file
+src/cf_flag_Uu.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_Uu.c.o
+.PHONY : src/cf_flag_Uu.c.o
+
+src/cf_flag_Uu.i: src/cf_flag_Uu.c.i
+
+.PHONY : src/cf_flag_Uu.i
+
+# target to preprocess a source file
+src/cf_flag_Uu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_Uu.c.i
+.PHONY : src/cf_flag_Uu.c.i
+
+src/cf_flag_Uu.s: src/cf_flag_Uu.c.s
+
+.PHONY : src/cf_flag_Uu.s
+
+# target to generate assembly for a file
+src/cf_flag_Uu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_Uu.c.s
+.PHONY : src/cf_flag_Uu.c.s
+
+src/cf_flag_c.o: src/cf_flag_c.c.o
+
+.PHONY : src/cf_flag_c.o
+
+# target to build an object file
+src/cf_flag_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_c.c.o
+.PHONY : src/cf_flag_c.c.o
+
+src/cf_flag_c.i: src/cf_flag_c.c.i
+
+.PHONY : src/cf_flag_c.i
+
+# target to preprocess a source file
+src/cf_flag_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_c.c.i
+.PHONY : src/cf_flag_c.c.i
+
+src/cf_flag_c.s: src/cf_flag_c.c.s
+
+.PHONY : src/cf_flag_c.s
+
+# target to generate assembly for a file
+src/cf_flag_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_c.c.s
+.PHONY : src/cf_flag_c.c.s
+
 src/cf_flag_r.o: src/cf_flag_r.c.o
 
 .PHONY : src/cf_flag_r.o
@@ -2221,6 +2329,87 @@ src/cf_flag_r.s: src/cf_flag_r.c.s
 src/cf_flag_r.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_r.c.s
 .PHONY : src/cf_flag_r.c.s
+
+src/cf_flag_t.o: src/cf_flag_t.c.o
+
+.PHONY : src/cf_flag_t.o
+
+# target to build an object file
+src/cf_flag_t.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_t.c.o
+.PHONY : src/cf_flag_t.c.o
+
+src/cf_flag_t.i: src/cf_flag_t.c.i
+
+.PHONY : src/cf_flag_t.i
+
+# target to preprocess a source file
+src/cf_flag_t.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_t.c.i
+.PHONY : src/cf_flag_t.c.i
+
+src/cf_flag_t.s: src/cf_flag_t.c.s
+
+.PHONY : src/cf_flag_t.s
+
+# target to generate assembly for a file
+src/cf_flag_t.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_t.c.s
+.PHONY : src/cf_flag_t.c.s
+
+src/cf_flag_u.o: src/cf_flag_u.c.o
+
+.PHONY : src/cf_flag_u.o
+
+# target to build an object file
+src/cf_flag_u.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_u.c.o
+.PHONY : src/cf_flag_u.c.o
+
+src/cf_flag_u.i: src/cf_flag_u.c.i
+
+.PHONY : src/cf_flag_u.i
+
+# target to preprocess a source file
+src/cf_flag_u.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_u.c.i
+.PHONY : src/cf_flag_u.c.i
+
+src/cf_flag_u.s: src/cf_flag_u.c.s
+
+.PHONY : src/cf_flag_u.s
+
+# target to generate assembly for a file
+src/cf_flag_u.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_u.c.s
+.PHONY : src/cf_flag_u.c.s
+
+src/cf_flags_check.o: src/cf_flags_check.c.o
+
+.PHONY : src/cf_flags_check.o
+
+# target to build an object file
+src/cf_flags_check.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flags_check.c.o
+.PHONY : src/cf_flags_check.c.o
+
+src/cf_flags_check.i: src/cf_flags_check.c.i
+
+.PHONY : src/cf_flags_check.i
+
+# target to preprocess a source file
+src/cf_flags_check.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flags_check.c.i
+.PHONY : src/cf_flags_check.c.i
+
+src/cf_flags_check.s: src/cf_flags_check.c.s
+
+.PHONY : src/cf_flags_check.s
+
+# target to generate assembly for a file
+src/cf_flags_check.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flags_check.c.s
+.PHONY : src/cf_flags_check.c.s
 
 src/cf_flags_num.o: src/cf_flags_num.c.o
 
@@ -2963,18 +3152,39 @@ help:
 	@echo "... Libmx/src/mx_toupper.o"
 	@echo "... Libmx/src/mx_toupper.i"
 	@echo "... Libmx/src/mx_toupper.s"
+	@echo "... src/cf_bool_mainp.o"
+	@echo "... src/cf_bool_mainp.i"
+	@echo "... src/cf_bool_mainp.s"
 	@echo "... src/cf_cmp_flags.o"
 	@echo "... src/cf_cmp_flags.i"
 	@echo "... src/cf_cmp_flags.s"
 	@echo "... src/cf_err_illegal_option.o"
 	@echo "... src/cf_err_illegal_option.i"
 	@echo "... src/cf_err_illegal_option.s"
+	@echo "... src/cf_flag_F.o"
+	@echo "... src/cf_flag_F.i"
+	@echo "... src/cf_flag_F.s"
 	@echo "... src/cf_flag_S.o"
 	@echo "... src/cf_flag_S.i"
 	@echo "... src/cf_flag_S.s"
+	@echo "... src/cf_flag_Uu.o"
+	@echo "... src/cf_flag_Uu.i"
+	@echo "... src/cf_flag_Uu.s"
+	@echo "... src/cf_flag_c.o"
+	@echo "... src/cf_flag_c.i"
+	@echo "... src/cf_flag_c.s"
 	@echo "... src/cf_flag_r.o"
 	@echo "... src/cf_flag_r.i"
 	@echo "... src/cf_flag_r.s"
+	@echo "... src/cf_flag_t.o"
+	@echo "... src/cf_flag_t.i"
+	@echo "... src/cf_flag_t.s"
+	@echo "... src/cf_flag_u.o"
+	@echo "... src/cf_flag_u.i"
+	@echo "... src/cf_flag_u.s"
+	@echo "... src/cf_flags_check.o"
+	@echo "... src/cf_flags_check.i"
+	@echo "... src/cf_flags_check.s"
 	@echo "... src/cf_flags_num.o"
 	@echo "... src/cf_flags_num.i"
 	@echo "... src/cf_flags_num.s"

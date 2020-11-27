@@ -32,9 +32,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="start isatty">
+    <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/cf_uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/cf_uls.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/uls.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/wc_temp.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/wc_temp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +105,7 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -101,9 +116,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="uls" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="uls" TARGET_NAME="uls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="uls" RUN_TARGET_NAME="uls">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -126,6 +151,14 @@
       <workItem from="1606059409714" duration="6162000" />
       <workItem from="1606072251091" duration="3124000" />
       <workItem from="1606238036362" duration="133000" />
+      <workItem from="1606238393283" duration="635000" />
+      <workItem from="1606239049117" duration="2109000" />
+      <workItem from="1606241421513" duration="1641000" />
+      <workItem from="1606246619842" duration="2853000" />
+      <workItem from="1606313760978" duration="3934000" />
+      <workItem from="1606319946387" duration="218000" />
+      <workItem from="1606320177393" duration="1846000" />
+      <workItem from="1606400624362" duration="7640000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -155,7 +188,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606073714011</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new Makefile">
+      <created>1606238411535</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606238411535</updated>
+    </task>
+    <task id="LOCAL-00006" summary="flags U, u, c, S">
+      <created>1606249396447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606249396447</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,13 +224,19 @@
     <MESSAGE value="add -f&#10;added if -f make -a positive&#10;Cf" />
     <MESSAGE value="flag -S Done" />
     <MESSAGE value="start isatty" />
-    <option name="LAST_COMMIT_MESSAGE" value="start isatty" />
+    <MESSAGE value="new Makefile" />
+    <MESSAGE value="flags U, u, c, S" />
+    <option name="LAST_COMMIT_MESSAGE" value="flags U, u, c, S" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605979435740">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="740" y="353" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1605979435740" />
+    <state x="1020" y="529" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606402231702">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1020" y="529" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440" timestamp="1606402231702" />
     <state x="1039" y="402" key="#xdebugger.evaluate" timestamp="1605986415809">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -220,15 +273,19 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state width="2510" height="460" key="GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337" timestamp="1605986469730" />
-    <state x="876" y="439" key="Vcs.Push.Dialog.v2" timestamp="1606073720586">
+    <state x="768" y="368" key="SettingsEditor" timestamp="1606320975612">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="876" y="439" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606073720586" />
+    <state x="768" y="368" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1606320975612" />
+    <state x="876" y="439" key="Vcs.Push.Dialog.v2" timestamp="1606249407962">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="876" y="439" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606249407962" />
     <state x="876" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1606062141122" />
-    <state width="600" height="461" key="javadoc.popup" timestamp="1606073384406">
+    <state width="600" height="461" key="javadoc.popup" timestamp="1606326140480">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606073384406" />
+    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606326140480" />
     <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
     <state x="978" y="624" width="596" height="192" key="makefile.clean.confirm.dialog" timestamp="1606238328264">
       <screen x="0" y="0" width="2560" height="1440" />

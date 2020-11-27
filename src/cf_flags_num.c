@@ -10,7 +10,7 @@ static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
         for (int j = i + 1; j < count_flags; j++)
             if (flags_char[i] == flags_char[j] && flags_char[i] != '-')
                 flags_char[j] = '-';
-    for (int i = 0, j = 0; i < count_flags; i++) //дать превдивое значение флага в буловом массиве
+    for (int i = 0, j = 0; i < count_flags; i++) //дать прaвдивое значение флага в буловом массиве
         for (j = 0; j < ALL_FLAGS; j++)
             if (flags_char[i] == flag[j])
                 flags[j] = true;

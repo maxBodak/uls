@@ -52,7 +52,6 @@ typedef struct s_obj {
     struct stat st;
     int kids_amt;
     char type;
-    char hidden;
 }              t_obj;
 typedef struct s_data {
     t_obj **dirs_path;
@@ -106,4 +105,10 @@ void wc_printTime(struct stat st, bool *fl);
 void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_r(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_S(t_obj **d, int d_amt, const bool *fl);
+void cf_flag_t(t_obj **d, int d_amt, const bool *fl);
+void cf_flag_u(t_obj **d, int d_amt, const bool *fl);
+void cf_flag_c(t_obj **d, int d_amt, const bool *fl);
+void cf_flag_Uu(t_obj **d, int d_amt, const bool *fl);
+void cf_flags_check (t_data *d, bool *fl);
+void cf_flag_F_and_p(t_obj *obj, bool *fl);
 
