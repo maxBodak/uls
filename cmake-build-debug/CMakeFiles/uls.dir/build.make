@@ -1026,31 +1026,31 @@ CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_toupper.c -o CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.s
 
-CMakeFiles/uls.dir/src/cf_flags_num.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../src/cf_flags_num.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/uls.dir/src/cf_flags_num.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flags_num.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: ../src/cf_bool_mainp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/uls.dir/src/cf_bool_mainp.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_bool_mainp.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c
 
-CMakeFiles/uls.dir/src/cf_flags_num.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flags_num.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c > CMakeFiles/uls.dir/src/cf_flags_num.c.i
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_bool_mainp.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c > CMakeFiles/uls.dir/src/cf_bool_mainp.c.i
 
-CMakeFiles/uls.dir/src/cf_flags_num.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flags_num.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c -o CMakeFiles/uls.dir/src/cf_flags_num.c.s
+CMakeFiles/uls.dir/src/cf_bool_mainp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_bool_mainp.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c -o CMakeFiles/uls.dir/src/cf_bool_mainp.c.s
 
-CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../src/cf_not_flag_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/uls.dir/src/cf_not_flag_f.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_not_flag_f.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../src/cf_cmp_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/uls.dir/src/cf_cmp_flags.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_cmp_flags.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c
 
-CMakeFiles/uls.dir/src/cf_not_flag_f.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_not_flag_f.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c > CMakeFiles/uls.dir/src/cf_not_flag_f.c.i
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_cmp_flags.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c > CMakeFiles/uls.dir/src/cf_cmp_flags.c.i
 
-CMakeFiles/uls.dir/src/cf_not_flag_f.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_not_flag_f.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c -o CMakeFiles/uls.dir/src/cf_not_flag_f.c.s
+CMakeFiles/uls.dir/src/cf_cmp_flags.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_cmp_flags.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c -o CMakeFiles/uls.dir/src/cf_cmp_flags.c.s
 
 CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o: ../src/cf_err_illegal_option.c
@@ -1065,35 +1065,22 @@ CMakeFiles/uls.dir/src/cf_err_illegal_option.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_err_illegal_option.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_err_illegal_option.c -o CMakeFiles/uls.dir/src/cf_err_illegal_option.c.s
 
-CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_cmp_flags.c.o: ../src/cf_cmp_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/uls.dir/src/cf_cmp_flags.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_cmp_flags.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c
+CMakeFiles/uls.dir/src/cf_flag_c.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_flag_c.c.o: ../src/cf_flag_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/uls.dir/src/cf_flag_c.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_c.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c
 
-CMakeFiles/uls.dir/src/cf_cmp_flags.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_cmp_flags.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c > CMakeFiles/uls.dir/src/cf_cmp_flags.c.i
+CMakeFiles/uls.dir/src/cf_flag_c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flag_c.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c > CMakeFiles/uls.dir/src/cf_flag_c.c.i
 
-CMakeFiles/uls.dir/src/cf_cmp_flags.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_cmp_flags.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c -o CMakeFiles/uls.dir/src/cf_cmp_flags.c.s
-
-CMakeFiles/uls.dir/src/cf_isatty.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_isatty.c.o: ../src/cf_isatty.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/uls.dir/src/cf_isatty.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_isatty.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c
-
-CMakeFiles/uls.dir/src/cf_isatty.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_isatty.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c > CMakeFiles/uls.dir/src/cf_isatty.c.i
-
-CMakeFiles/uls.dir/src/cf_isatty.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_isatty.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c -o CMakeFiles/uls.dir/src/cf_isatty.c.s
+CMakeFiles/uls.dir/src/cf_flag_c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_c.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c -o CMakeFiles/uls.dir/src/cf_flag_c.c.s
 
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/cf_flag_r.c.o: ../src/cf_flag_r.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/uls.dir/src/cf_flag_r.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/uls.dir/src/cf_flag_r.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_r.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_r.c
 
 CMakeFiles/uls.dir/src/cf_flag_r.c.i: cmake_force
@@ -1106,7 +1093,7 @@ CMakeFiles/uls.dir/src/cf_flag_r.c.s: cmake_force
 
 CMakeFiles/uls.dir/src/cf_flag_S.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/cf_flag_S.c.o: ../src/cf_flag_S.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/uls.dir/src/cf_flag_S.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/uls.dir/src/cf_flag_S.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_S.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_S.c
 
 CMakeFiles/uls.dir/src/cf_flag_S.c.i: cmake_force
@@ -1119,7 +1106,7 @@ CMakeFiles/uls.dir/src/cf_flag_S.c.s: cmake_force
 
 CMakeFiles/uls.dir/src/cf_flag_t.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/cf_flag_t.c.o: ../src/cf_flag_t.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/uls.dir/src/cf_flag_t.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/uls.dir/src/cf_flag_t.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_t.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_t.c
 
 CMakeFiles/uls.dir/src/cf_flag_t.c.i: cmake_force
@@ -1130,9 +1117,35 @@ CMakeFiles/uls.dir/src/cf_flag_t.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_t.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_t.c -o CMakeFiles/uls.dir/src/cf_flag_t.c.s
 
+CMakeFiles/uls.dir/src/cf_flag_u.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_flag_u.c.o: ../src/cf_flag_u.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/uls.dir/src/cf_flag_u.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_u.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c
+
+CMakeFiles/uls.dir/src/cf_flag_u.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flag_u.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c > CMakeFiles/uls.dir/src/cf_flag_u.c.i
+
+CMakeFiles/uls.dir/src/cf_flag_u.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_u.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c -o CMakeFiles/uls.dir/src/cf_flag_u.c.s
+
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: ../src/cf_flag_Uu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/uls.dir/src/cf_flag_Uu.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_Uu.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c
+
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flag_Uu.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c > CMakeFiles/uls.dir/src/cf_flag_Uu.c.i
+
+CMakeFiles/uls.dir/src/cf_flag_Uu.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_Uu.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c -o CMakeFiles/uls.dir/src/cf_flag_Uu.c.s
+
 CMakeFiles/uls.dir/src/cf_flags_check.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/cf_flags_check.c.o: ../src/cf_flags_check.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/uls.dir/src/cf_flags_check.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/uls.dir/src/cf_flags_check.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flags_check.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_check.c
 
 CMakeFiles/uls.dir/src/cf_flags_check.c.i: cmake_force
@@ -1143,35 +1156,48 @@ CMakeFiles/uls.dir/src/cf_flags_check.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flags_check.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_check.c -o CMakeFiles/uls.dir/src/cf_flags_check.c.s
 
-CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_bool_mainp.c.o: ../src/cf_bool_mainp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/uls.dir/src/cf_bool_mainp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_bool_mainp.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c
+CMakeFiles/uls.dir/src/cf_flags_num.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_flags_num.c.o: ../src/cf_flags_num.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/uls.dir/src/cf_flags_num.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flags_num.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c
 
-CMakeFiles/uls.dir/src/cf_bool_mainp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_bool_mainp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c > CMakeFiles/uls.dir/src/cf_bool_mainp.c.i
+CMakeFiles/uls.dir/src/cf_flags_num.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flags_num.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c > CMakeFiles/uls.dir/src/cf_flags_num.c.i
 
-CMakeFiles/uls.dir/src/cf_bool_mainp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_bool_mainp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c -o CMakeFiles/uls.dir/src/cf_bool_mainp.c.s
+CMakeFiles/uls.dir/src/cf_flags_num.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flags_num.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c -o CMakeFiles/uls.dir/src/cf_flags_num.c.s
 
-CMakeFiles/uls.dir/src/cf_flag_F.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_flag_F.c.o: ../src/cf_flag_F.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/uls.dir/src/cf_flag_F.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_F.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_F.c
+CMakeFiles/uls.dir/src/cf_isatty.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_isatty.c.o: ../src/cf_isatty.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/uls.dir/src/cf_isatty.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_isatty.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c
 
-CMakeFiles/uls.dir/src/cf_flag_F.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flag_F.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_F.c > CMakeFiles/uls.dir/src/cf_flag_F.c.i
+CMakeFiles/uls.dir/src/cf_isatty.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_isatty.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c > CMakeFiles/uls.dir/src/cf_isatty.c.i
 
-CMakeFiles/uls.dir/src/cf_flag_F.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_F.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_F.c -o CMakeFiles/uls.dir/src/cf_flag_F.c.s
+CMakeFiles/uls.dir/src/cf_isatty.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_isatty.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c -o CMakeFiles/uls.dir/src/cf_isatty.c.s
+
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.o: ../src/cf_not_flag_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/uls.dir/src/cf_not_flag_f.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_not_flag_f.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c
+
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_not_flag_f.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c > CMakeFiles/uls.dir/src/cf_not_flag_f.c.i
+
+CMakeFiles/uls.dir/src/cf_not_flag_f.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_not_flag_f.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c -o CMakeFiles/uls.dir/src/cf_not_flag_f.c.s
 
 CMakeFiles/uls.dir/src/main.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/uls.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/uls.dir/src/main.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/main.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/main.c
 
 CMakeFiles/uls.dir/src/main.c.i: cmake_force
@@ -1182,22 +1208,35 @@ CMakeFiles/uls.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/main.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/main.c -o CMakeFiles/uls.dir/src/main.c.s
 
-CMakeFiles/uls.dir/src/wc_fetcher_data.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/wc_fetcher_data.c.o: ../src/wc_fetcher_data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/uls.dir/src/wc_fetcher_data.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_fetcher_data.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_data.c
+CMakeFiles/uls.dir/src/wc_colorer.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_colorer.c.o: ../src/wc_colorer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/uls.dir/src/wc_colorer.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_colorer.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_colorer.c
 
-CMakeFiles/uls.dir/src/wc_fetcher_data.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_fetcher_data.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_data.c > CMakeFiles/uls.dir/src/wc_fetcher_data.c.i
+CMakeFiles/uls.dir/src/wc_colorer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_colorer.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_colorer.c > CMakeFiles/uls.dir/src/wc_colorer.c.i
 
-CMakeFiles/uls.dir/src/wc_fetcher_data.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_fetcher_data.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_data.c -o CMakeFiles/uls.dir/src/wc_fetcher_data.c.s
+CMakeFiles/uls.dir/src/wc_colorer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_colorer.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_colorer.c -o CMakeFiles/uls.dir/src/wc_colorer.c.s
+
+CMakeFiles/uls.dir/src/wc_errors.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_errors.c.o: ../src/wc_errors.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/uls.dir/src/wc_errors.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_errors.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c
+
+CMakeFiles/uls.dir/src/wc_errors.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_errors.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c > CMakeFiles/uls.dir/src/wc_errors.c.i
+
+CMakeFiles/uls.dir/src/wc_errors.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_errors.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c -o CMakeFiles/uls.dir/src/wc_errors.c.s
 
 CMakeFiles/uls.dir/src/wc_fetcher_dir.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_fetcher_dir.c.o: ../src/wc_fetcher_dir.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/uls.dir/src/wc_fetcher_dir.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/uls.dir/src/wc_fetcher_dir.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_fetcher_dir.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_dir.c
 
 CMakeFiles/uls.dir/src/wc_fetcher_dir.c.i: cmake_force
@@ -1210,7 +1249,7 @@ CMakeFiles/uls.dir/src/wc_fetcher_dir.c.s: cmake_force
 
 CMakeFiles/uls.dir/src/wc_fetcher_file.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_fetcher_file.c.o: ../src/wc_fetcher_file.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/uls.dir/src/wc_fetcher_file.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/uls.dir/src/wc_fetcher_file.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_fetcher_file.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_file.c
 
 CMakeFiles/uls.dir/src/wc_fetcher_file.c.i: cmake_force
@@ -1221,9 +1260,87 @@ CMakeFiles/uls.dir/src/wc_fetcher_file.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_fetcher_file.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_file.c -o CMakeFiles/uls.dir/src/wc_fetcher_file.c.s
 
+CMakeFiles/uls.dir/src/wc_l_get_spacing.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_l_get_spacing.c.o: ../src/wc_l_get_spacing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/uls.dir/src/wc_l_get_spacing.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_l_get_spacing.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_get_spacing.c
+
+CMakeFiles/uls.dir/src/wc_l_get_spacing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_l_get_spacing.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_get_spacing.c > CMakeFiles/uls.dir/src/wc_l_get_spacing.c.i
+
+CMakeFiles/uls.dir/src/wc_l_get_spacing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_l_get_spacing.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_get_spacing.c -o CMakeFiles/uls.dir/src/wc_l_get_spacing.c.s
+
+CMakeFiles/uls.dir/src/wc_l_print_perms.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_l_print_perms.c.o: ../src/wc_l_print_perms.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/uls.dir/src/wc_l_print_perms.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_l_print_perms.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_perms.c
+
+CMakeFiles/uls.dir/src/wc_l_print_perms.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_l_print_perms.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_perms.c > CMakeFiles/uls.dir/src/wc_l_print_perms.c.i
+
+CMakeFiles/uls.dir/src/wc_l_print_perms.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_l_print_perms.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_perms.c -o CMakeFiles/uls.dir/src/wc_l_print_perms.c.s
+
+CMakeFiles/uls.dir/src/wc_l_print_stats.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_l_print_stats.c.o: ../src/wc_l_print_stats.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/uls.dir/src/wc_l_print_stats.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_l_print_stats.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_stats.c
+
+CMakeFiles/uls.dir/src/wc_l_print_stats.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_l_print_stats.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_stats.c > CMakeFiles/uls.dir/src/wc_l_print_stats.c.i
+
+CMakeFiles/uls.dir/src/wc_l_print_stats.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_l_print_stats.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_stats.c -o CMakeFiles/uls.dir/src/wc_l_print_stats.c.s
+
+CMakeFiles/uls.dir/src/wc_l_print_time.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_l_print_time.c.o: ../src/wc_l_print_time.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/uls.dir/src/wc_l_print_time.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_l_print_time.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_time.c
+
+CMakeFiles/uls.dir/src/wc_l_print_time.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_l_print_time.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_time.c > CMakeFiles/uls.dir/src/wc_l_print_time.c.i
+
+CMakeFiles/uls.dir/src/wc_l_print_time.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_l_print_time.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_time.c -o CMakeFiles/uls.dir/src/wc_l_print_time.c.s
+
+CMakeFiles/uls.dir/src/wc_manager_fetching.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_manager_fetching.c.o: ../src/wc_manager_fetching.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/uls.dir/src/wc_manager_fetching.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_manager_fetching.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_fetching.c
+
+CMakeFiles/uls.dir/src/wc_manager_fetching.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_manager_fetching.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_fetching.c > CMakeFiles/uls.dir/src/wc_manager_fetching.c.i
+
+CMakeFiles/uls.dir/src/wc_manager_fetching.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_manager_fetching.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_fetching.c -o CMakeFiles/uls.dir/src/wc_manager_fetching.c.s
+
+CMakeFiles/uls.dir/src/wc_manager_printing.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_manager_printing.c.o: ../src/wc_manager_printing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/uls.dir/src/wc_manager_printing.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_manager_printing.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_printing.c
+
+CMakeFiles/uls.dir/src/wc_manager_printing.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_manager_printing.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_printing.c > CMakeFiles/uls.dir/src/wc_manager_printing.c.i
+
+CMakeFiles/uls.dir/src/wc_manager_printing.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_manager_printing.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_printing.c -o CMakeFiles/uls.dir/src/wc_manager_printing.c.s
+
 CMakeFiles/uls.dir/src/wc_mem_cleaner.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_mem_cleaner.c.o: ../src/wc_mem_cleaner.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/uls.dir/src/wc_mem_cleaner.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/uls.dir/src/wc_mem_cleaner.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_mem_cleaner.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_mem_cleaner.c
 
 CMakeFiles/uls.dir/src/wc_mem_cleaner.c.i: cmake_force
@@ -1236,7 +1353,7 @@ CMakeFiles/uls.dir/src/wc_mem_cleaner.c.s: cmake_force
 
 CMakeFiles/uls.dir/src/wc_path_parser.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_path_parser.c.o: ../src/wc_path_parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/uls.dir/src/wc_path_parser.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/uls.dir/src/wc_path_parser.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_path_parser.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_path_parser.c
 
 CMakeFiles/uls.dir/src/wc_path_parser.c.i: cmake_force
@@ -1249,7 +1366,7 @@ CMakeFiles/uls.dir/src/wc_path_parser.c.s: cmake_force
 
 CMakeFiles/uls.dir/src/wc_printer_C.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_printer_C.c.o: ../src/wc_printer_C.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/uls.dir/src/wc_printer_C.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/uls.dir/src/wc_printer_C.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_printer_C.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_C.c
 
 CMakeFiles/uls.dir/src/wc_printer_C.c.i: cmake_force
@@ -1262,7 +1379,7 @@ CMakeFiles/uls.dir/src/wc_printer_C.c.s: cmake_force
 
 CMakeFiles/uls.dir/src/wc_printer_l.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_printer_l.c.o: ../src/wc_printer_l.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/uls.dir/src/wc_printer_l.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/uls.dir/src/wc_printer_l.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_printer_l.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l.c
 
 CMakeFiles/uls.dir/src/wc_printer_l.c.i: cmake_force
@@ -1273,22 +1390,9 @@ CMakeFiles/uls.dir/src/wc_printer_l.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_printer_l.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l.c -o CMakeFiles/uls.dir/src/wc_printer_l.c.s
 
-CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o: ../src/wc_printer_l_sizer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l_sizer.c
-
-CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l_sizer.c > CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.i
-
-CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l_sizer.c -o CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.s
-
 CMakeFiles/uls.dir/src/wc_printer_m.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_printer_m.c.o: ../src/wc_printer_m.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/uls.dir/src/wc_printer_m.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/uls.dir/src/wc_printer_m.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_printer_m.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_m.c
 
 CMakeFiles/uls.dir/src/wc_printer_m.c.i: cmake_force
@@ -1301,7 +1405,7 @@ CMakeFiles/uls.dir/src/wc_printer_m.c.s: cmake_force
 
 CMakeFiles/uls.dir/src/wc_printer_one.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_printer_one.c.o: ../src/wc_printer_one.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/uls.dir/src/wc_printer_one.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/uls.dir/src/wc_printer_one.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_printer_one.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_one.c
 
 CMakeFiles/uls.dir/src/wc_printer_one.c.i: cmake_force
@@ -1312,35 +1416,9 @@ CMakeFiles/uls.dir/src/wc_printer_one.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_printer_one.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_one.c -o CMakeFiles/uls.dir/src/wc_printer_one.c.s
 
-CMakeFiles/uls.dir/src/wc_temp.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/wc_temp.c.o: ../src/wc_temp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/uls.dir/src/wc_temp.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_temp.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp.c
-
-CMakeFiles/uls.dir/src/wc_temp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_temp.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp.c > CMakeFiles/uls.dir/src/wc_temp.c.i
-
-CMakeFiles/uls.dir/src/wc_temp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_temp.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp.c -o CMakeFiles/uls.dir/src/wc_temp.c.s
-
-CMakeFiles/uls.dir/src/wc_utilities.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/wc_utilities.c.o: ../src/wc_utilities.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/uls.dir/src/wc_utilities.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_utilities.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c
-
-CMakeFiles/uls.dir/src/wc_utilities.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_utilities.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c > CMakeFiles/uls.dir/src/wc_utilities.c.i
-
-CMakeFiles/uls.dir/src/wc_utilities.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_utilities.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c -o CMakeFiles/uls.dir/src/wc_utilities.c.s
-
 CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o: CMakeFiles/uls.dir/flags.make
 CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o: ../src/wc_quicksort_obj.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_quicksort_obj.c
 
 CMakeFiles/uls.dir/src/wc_quicksort_obj.c.i: cmake_force
@@ -1351,70 +1429,18 @@ CMakeFiles/uls.dir/src/wc_quicksort_obj.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_quicksort_obj.c.s"
 	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_quicksort_obj.c -o CMakeFiles/uls.dir/src/wc_quicksort_obj.c.s
 
-CMakeFiles/uls.dir/src/wc_errors.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/wc_errors.c.o: ../src/wc_errors.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/uls.dir/src/wc_errors.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_errors.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c
+CMakeFiles/uls.dir/src/wc_utilities.c.o: CMakeFiles/uls.dir/flags.make
+CMakeFiles/uls.dir/src/wc_utilities.c.o: ../src/wc_utilities.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/uls.dir/src/wc_utilities.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_utilities.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c
 
-CMakeFiles/uls.dir/src/wc_errors.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_errors.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c > CMakeFiles/uls.dir/src/wc_errors.c.i
+CMakeFiles/uls.dir/src/wc_utilities.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_utilities.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c > CMakeFiles/uls.dir/src/wc_utilities.c.i
 
-CMakeFiles/uls.dir/src/wc_errors.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_errors.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c -o CMakeFiles/uls.dir/src/wc_errors.c.s
-
-CMakeFiles/uls.dir/src/wc_printer_color.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/wc_printer_color.c.o: ../src/wc_printer_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/uls.dir/src/wc_printer_color.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/wc_printer_color.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_color.c
-
-CMakeFiles/uls.dir/src/wc_printer_color.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/wc_printer_color.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_color.c > CMakeFiles/uls.dir/src/wc_printer_color.c.i
-
-CMakeFiles/uls.dir/src/wc_printer_color.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_printer_color.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_color.c -o CMakeFiles/uls.dir/src/wc_printer_color.c.s
-
-CMakeFiles/uls.dir/src/cf_flag_u.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_flag_u.c.o: ../src/cf_flag_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/uls.dir/src/cf_flag_u.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_u.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c
-
-CMakeFiles/uls.dir/src/cf_flag_u.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flag_u.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c > CMakeFiles/uls.dir/src/cf_flag_u.c.i
-
-CMakeFiles/uls.dir/src/cf_flag_u.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_u.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c -o CMakeFiles/uls.dir/src/cf_flag_u.c.s
-
-CMakeFiles/uls.dir/src/cf_flag_c.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_flag_c.c.o: ../src/cf_flag_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/uls.dir/src/cf_flag_c.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_c.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c
-
-CMakeFiles/uls.dir/src/cf_flag_c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flag_c.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c > CMakeFiles/uls.dir/src/cf_flag_c.c.i
-
-CMakeFiles/uls.dir/src/cf_flag_c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_c.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c -o CMakeFiles/uls.dir/src/cf_flag_c.c.s
-
-CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: CMakeFiles/uls.dir/flags.make
-CMakeFiles/uls.dir/src/cf_flag_Uu.c.o: ../src/cf_flag_Uu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/uls.dir/src/cf_flag_Uu.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/uls.dir/src/cf_flag_Uu.c.o   -c /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c
-
-CMakeFiles/uls.dir/src/cf_flag_Uu.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/uls.dir/src/cf_flag_Uu.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c > CMakeFiles/uls.dir/src/cf_flag_Uu.c.i
-
-CMakeFiles/uls.dir/src/cf_flag_Uu.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/cf_flag_Uu.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c -o CMakeFiles/uls.dir/src/cf_flag_Uu.c.s
+CMakeFiles/uls.dir/src/wc_utilities.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/uls.dir/src/wc_utilities.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c -o CMakeFiles/uls.dir/src/wc_utilities.c.s
 
 # Object files for target uls
 uls_OBJECTS = \
@@ -1491,36 +1517,38 @@ uls_OBJECTS = \
 "CMakeFiles/uls.dir/Libmx/src/mx_swap_str.c.o" \
 "CMakeFiles/uls.dir/Libmx/src/mx_tolower.c.o" \
 "CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.o" \
-"CMakeFiles/uls.dir/src/cf_flags_num.c.o" \
-"CMakeFiles/uls.dir/src/cf_not_flag_f.c.o" \
-"CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o" \
+"CMakeFiles/uls.dir/src/cf_bool_mainp.c.o" \
 "CMakeFiles/uls.dir/src/cf_cmp_flags.c.o" \
-"CMakeFiles/uls.dir/src/cf_isatty.c.o" \
+"CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o" \
+"CMakeFiles/uls.dir/src/cf_flag_c.c.o" \
 "CMakeFiles/uls.dir/src/cf_flag_r.c.o" \
 "CMakeFiles/uls.dir/src/cf_flag_S.c.o" \
 "CMakeFiles/uls.dir/src/cf_flag_t.c.o" \
+"CMakeFiles/uls.dir/src/cf_flag_u.c.o" \
+"CMakeFiles/uls.dir/src/cf_flag_Uu.c.o" \
 "CMakeFiles/uls.dir/src/cf_flags_check.c.o" \
-"CMakeFiles/uls.dir/src/cf_bool_mainp.c.o" \
-"CMakeFiles/uls.dir/src/cf_flag_F.c.o" \
+"CMakeFiles/uls.dir/src/cf_flags_num.c.o" \
+"CMakeFiles/uls.dir/src/cf_isatty.c.o" \
+"CMakeFiles/uls.dir/src/cf_not_flag_f.c.o" \
 "CMakeFiles/uls.dir/src/main.c.o" \
-"CMakeFiles/uls.dir/src/wc_fetcher_data.c.o" \
+"CMakeFiles/uls.dir/src/wc_colorer.c.o" \
+"CMakeFiles/uls.dir/src/wc_errors.c.o" \
 "CMakeFiles/uls.dir/src/wc_fetcher_dir.c.o" \
 "CMakeFiles/uls.dir/src/wc_fetcher_file.c.o" \
+"CMakeFiles/uls.dir/src/wc_l_get_spacing.c.o" \
+"CMakeFiles/uls.dir/src/wc_l_print_perms.c.o" \
+"CMakeFiles/uls.dir/src/wc_l_print_stats.c.o" \
+"CMakeFiles/uls.dir/src/wc_l_print_time.c.o" \
+"CMakeFiles/uls.dir/src/wc_manager_fetching.c.o" \
+"CMakeFiles/uls.dir/src/wc_manager_printing.c.o" \
 "CMakeFiles/uls.dir/src/wc_mem_cleaner.c.o" \
 "CMakeFiles/uls.dir/src/wc_path_parser.c.o" \
 "CMakeFiles/uls.dir/src/wc_printer_C.c.o" \
 "CMakeFiles/uls.dir/src/wc_printer_l.c.o" \
-"CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o" \
 "CMakeFiles/uls.dir/src/wc_printer_m.c.o" \
 "CMakeFiles/uls.dir/src/wc_printer_one.c.o" \
-"CMakeFiles/uls.dir/src/wc_temp.c.o" \
-"CMakeFiles/uls.dir/src/wc_utilities.c.o" \
 "CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o" \
-"CMakeFiles/uls.dir/src/wc_errors.c.o" \
-"CMakeFiles/uls.dir/src/wc_printer_color.c.o" \
-"CMakeFiles/uls.dir/src/cf_flag_u.c.o" \
-"CMakeFiles/uls.dir/src/cf_flag_c.c.o" \
-"CMakeFiles/uls.dir/src/cf_flag_Uu.c.o"
+"CMakeFiles/uls.dir/src/wc_utilities.c.o"
 
 # External object files for target uls
 uls_EXTERNAL_OBJECTS =
@@ -1598,39 +1626,41 @@ uls: CMakeFiles/uls.dir/Libmx/src/mx_swap_char.c.o
 uls: CMakeFiles/uls.dir/Libmx/src/mx_swap_str.c.o
 uls: CMakeFiles/uls.dir/Libmx/src/mx_tolower.c.o
 uls: CMakeFiles/uls.dir/Libmx/src/mx_toupper.c.o
-uls: CMakeFiles/uls.dir/src/cf_flags_num.c.o
-uls: CMakeFiles/uls.dir/src/cf_not_flag_f.c.o
-uls: CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o
+uls: CMakeFiles/uls.dir/src/cf_bool_mainp.c.o
 uls: CMakeFiles/uls.dir/src/cf_cmp_flags.c.o
-uls: CMakeFiles/uls.dir/src/cf_isatty.c.o
+uls: CMakeFiles/uls.dir/src/cf_err_illegal_option.c.o
+uls: CMakeFiles/uls.dir/src/cf_flag_c.c.o
 uls: CMakeFiles/uls.dir/src/cf_flag_r.c.o
 uls: CMakeFiles/uls.dir/src/cf_flag_S.c.o
 uls: CMakeFiles/uls.dir/src/cf_flag_t.c.o
+uls: CMakeFiles/uls.dir/src/cf_flag_u.c.o
+uls: CMakeFiles/uls.dir/src/cf_flag_Uu.c.o
 uls: CMakeFiles/uls.dir/src/cf_flags_check.c.o
-uls: CMakeFiles/uls.dir/src/cf_bool_mainp.c.o
-uls: CMakeFiles/uls.dir/src/cf_flag_F.c.o
+uls: CMakeFiles/uls.dir/src/cf_flags_num.c.o
+uls: CMakeFiles/uls.dir/src/cf_isatty.c.o
+uls: CMakeFiles/uls.dir/src/cf_not_flag_f.c.o
 uls: CMakeFiles/uls.dir/src/main.c.o
-uls: CMakeFiles/uls.dir/src/wc_fetcher_data.c.o
+uls: CMakeFiles/uls.dir/src/wc_colorer.c.o
+uls: CMakeFiles/uls.dir/src/wc_errors.c.o
 uls: CMakeFiles/uls.dir/src/wc_fetcher_dir.c.o
 uls: CMakeFiles/uls.dir/src/wc_fetcher_file.c.o
+uls: CMakeFiles/uls.dir/src/wc_l_get_spacing.c.o
+uls: CMakeFiles/uls.dir/src/wc_l_print_perms.c.o
+uls: CMakeFiles/uls.dir/src/wc_l_print_stats.c.o
+uls: CMakeFiles/uls.dir/src/wc_l_print_time.c.o
+uls: CMakeFiles/uls.dir/src/wc_manager_fetching.c.o
+uls: CMakeFiles/uls.dir/src/wc_manager_printing.c.o
 uls: CMakeFiles/uls.dir/src/wc_mem_cleaner.c.o
 uls: CMakeFiles/uls.dir/src/wc_path_parser.c.o
 uls: CMakeFiles/uls.dir/src/wc_printer_C.c.o
 uls: CMakeFiles/uls.dir/src/wc_printer_l.c.o
-uls: CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o
 uls: CMakeFiles/uls.dir/src/wc_printer_m.c.o
 uls: CMakeFiles/uls.dir/src/wc_printer_one.c.o
-uls: CMakeFiles/uls.dir/src/wc_temp.c.o
-uls: CMakeFiles/uls.dir/src/wc_utilities.c.o
 uls: CMakeFiles/uls.dir/src/wc_quicksort_obj.c.o
-uls: CMakeFiles/uls.dir/src/wc_errors.c.o
-uls: CMakeFiles/uls.dir/src/wc_printer_color.c.o
-uls: CMakeFiles/uls.dir/src/cf_flag_u.c.o
-uls: CMakeFiles/uls.dir/src/cf_flag_c.c.o
-uls: CMakeFiles/uls.dir/src/cf_flag_Uu.c.o
+uls: CMakeFiles/uls.dir/src/wc_utilities.c.o
 uls: CMakeFiles/uls.dir/build.make
 uls: CMakeFiles/uls.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Linking C executable uls"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Linking C executable uls"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uls.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
