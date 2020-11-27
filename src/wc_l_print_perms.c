@@ -19,21 +19,21 @@ static inline void printPerms_lastChar(char *p) {
     mx_printchar((st.st_mode & S_IWUSR) ? 'w' : '-');
     //Char 4
     mx_printchar((st.st_mode & S_IXUSR) ?
-             ((st.st_mode & S_ISUID) ? 's' : 'x') :
-             ((st.st_mode & S_ISUID) ? 'S' : '-'));
+                ((st.st_mode & S_ISUID) ? 's' : 'x') :
+                ((st.st_mode & S_ISUID) ? 'S' : '-'));
     //Chars 5 & 6
     mx_printchar((st.st_mode& S_IRGRP) ? 'r' : '-');
     mx_printchar((st.st_mode & S_IWGRP) ? 'w' : '-');
     //Char 7
     mx_printchar((st.st_mode & S_IXGRP) ?
-             ((st.st_mode & S_ISGID) ? 's' : 'x') :
-             ((st.st_mode & S_ISGID) ? 'S' : '-'));
+                ((st.st_mode & S_ISGID) ? 's' : 'x') :
+                ((st.st_mode & S_ISGID) ? 'S' : '-'));
     //char 8 & 9
     mx_printchar((st.st_mode& S_IROTH) ? 'r' : '-');
     mx_printchar((st.st_mode & S_IWOTH) ? 'w' : '-');
     //Char 10
     mx_printchar((st.st_mode & S_IXOTH) ?
-             ((st.st_mode & S_ISTXT) ? 't' : 'x') :
-             ((st.st_mode & S_ISTXT) ? 'T' : '-'));
+                ((st.st_mode & S_ISTXT) ? 't' : 'x') :
+                ((st.st_mode & S_ISTXT) ? 'T' : '-'));
     printPerms_lastChar(p);
 }

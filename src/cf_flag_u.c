@@ -16,7 +16,7 @@ static bool cmpLexographical(t_obj *obj1, t_obj *obj2) {
 void cf_flag_u(t_obj **d, int d_amt, const bool *fl) {
 
     if (fl[u] && fl[t]) {
-        mx_quicksortObj(d, 0, d_amt - 1, cmpLexographical);
+        wc_quicksortObj(d, 0, d_amt - 1, cmpLexographical);
         for (int i = 0; i < d_amt; i++)
             if (d[i]->kids_amt)
                 cf_flag_u(d[i]->kids, d[i]->kids_amt, fl);
