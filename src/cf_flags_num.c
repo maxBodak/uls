@@ -7,8 +7,8 @@ static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
 
     for (int i = 0; i < ALL_FLAGS; i++)//обнулить буловый массив
         flags[i] = false;
-    for (int i = 0; i < count_flags; i++)//убрать дубликаты в строке флагов
-        for (int j = i + 1; j < count_flags; j++)
+    for (int i = count_flags - 1 ; i >= 0; i--)//убрать дубликаты в строке флагов
+        for (int j = i - 1; j >= 0; j--)
             if (flags_char[i] == flags_char[j] && flags_char[i] != '-')
                 flags_char[j] = '-';
     for (int i = 0, j = 0; i < count_flags; i++) //дать прaвдивое значение флага в буловом массиве
@@ -23,7 +23,7 @@ static void char_cmp(int i, int j, char *flags_char, bool *flags) {
 }
 
 static inline void cmp_flags(char *flags_char, bool *flags, int i) {
-    for (int j = i - 1; j >= 0; j--) {
+    for (int j = i; j >= 0; j--) {
         if (flags_char[j] == 'l')
             char_cmp(l, j, flags_char, flags);
         else if (flags_char[j] == 'm')
@@ -39,7 +39,8 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
     for (int i = count_flags - 1; i >= 0; i--) {
         if(flags_char[i] == 'l' || flags_char[i] == 'm' ||
                 flags_char[i] == 'C' || flags_char[i] == '1' )
-            cmp_flags(flags_char, flags, i);
+            cmp_flags(flags_char, flags, i - 1);
+
         else if(flags_char[i] == 'u' || flags_char[i] == 'c')
             for (int j = i - 1; j >= 0; j--) {
                 if (flags_char[j] == 'u') {
@@ -48,6 +49,7 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
                 else if (flags_char[j] == 'c')
                     char_cmp(c, j, flags_char, flags);
             }
+
         else if(flags_char[i] == 'F' || flags_char[i] == 'p') {
             for (int j = i - 1; j >= 0; j--) {
                 if (flags_char[j] == 'F') {
@@ -56,6 +58,7 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
                     char_cmp(p, j, flags_char, flags);
             }
         }
+
         else if(flags_char[i] == 'L' || flags_char[i] == 'H') {
             for (int j = i - 1; j >= 0; j--) {
                 if (flags_char[j] == 'H') {

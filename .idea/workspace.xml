@@ -33,9 +33,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_flags_num.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_num.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,11 +102,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="uls" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="uls" TARGET_NAME="uls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="uls" RUN_TARGET_NAME="uls">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -149,6 +143,7 @@
       <workItem from="1606494401740" duration="72000" />
       <workItem from="1606494595582" duration="31000" />
       <workItem from="1606494640042" duration="5088000" />
+      <workItem from="1606595073387" duration="1385000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
