@@ -1,6 +1,6 @@
 #include "uls.h"
 
-t_lout wc_getSizesForL(t_obj **fp, int fp_amt) {
+t_lout wc_getSizesForL(t_obj **fp, int fp_amt, bool *fl) {
     t_lout r;
     struct passwd* tmp = getpwuid(fp[0]->st.st_uid);
     struct group *tmp_g = getgrgid(fp[0]->st.st_gid);
@@ -16,13 +16,13 @@ t_lout wc_getSizesForL(t_obj **fp, int fp_amt) {
             link = fp[i]->st.st_nlink;
         //Column 3 (owner)
         tmp = getpwuid(fp[i]->st.st_uid);
-        if (tmp && r.b_owner < mx_strlen_safe(tmp->pw_name))
+        if (tmp && !fl[n] && r.b_owner < mx_strlen_safe(tmp->pw_name))
             r.b_owner = mx_strlen_safe(tmp->pw_name);
         else if (!tmp && r.b_owner < wc_getBitDepth(fp[i]->st.st_uid))
             r.b_owner = wc_getBitDepth(fp[i]->st.st_uid);
         //Column 4 (group)
         tmp_g = getgrgid(fp[i]->st.st_gid);
-        if (tmp_g && r.c_group < mx_strlen_safe(tmp_g->gr_name))
+        if (tmp_g && !fl[n] && r.c_group < mx_strlen_safe(tmp_g->gr_name))
             r.c_group = mx_strlen_safe(tmp_g->gr_name);
         else if (!tmp_g && r.c_group < wc_getBitDepth(fp[i]->st.st_gid))
             r.c_group = wc_getBitDepth(fp[i]->st.st_gid);

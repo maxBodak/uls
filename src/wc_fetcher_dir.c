@@ -24,6 +24,7 @@ static inline t_obj *initDir(char *p, bool *fl) {
         d->kids = NULL;
         d->type = perm_denied;
         d->is_root = false;
+        d->is_deadl = false;
         fl[err] = true;
     } else {
         while ((ep = readdir(dp)))
@@ -32,6 +33,7 @@ static inline t_obj *initDir(char *p, bool *fl) {
         d->kids = (t_obj **)malloc(sizeof(t_obj *) * count);
         d->kids_amt = count;
         count = fl[L] ? stat(p, &stats) : lstat(p, &stats);
+        d->is_deadl = count ? true : false;;
         count = count ? lstat(p, &stats) : count;
         d->type = wc_getType(stats);
         d->is_root = false;
@@ -57,7 +59,6 @@ static inline char *addPrefix(char *prefix, char *str) {
         free(t2);
     }
     return t1;
-
 }/*==========================================================================*/
 t_obj *wc_fetchDirInfo(char *p, bool *fl) {
     DIR *dp;
@@ -86,6 +87,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
 
                 e = fl[L] ? stat(res->kids[i]->path_name, &(res->kids[i]->st)) :
                             lstat(res->kids[i]->path_name, &(res->kids[i]->st));
+                res->kids[i]->is_deadl = e ? true : false;
                 e = e ? lstat(res->kids[i]->path_name, &(res->kids[i]->st)) : e;
                 if (res->kids[i]->type != perm_denied)
                     res->kids[i]->type = wc_getType(res->kids[i]->st);

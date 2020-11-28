@@ -15,7 +15,7 @@ static inline void printDog(t_obj *obj) {
     }
 }
 void wc_printWithL(t_obj **fp, int fp_amt, bool *fl, bool use_total) {
-    t_lout spaces = wc_getSizesForL(fp, fp_amt);
+    t_lout spaces = wc_getSizesForL(fp, fp_amt, fl);
     if (use_total) {
         mx_printstr("total ");
         mx_printint(spaces.total);

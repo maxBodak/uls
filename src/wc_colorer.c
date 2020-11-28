@@ -1,6 +1,6 @@
 #include "uls.h"
 
-static void colorDir(struct stat sb) {
+static inline void colorDir(struct stat sb) {
     if ((sb.st_mode & S_IWOTH) == S_IWOTH
         && (sb.st_mode & S_ISVTX) == S_ISVTX)
         mx_printstr(DIR_T);
@@ -10,7 +10,7 @@ static void colorDir(struct stat sb) {
     else
         mx_printstr(BLU);
 }//*--------------------------------------------------------------------------*/
-static void colorFile(struct stat sb) {
+static inline void colorFile(struct stat sb) {
     if ((sb.st_mode & S_ISUID) == S_ISUID)
         mx_printstr(BLK_F_RED_B );
     else if ((sb.st_mode & S_ISGID) == S_ISGID)
@@ -20,7 +20,7 @@ static void colorFile(struct stat sb) {
     else
         mx_printstr(RESET);
 }//*--------------------------------------------------------------------------*/
-static void colorLink(t_obj *obj, bool *fl) {
+static inline void colorLink(t_obj *obj, bool *fl) {
     if (fl[l] || !obj->is_root)
         mx_printstr(MAG);
     else {
