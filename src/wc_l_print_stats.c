@@ -63,7 +63,7 @@ void wc_printStats(struct stat st, t_lout l, bool *fl) {
     mx_printint(st.st_nlink);
     //Column 3 (owner)
     mx_printchar(' ');
-    if (tmp) {
+    if (tmp && !fl[n]) {
         mx_printstr(tmp->pw_name);
         for (int i = l.b_owner - mx_strlen(tmp->pw_name); i > 0; i--)
             mx_printchar(' ');
@@ -73,15 +73,17 @@ void wc_printStats(struct stat st, t_lout l, bool *fl) {
             mx_printchar(' ');
     }
     // Column 4 (group)
-    mx_printstr("  ");
-    if (tmp_g) {
-        mx_printstr(tmp_g->gr_name);
-        for (int i = l.c_group - mx_strlen(tmp_g->gr_name); i > 0; i--)
-            mx_printchar(' ');
-    } else {
-        mx_printint(st.st_gid);
-        for (int i = l.c_group - wc_getBitDepth(st.st_gid); i > 0; i--)
-            mx_printchar(' ');
+    if (!fl[o]) {
+        mx_printstr("  ");
+        if (tmp_g && !fl[n]) {
+            mx_printstr(tmp_g->gr_name);
+            for (int i = l.c_group - mx_strlen(tmp_g->gr_name); i > 0; i--)
+                mx_printchar(' ');
+        } else {
+            mx_printint(st.st_gid);
+            for (int i = l.c_group - wc_getBitDepth(st.st_gid); i > 0; i--)
+                mx_printchar(' ');
+        }
     }
     printSize(st, l, fl);
 }

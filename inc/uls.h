@@ -83,7 +83,7 @@ void wc_printWithC(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithOne(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithM(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithL(t_obj **fp, int fp_amt, bool *fl, bool use_total);
-t_lout wc_getSizesForL(t_obj **fp, int fp_amt);
+t_lout wc_getSizesForL(t_obj **fp, int fp_amt, bool *fl);
 void wc_printPerms(struct stat st, char *p);
 void wc_printStats(struct stat st, t_lout l, bool *fl);
 void wc_printTime(struct stat st, bool *fl);
