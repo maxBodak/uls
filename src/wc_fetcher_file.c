@@ -7,6 +7,6 @@ t_obj *wc_fetchFileInfo(char *p) {
     f->s_name = wc_getShortName(p);
     f->kids_amt = 0;
     f->kids = NULL;
-    f->type = file;
+    f->type = wc_getType(f->st);
     return f;
 }

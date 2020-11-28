@@ -1,5 +1,13 @@
 #include "uls.h"
 
+static inline bool usePathName(char *p) {
+    while (*p) {
+        if (p[0] == '/' && p[1] != '\0')
+            return true;
+        p++;
+    }
+    return false;
+}
 t_data *wc_fetchData(t_path *p, bool *fl) {
     int dcount = 0;
     t_data *res = NULL;
@@ -19,10 +27,16 @@ t_data *wc_fetchData(t_path *p, bool *fl) {
             res->files_path = (t_obj **)malloc(sizeof(t_obj *) * res->files_amt);
         
         for (int i = 0, j = 0, k = 0; k < p->amt; k++) {
-            if (p->isdir[k])
+            if (p->isdir[k]) {
                 res->dirs_path[j++] = wc_fetchDirInfo(p->path[k], fl);
-            else
+                if (usePathName(p->path[k]))
+                    res->dirs_path[j - 1]->use_pname = true;
+            }
+            else {
                 res->files_path[i++] = wc_fetchFileInfo(p->path[k]);
+                if (usePathName(p->path[k]))
+                    res->files_path[i - 1]->use_pname = true;
+            }
         }
     }
     return res;
