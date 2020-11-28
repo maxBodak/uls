@@ -5,11 +5,10 @@ t_lout wc_getSizesForL(t_obj **fp, int fp_amt) {
     struct passwd* tmp = getpwuid(fp[0]->st.st_uid);
     struct group *tmp_g = getgrgid(fp[0]->st.st_gid);
     int link = fp[0]->st.st_nlink;
-    
     r.d_size = 0;
     r.total = fp[0]->st.st_blocks;
-    r.b_owner = mx_strlen_safe(tmp->pw_name);
-    r.c_group = mx_strlen_safe(tmp_g->gr_name);
+    r.b_owner = 0;
+    r.c_group = 0;
     r.d_minor = false;
     for (int i = 0; i < fp_amt; i++) {
         //Column 2 (links)

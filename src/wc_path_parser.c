@@ -75,6 +75,8 @@ t_path *wc_getPaths(int argc, char *argv[], bool *fl) {
     status = (char *)malloc(sizeof(char) * (argc - flags));
     for(int i = flags; i < argc; i++) {
         status[i - flags] = checkPath(argv[i], fl);
+        // -d flag check
+        status[i - flags] = fl[d] ? 2 : status[i - flags];
         fakes += !status[i - flags];
     }
     return initPaths(argc, argv, status, flags, fakes, fl);
