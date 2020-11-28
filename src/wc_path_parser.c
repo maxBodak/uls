@@ -3,9 +3,17 @@
 static inline char checkPath(char *path) {
     struct stat stats;
     int e = stat(path, &stats);
-    
+    char t = wc_getType(stats);
+
     if (!e) {
-        if (S_ISDIR(stats.st_mode))
+        if (t == dir)
+            return 1;
+        return 2;
+    }
+    e = lstat(path, &stats);
+    t = wc_getType(stats);
+    if (!e) {
+        if (t == dir)
             return 1;
         return 2;
     }

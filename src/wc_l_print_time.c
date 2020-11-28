@@ -21,8 +21,9 @@ void wc_printTime(struct stat st, bool *fl) {
         mx_printstr(sub);
     }
     else {
-        sub = mx_substr(ctime(&(time)), 4, 16); 
+        sub = mx_substr(ctime(&(time)), 4, fl[T] ? 24 : 16); 
         mx_printstr(sub);
-        free(sub);
     }
+    free(sub);
 }/*==========================================================================*/
+

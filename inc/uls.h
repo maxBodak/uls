@@ -20,7 +20,7 @@
 #define RED       "\x1B[31m"
 #define GRN       "\x1B[32m"
 #define YEL       "\x1B[33m"
-#define BLU       "\x1B[34m"
+#define BLU       "\x1B[1m\x1B[36m"
 #define MAG       "\x1B[35m"
 #define RESET     "\x1B[0m"
 #define BLK_F_RED_B "\x1B[0;30;41m"
@@ -52,6 +52,7 @@ typedef struct s_obj {
     struct stat st;
     int kids_amt;
     char type;
+    bool use_pname;
 }              t_obj;
 typedef struct s_data {
     t_obj **dirs_path;
@@ -65,6 +66,7 @@ typedef struct s_lout {
     short b_owner;
     short c_group;
     short d_size;
+    bool d_minor;
 }               t_lout;
 
 /*-----------Fetchers-------------*/
@@ -76,6 +78,8 @@ t_data *wc_fetchData(t_path *p, bool *fl);
 //void wc_printShortName(char *p);
 char *wc_getShortName(char *p);
 short wc_getBitDepth(int a);
+char wc_getType(struct stat st);
+void wc_printDouble(double n);
 //char *getStatName(char *name);
 /*-----------Cleaners------------*/
 void wc_freePath(t_path *p);
@@ -86,15 +90,15 @@ void wc_printName(t_obj *obj, bool *fl);
 void wc_printWithC(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithOne(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithM(t_obj **fp, int fp_amt, bool *fl);
-void wc_printWithL(t_obj **fp, int fp_amt, bool *fl);
+void wc_printWithL(t_obj **fp, int fp_amt, bool *fl, bool use_total);
 t_lout wc_getSizesForL(t_obj **fp, int fp_amt);
 void wc_printPerms(struct stat st, char *p);
-void wc_printStats(struct stat st, t_lout l);
+void wc_printStats(struct stat st, t_lout l, bool *fl);
 void wc_printTime(struct stat st, bool *fl);
-/*-----------Temp-----------------*/
+/*-----------Print Manager-----------------*/
 void wc_printResult(t_data *d, bool *flocktimeout);
 void wc_printDir(t_obj *obj, bool *fl);
-void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl);
+void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl, bool use_total);
 /*-----------Sorting--------------*/
 void wc_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
 /*-----------Errors---------------*/

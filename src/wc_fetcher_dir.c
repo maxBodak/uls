@@ -6,14 +6,6 @@ static inline bool isDot(char *name) {
 static inline bool isHidden(char *name) {
     return name[0] == '.';
 }/*--------------------------------------------------------------------------*/
-static inline char getType(struct stat st) {
-    return S_ISFIFO(st.st_mode) ? fifo :
-            S_ISCHR(st.st_mode) ? chr :
-            S_ISBLK(st.st_mode) ? blk : 
-            S_ISLNK(st.st_mode) ? lnk : 
-            S_ISSOCK(st.st_mode) ? sock :
-            S_ISDIR(st.st_mode) ? dir : file;
-}/*--------------------------------------------------------------------------*/
 static inline t_obj *initDir(char *p, bool *fl) {
     DIR *dp;
     struct dirent *ep;
@@ -37,7 +29,7 @@ static inline t_obj *initDir(char *p, bool *fl) {
         d->kids = (t_obj **)malloc(sizeof(t_obj *) * count);
         d->kids_amt = count;
         lstat(p, &stats);
-        d->type = getType(stats);
+        d->type = wc_getType(stats);
         closedir(dp);
     }
     return d;
@@ -81,7 +73,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                 }
                 lstat(res->kids[i]->path_name, &(res->kids[i]->st));
                 if (res->kids[i]->type != perm_denied)
-                    res->kids[i]->type = getType(res->kids[i]->st);
+                    res->kids[i]->type = wc_getType(res->kids[i]->st);
                 i++;
             }
         }

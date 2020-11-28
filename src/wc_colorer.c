@@ -9,8 +9,7 @@ static void colorDir(struct stat sb) {
         mx_printstr(DIR_X);
     else
         mx_printstr(BLU);
-}
-
+}//*--------------------------------------------------------------------------*/
 static void colorFile(struct stat sb) {
     if ((sb.st_mode & S_ISUID) == S_ISUID)
         mx_printstr(BLK_F_RED_B );
@@ -20,8 +19,23 @@ static void colorFile(struct stat sb) {
         mx_printstr(RED);
     else
         mx_printstr(RESET);
-}
-
+}//*--------------------------------------------------------------------------*/
+static void colorLink(t_obj *obj, bool *fl) {
+    if (fl[l])
+        mx_printstr(MAG);
+    else {
+        struct stat stats;
+        stat(obj->path_name, &stats);
+        if (S_ISREG(stats.st_mode))
+            colorFile(stats);
+        else {
+            mx_printstr(S_ISFIFO(stats.st_mode) ? YEL :
+                        S_ISCHR(stats.st_mode) ? CHR :
+                        S_ISBLK(stats.st_mode) ? BLOCK :
+                        S_ISSOCK(stats.st_mode) ? GRN : MAG);
+        }
+    }
+}//*--------------------------------------------------------------------------*/
 void wc_printName(t_obj *obj, bool *fl) {
     if (fl[G]) {
         if (S_ISFIFO(obj->st.st_mode))
@@ -30,16 +44,16 @@ void wc_printName(t_obj *obj, bool *fl) {
             mx_printstr(CHR);
         else if (S_ISBLK(obj->st.st_mode))
             mx_printstr(BLOCK);
-        else if (S_ISLNK(obj->st.st_mode))
-            mx_printstr(MAG);
         else if (S_ISSOCK(obj->st.st_mode))
             mx_printstr(GRN);
+        else if (S_ISLNK(obj->st.st_mode))
+            colorLink(obj, fl);
         else if (S_ISDIR(obj->st.st_mode))
             colorDir(obj->st);
         else if (S_ISREG(obj->st.st_mode))
             colorFile(obj->st);
-        mx_printstr(obj->s_name);
+        mx_printstr(obj->use_pname ? obj->path_name : obj->s_name);
         mx_printstr(RESET);
     } else
-        mx_printstr(obj->s_name);
+        mx_printstr(obj->use_pname ? obj->path_name : obj->s_name);
 }

@@ -5,7 +5,7 @@ static void swapObj(t_obj **a, t_obj **b) {
 
     *a = *b;
     *b = temp;
-}
+}//*--------------------------------------------------------------------------*/
 static int partition(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *)) {
     int p = (r + l) / 2;
 
@@ -21,7 +21,7 @@ static int partition(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *)) {
         r -= 1 * (r != p);
     }
     return p;
-}
+}//*--------------------------------------------------------------------------*/
 void wc_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *)) {
     int p;
 
