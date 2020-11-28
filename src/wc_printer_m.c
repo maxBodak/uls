@@ -1,6 +1,6 @@
 #include "uls.h"
 
-static void printDelimiter(int *len, char *name, int win_col) {
+static inline void printDelimiter(int *len, char *name, int win_col) {
     int ln = mx_strlen(name);
 
     mx_printstr(", ");

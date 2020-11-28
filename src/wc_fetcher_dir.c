@@ -59,7 +59,6 @@ static inline char *addPrefix(char *prefix, char *str) {
         free(t2);
     }
     return t1;
-
 }/*==========================================================================*/
 t_obj *wc_fetchDirInfo(char *p, bool *fl) {
     DIR *dp;

@@ -1,6 +1,6 @@
 #include"uls.h"
 
-static bool cmpLexographical(t_obj *obj1, t_obj *obj2) {
+static inline bool cmpLexographical(t_obj *obj1, t_obj *obj2) {
     char *s1 = obj1->s_name;
     char *s2 = obj2->s_name;
 

@@ -35,17 +35,4 @@ void wc_printDouble(double n) {
         mx_printint((int)((n - (int)n) * 10));
     }
 }//*--------------------------------------------------------------------------*/
-// void wc_printShortName(char *p) {
-//     int l = mx_strlen_safe(p) - 1;
 
-//     for (;l > 0 && p[l] != '/'; l--);
-//     l += (l != 0);
-//     p += l;
-//     mx_printstr(p);
-// }/*--------------------------------------------------------------------------*/
-// char *getStatName(char *name) {
-//     int l = mx_strlen_safe(name) - 1;
-
-//     for (;l > 0 && name[l] != '.'; l--);
-//     return l ? mx_strndup(name, l) : mx_strdup(name);
-// }
