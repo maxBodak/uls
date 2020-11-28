@@ -47,7 +47,7 @@ void wc_printResult(t_data *d, bool *fl) {
     
         for (int i = 0; i < d->dirs_amt; i++) {
             mx_printstr(d->dirs_path[i]->path_name);
-            mx_printstr(": \n");
+            mx_printstr(":\n");
 
             if (d->dirs_path[i]->type != perm_denied)
                 printDir(d->dirs_path[i], fl);

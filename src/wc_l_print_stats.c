@@ -9,15 +9,15 @@ static inline void printH(struct stat st) {
         mx_printchar('B');
     }
     else if (st.st_size >= 1000 && st.st_size < 1000000) {
-        wc_printDouble((double)st.st_size / 1000);
+        wc_printDouble((double)st.st_size / BIBYTE);
         mx_printchar('K');
     }
     else if (st.st_size >= 1000000 && st.st_size < 1000000000) {
-        wc_printDouble((double)st.st_size / 1000 / 1000);
+        wc_printDouble((double)st.st_size / BIBYTE / BIBYTE);
         mx_printchar('M');
     }
     else if (st.st_size >= 1000000000 && st.st_size < 1000000000000) {
-        wc_printDouble((double)st.st_size / 1000 / 1000 / 1000);
+        wc_printDouble((double)st.st_size / BIBYTE / BIBYTE / BIBYTE);
         mx_printchar('G');
     }
 }

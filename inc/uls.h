@@ -29,6 +29,7 @@
 #define CHR "\x1B[0;34;43m"
 #define DIR_T "\x1B[0;30;42m"
 #define DIR_X "\033[0;30;43m"
+#define BIBYTE 1024
 
 enum types {
     fifo,
