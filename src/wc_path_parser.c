@@ -1,11 +1,11 @@
 #include "uls.h"
 
-static inline char checkPath(char *path) {
+static inline char checkPath(char *path, bool *fl) {
     struct stat stats;
     int e = stat(path, &stats);
     char t = wc_getType(stats);
 
-    if (!e) {
+    if (!e && !fl[l]) {
         if (t == dir)
             return 1;
         return 2;
@@ -58,7 +58,7 @@ static inline t_path *initPaths(int argc, char *argv[], char *status,
     free(status);
     return p;
 }/*==========================================================================*/
-t_path *wc_getPaths(int argc, char *argv[]) {
+t_path *wc_getPaths(int argc, char *argv[], bool*fl) {
     int fakes = 0;
     int flags = 1;
     char *status = NULL;
@@ -73,7 +73,7 @@ t_path *wc_getPaths(int argc, char *argv[]) {
 
     status = (char *)malloc(sizeof(char) * (argc - flags));
     for(int i = flags; i < argc; i++) {
-        status[i - flags] = checkPath(argv[i]);
+        status[i - flags] = checkPath(argv[i], fl);
         fakes += !status[i - flags];
     }
     return initPaths(argc, argv, status, flags, fakes);

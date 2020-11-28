@@ -2,7 +2,7 @@
   void wc_errorNoPath(char *path) {
     mx_printerr("uls: ");
     mx_printerr(path);
-    mx_printerr(": No such file or directory exists\n");
+    mx_printerr(": No such file or directory\n");
 }/*--------------------------------------------------------------------------*/
 void wc_errorPermDenied(char *name_of_dir) {
     for (int i = mx_strlen(name_of_dir); i >= 0; i--) {

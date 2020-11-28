@@ -21,7 +21,7 @@ static void colorFile(struct stat sb) {
         mx_printstr(RESET);
 }//*--------------------------------------------------------------------------*/
 static void colorLink(t_obj *obj, bool *fl) {
-    if (fl[l])
+    if (fl[l] || !obj->use_pname)
         mx_printstr(MAG);
     else {
         struct stat stats;

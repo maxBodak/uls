@@ -70,7 +70,7 @@ typedef struct s_lout {
 }               t_lout;
 
 /*-----------Fetchers-------------*/
-t_path *wc_getPaths(int argc, char *argv[]);
+t_path *wc_getPaths(int argc, char *argv[], bool *fl);
 t_obj *wc_fetchDirInfo(char *p, bool *fl);
 t_obj *wc_fetchFileInfo(char *p);
 t_data *wc_fetchData(t_path *p, bool *fl);

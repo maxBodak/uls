@@ -3,7 +3,7 @@
 int main(int argc, char ** argv) {
 //Parsing
     bool *fl = cf_bool_manip(argc, argv);
-    t_path *p = wc_getPaths(argc, argv);
+    t_path *p = wc_getPaths(argc, argv, fl);
 //Fetching
     t_data *d = wc_fetchData(p, fl);
 //Sorting
