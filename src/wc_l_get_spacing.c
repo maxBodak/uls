@@ -6,7 +6,7 @@ t_lout wc_getSizesForL(t_obj **fp, int fp_amt) {
     struct group *tmp_g = getgrgid(fp[0]->st.st_gid);
     int link = fp[0]->st.st_nlink;
     r.d_size = 0;
-    r.total = fp[0]->st.st_blocks;
+    r.total = 0;
     r.b_owner = 0;
     r.c_group = 0;
     r.d_minor = false;
