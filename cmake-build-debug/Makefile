@@ -2357,6 +2357,33 @@ src/cf_flag_u.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_u.c.s
 .PHONY : src/cf_flag_u.c.s
 
+src/cf_flags_F_and_p.o: src/cf_flags_F_and_p.c.o
+
+.PHONY : src/cf_flags_F_and_p.o
+
+# target to build an object file
+src/cf_flags_F_and_p.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flags_F_and_p.c.o
+.PHONY : src/cf_flags_F_and_p.c.o
+
+src/cf_flags_F_and_p.i: src/cf_flags_F_and_p.c.i
+
+.PHONY : src/cf_flags_F_and_p.i
+
+# target to preprocess a source file
+src/cf_flags_F_and_p.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flags_F_and_p.c.i
+.PHONY : src/cf_flags_F_and_p.c.i
+
+src/cf_flags_F_and_p.s: src/cf_flags_F_and_p.c.s
+
+.PHONY : src/cf_flags_F_and_p.s
+
+# target to generate assembly for a file
+src/cf_flags_F_and_p.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flags_F_and_p.c.s
+.PHONY : src/cf_flags_F_and_p.c.s
+
 src/cf_flags_check.o: src/cf_flags_check.c.o
 
 .PHONY : src/cf_flags_check.o
@@ -3233,6 +3260,9 @@ help:
 	@echo "... src/cf_flag_u.o"
 	@echo "... src/cf_flag_u.i"
 	@echo "... src/cf_flag_u.s"
+	@echo "... src/cf_flags_F_and_p.o"
+	@echo "... src/cf_flags_F_and_p.i"
+	@echo "... src/cf_flags_F_and_p.s"
 	@echo "... src/cf_flags_check.o"
 	@echo "... src/cf_flags_check.i"
 	@echo "... src/cf_flags_check.s"

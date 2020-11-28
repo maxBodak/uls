@@ -86,6 +86,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_r.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flag_r.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_t.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flag_t.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flag_u.c.o"
+  "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_F_and_p.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flags_F_and_p.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_check.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flags_check.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_flags_num.c.o"
   "/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c" "/Users/mtsyfir/Desktop/Sprints/St_2/uls/cmake-build-debug/CMakeFiles/uls.dir/src/cf_isatty.c.o"

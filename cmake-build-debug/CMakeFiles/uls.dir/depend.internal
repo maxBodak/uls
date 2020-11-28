@@ -250,6 +250,11 @@ CMakeFiles/uls.dir/src/cf_flag_u.c.o
  ../inc/cf_uls.h
  ../inc/uls.h
  /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c
+CMakeFiles/uls.dir/src/cf_flags_F_and_p.c.o
+ ../Libmx/inc/libmx.h
+ ../inc/cf_uls.h
+ ../inc/uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_F_and_p.c
 CMakeFiles/uls.dir/src/cf_flags_check.c.o
  ../Libmx/inc/libmx.h
  ../inc/cf_uls.h

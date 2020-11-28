@@ -47,6 +47,14 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
                 else if (flags_char[j] == 'c')
                     char_cmp(c, j, flags_char, flags);
             }
+        else if(flags_char[i] == 'F' || flags_char[i] == 'p') {
+            for (int j = i - 1; j >= 0; j--) {
+                if (flags_char[j] == 'F') {
+                    char_cmp(F, j, flags_char, flags);
+                } else if (flags_char[j] == 'p')
+                    char_cmp(p, j, flags_char, flags);
+            }
+        }
     }
 }
 

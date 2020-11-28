@@ -81,6 +81,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/uls.dir/src/cf_flag_r.c.o"
   "CMakeFiles/uls.dir/src/cf_flag_t.c.o"
   "CMakeFiles/uls.dir/src/cf_flag_u.c.o"
+  "CMakeFiles/uls.dir/src/cf_flags_F_and_p.c.o"
   "CMakeFiles/uls.dir/src/cf_flags_check.c.o"
   "CMakeFiles/uls.dir/src/cf_flags_num.c.o"
   "CMakeFiles/uls.dir/src/cf_isatty.c.o"
