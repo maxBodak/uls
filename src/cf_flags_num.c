@@ -3,7 +3,7 @@
 static inline void fill_bool(char *flags_char, bool *flags, int count_flags) {
     char flag[ALL_FLAGS] = {'G', 'U', 'F', 'f', 'a', 'A', 'R', 'l', '1',
                             'm', 'C', 'S', 't','r', 'p', 'u', 'c', '@', 'e',
-                            'h', 'T', 'd'};
+                            'h', 'T', 'd', 'L', 'H'};
 
     for (int i = 0; i < ALL_FLAGS; i++)//обнулить буловый массив
         flags[i] = false;
@@ -54,6 +54,14 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
                     char_cmp(F, j, flags_char, flags);
                 } else if (flags_char[j] == 'p')
                     char_cmp(p, j, flags_char, flags);
+            }
+        }
+        else if(flags_char[i] == 'L' || flags_char[i] == 'H') {
+            for (int j = i - 1; j >= 0; j--) {
+                if (flags_char[j] == 'H') {
+                    char_cmp(H, j, flags_char, flags);
+                } else if (flags_char[j] == 'L')
+                    char_cmp(L, j, flags_char, flags);
             }
         }
     }

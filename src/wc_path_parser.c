@@ -5,26 +5,28 @@ static inline char checkPath(char *path, bool *fl) {
     int e = stat(path, &stats);
     char t = wc_getType(stats);
 
-    if (!e && !fl[l]) {
+    if (!e && (!fl[l] || fl[H] || (fl[L]))) {
         if (t == dir)
             return 1;
         return 2;
     }
-    e = lstat(path, &stats);
-    t = wc_getType(stats);
-    if (!e) {
-        if (t == dir)
-            return 1;
-        return 2;
+    else {
+        e = lstat(path, &stats);
+        t = wc_getType(stats);
+        if (!e) {
+            if (t == dir)
+                return 1;
+            return 2;
+        }
     }
     return 0;
 }/*--------------------------------------------------------------------------*/
-static inline t_path *CurDirPath() {
+static inline t_path *CurDirPath(bool *fl) {
     t_path *p = (t_path *)malloc(sizeof(t_path));
 
     p->amt = 1;
     p->isdir = (bool *)malloc(sizeof(bool));
-    p->isdir[0] = true;
+    p->isdir[0] = fl[d] ? false : true;
     p->path = (char **)malloc(sizeof(char *));
     p->path[0] = (char *)malloc(sizeof(char) * 2);
     p->path[0][0] = '.';
@@ -70,7 +72,7 @@ t_path *wc_getPaths(int argc, char *argv[], bool *fl) {
                 break;
 
     if (argc - flags == 0)
-            return CurDirPath();
+            return CurDirPath(fl);
 
     status = (char *)malloc(sizeof(char) * (argc - flags));
     for(int i = flags; i < argc; i++) {

@@ -31,7 +31,8 @@ static inline t_obj *initDir(char *p, bool *fl) {
                 count++;
         d->kids = (t_obj **)malloc(sizeof(t_obj *) * count);
         d->kids_amt = count;
-        lstat(p, &stats);
+        count = fl[L] ? stat(p, &stats) : lstat(p, &stats);
+        count = count ? lstat(p, &stats) : count;
         d->type = wc_getType(stats);
         d->is_root = false;
         closedir(dp);
@@ -62,8 +63,8 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
     DIR *dp;
     char *buf = NULL;
     struct dirent *ep;
-    //mx_printerr("init dir call\n");
     t_obj *res = initDir(p, fl);
+    int e;
 
     dp = opendir (p);
     if (dp) {
@@ -82,7 +83,10 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                     res->kids[i]->kids = NULL;
                 }
                 res->kids[i]->is_root = false;
-                lstat(res->kids[i]->path_name, &(res->kids[i]->st));
+
+                e = fl[L] ? stat(res->kids[i]->path_name, &(res->kids[i]->st)) :
+                            lstat(res->kids[i]->path_name, &(res->kids[i]->st));
+                e = e ? lstat(res->kids[i]->path_name, &(res->kids[i]->st)) : e;
                 if (res->kids[i]->type != perm_denied)
                     res->kids[i]->type = wc_getType(res->kids[i]->st);
                 i++;

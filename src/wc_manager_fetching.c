@@ -35,7 +35,7 @@ t_data *wc_fetchData(t_path *p, bool *fl) {
                 }
             }
             else {
-                res->files_path[i++] = wc_fetchFileInfo(p->path[k]);
+                res->files_path[i++] = wc_fetchFileInfo(p->path[k], fl);
                 if (usePathName(p->path[k])) {
                     res->files_path[i - 1]->s_name = res->files_path[i - 1]->path_name;
                     res->files_path[i - 1]->is_root = true;

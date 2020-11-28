@@ -9,7 +9,6 @@ static inline void printH(struct stat st) {
         mx_printchar('B');
     }
     else if (st.st_size >= 1000 && st.st_size < 1000000) {
-        
         wc_printDouble((double)st.st_size / 1000);
         mx_printchar('K');
     }
