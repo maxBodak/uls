@@ -22,6 +22,10 @@ void wc_printWithL(t_obj **fp, int fp_amt, bool *fl, bool use_total) {
         mx_printchar('\n');
     }
     for(int i = 0; i < fp_amt; i++) {
+        if (fl[ii]) {
+            mx_printint(fp[i]->st.st_ino);
+            mx_printchar(' ');
+        }
         wc_printPerms(fp[i]->st, fp[i]->path_name);
         wc_printStats(fp[i]->st, spaces, fl);
         wc_printTime(fp[i]->st, fl);

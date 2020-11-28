@@ -57,24 +57,27 @@ static inline void printSize(struct stat st, t_lout l, bool *fl) {
 void wc_printStats(struct stat st, t_lout l, bool *fl) {
     struct passwd* tmp = getpwuid(st.st_uid);
     struct group *tmp_g = getgrgid(st.st_gid);
+
     //Column 2 (links)
     for (int i = l.a_link - wc_getBitDepth(st.st_nlink); i >= 0; i--)
         mx_printchar(' ');
     mx_printint(st.st_nlink);
     //Column 3 (owner)
-    mx_printchar(' ');
-    if (tmp && !fl[n]) {
-        mx_printstr(tmp->pw_name);
-        for (int i = l.b_owner - mx_strlen(tmp->pw_name); i > 0; i--)
-            mx_printchar(' ');
-    } else {
-        mx_printint(st.st_uid);
-        for (int i = l.b_owner - wc_getBitDepth(st.st_uid); i > 0; i--)
-            mx_printchar(' ');
+    if (!fl[g]) {
+        mx_printchar(' ');
+        if (tmp && !fl[n]) {
+            mx_printstr(tmp->pw_name);
+            for (int i = l.b_owner - mx_strlen(tmp->pw_name); i > 0; i--)
+                mx_printchar(' ');
+        } else {
+            mx_printint(st.st_uid);
+            for (int i = l.b_owner - wc_getBitDepth(st.st_uid); i > 0; i--)
+                mx_printchar(' ');
+        }
     }
     // Column 4 (group)
     if (!fl[o]) {
-        mx_printstr("  ");
+        mx_printstr(fl[g] ? " " : "  ");
         if (tmp_g && !fl[n]) {
             mx_printstr(tmp_g->gr_name);
             for (int i = l.c_group - mx_strlen(tmp_g->gr_name); i > 0; i--)
