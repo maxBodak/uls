@@ -27,10 +27,11 @@ char wc_getType(struct stat st) {
             S_ISDIR(st.st_mode) ? dir : file;
 }/*--------------------------------------------------------------------------*/// void *wc_printDouble(double *) {
 void wc_printDouble(double n) {
-    for (int i = mx_pow(10, wc_getBitDepth((int)n)); i > 1; i /= 10)
-        mx_printchar((int)n % i + 48);
-
-    if (wc_getBitDepth((int)n) == 1) {
+    int i = mx_pow(10, wc_getBitDepth((int)n));
+    
+    mx_printstr(i == 100 ? " " : "");
+    mx_printint((int)n % i);
+    if (i < 100) {
         mx_printchar('.');
         mx_printint((int)((n - (int)n) * 10));
     }

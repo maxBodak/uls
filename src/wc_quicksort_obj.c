@@ -1,12 +1,12 @@
 #include "uls.h"
 
-static void swapObj(t_obj **a, t_obj **b) {
+static inline void swapObj(t_obj **a, t_obj **b) {
     t_obj *temp = *a;
 
     *a = *b;
     *b = temp;
 }//*--------------------------------------------------------------------------*/
-static int partition(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *)) {
+static inline int partition(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *)) {
     int p = (r + l) / 2;
 
     while (l < r) {

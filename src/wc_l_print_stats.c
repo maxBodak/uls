@@ -1,7 +1,7 @@
 #include "uls.h"
 
 static inline void printH(struct stat st) {
-    mx_printchar(' ');
+    mx_printstr("   ");
     if (st.st_size < 1000) {
         for (int i = 3 - wc_getBitDepth(st.st_size); i > 0; i--)
             mx_printchar(' ');
