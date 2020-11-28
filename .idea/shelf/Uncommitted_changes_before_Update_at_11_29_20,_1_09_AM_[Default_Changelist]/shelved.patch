@@ -1,0 +1,196 @@
+Index: cmake-build-debug/CMakeFiles/uls.dir/C.includecache
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#IncludeRegexLine: ^[ \t]*[#%][ \t]*(include|import)[ \t]*[<\"]([^\">]+)([\">])\n\n#IncludeRegexScan: ^.*$\n\n#IncludeRegexComplain: ^$\n\n#IncludeRegexTransform: \n\n../Libmx/inc/libmx.h\nstdio.h\n-\nunistd.h\n-\nstdlib.h\n-\nstdbool.h\n-\nstring.h\n-\nfcntl.h\n-\nmalloc/malloc.h\n-\n\n../inc/cf_uls.h\nuls.h\n../inc/uls.h\n\n../inc/uls.h\nlibmx.h\n../inc/libmx.h\ncf_uls.h\n../inc/cf_uls.h\nsys/stat.h\n-\nsys/types.h\n-\nsys/errno.h\n-\ndirent.h\n-\npwd.h\n-\ngrp.h\n-\nsys/xattr.h\n-\nsys/acl.h\n-\nsys/ioctl.h\n-\ntime.h\n-\n\n/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_F_and_p.c\nuls.h\n/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- cmake-build-debug/CMakeFiles/uls.dir/C.includecache	(revision 58af8a2682421c425317befccde18ebb92964c25)
++++ cmake-build-debug/CMakeFiles/uls.dir/C.includecache	(date 1606599454000)
+@@ -52,7 +52,135 @@
+ time.h
+ -
+ 
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_bool_mainp.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_cmp_flags.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_err_illegal_option.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_S.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_Uu.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_c.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_r.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_t.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_u.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_F_and_p.c
+ uls.h
+ /Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
+ 
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_check.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flags_num.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_isatty.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_not_flag_f.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/main.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_colorer.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_dir.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_file.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_get_spacing.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_perms.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_stats.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_time.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_fetching.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_printing.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_mem_cleaner.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_path_parser.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_C.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_m.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_one.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_quicksort_obj.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c
++uls.h
++/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/uls.h
++
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"BranchesTreeState\">\n    <expand>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"LOCAL_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n      <path>\n        <item name=\"ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"REMOTE_ROOT\" type=\"e8cecc67:BranchNodeDescriptor\" />\n        <item name=\"GROUP_NODE:origin\" type=\"e8cecc67:BranchNodeDescriptor\" />\n      </path>\n    </expand>\n    <select />\n  </component>\n  <component name=\"CMakeRunConfigurationManager\" shouldGenerate=\"true\" shouldDeleteObsolete=\"true\">\n    <generated>\n      <config projectName=\"uls\" targetName=\"uls\" />\n    </generated>\n  </component>\n  <component name=\"CMakeSettings\">\n    <configurations>\n      <configuration PROFILE_NAME=\"Debug\" CONFIG_NAME=\"Debug\" />\n    </configurations>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"e74735da-0891-4273-8db4-5030d486b30d\" name=\"Default Changelist\" comment=\"flags U, u, c, S\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/uls\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/uls\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"CMakeBuildProfile:Debug\" />\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MakefileLocalSettings\">\n    <option name=\"availableProjects\">\n      <map>\n        <entry>\n          <key>\n            <ExternalProjectPojo>\n              <option name=\"name\" value=\"uls\" />\n              <option name=\"path\" value=\"$PROJECT_DIR$\" />\n            </ExternalProjectPojo>\n          </key>\n          <value>\n            <list>\n              <ExternalProjectPojo>\n                <option name=\"name\" value=\"uls\" />\n                <option name=\"path\" value=\"$PROJECT_DIR$\" />\n              </ExternalProjectPojo>\n            </list>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"projectSyncType\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"RE_IMPORT\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"1kYjwWPRvkSMNXp89k3SWIJTJJn\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"cf.first.check.clang-format\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settingsdialog.IDE.editor.colors.General\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n  </component>\n  <component name=\"RunManager\">\n    <configuration default=\"true\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"uls\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" PROGRAM_PARAMS=\"-r\" REDIRECT_INPUT=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"uls\" TARGET_NAME=\"uls\" CONFIG_NAME=\"Debug\" RUN_TARGET_PROJECT_NAME=\"uls\" RUN_TARGET_NAME=\"uls\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"e74735da-0891-4273-8db4-5030d486b30d\" name=\"Default Changelist\" comment=\"\" />\n      <created>1605884657647</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1605884657647</updated>\n      <workItem from=\"1605884658745\" duration=\"8000\" />\n      <workItem from=\"1605884686138\" duration=\"1147000\" />\n      <workItem from=\"1605885960328\" duration=\"2099000\" />\n      <workItem from=\"1605888815791\" duration=\"3785000\" />\n      <workItem from=\"1605893331745\" duration=\"3248000\" />\n      <workItem from=\"1605971004033\" duration=\"66000\" />\n      <workItem from=\"1605971082991\" duration=\"4379000\" />\n      <workItem from=\"1605978731350\" duration=\"5166000\" />\n      <workItem from=\"1606059409714\" duration=\"6162000\" />\n      <workItem from=\"1606072251091\" duration=\"3124000\" />\n      <workItem from=\"1606238036362\" duration=\"133000\" />\n      <workItem from=\"1606238393283\" duration=\"635000\" />\n      <workItem from=\"1606239049117\" duration=\"2109000\" />\n      <workItem from=\"1606241421513\" duration=\"1641000\" />\n      <workItem from=\"1606246619842\" duration=\"2853000\" />\n      <workItem from=\"1606313760978\" duration=\"3934000\" />\n      <workItem from=\"1606319946387\" duration=\"218000\" />\n      <workItem from=\"1606320177393\" duration=\"1846000\" />\n      <workItem from=\"1606400624362\" duration=\"7640000\" />\n      <workItem from=\"1606494401740\" duration=\"72000\" />\n      <workItem from=\"1606494595582\" duration=\"31000\" />\n      <workItem from=\"1606494640042\" duration=\"5088000\" />\n      <workItem from=\"1606595073387\" duration=\"1385000\" />\n      <workItem from=\"1606596475035\" duration=\"1743000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"add -f&#10;added if -f make -a positive&#10;Cf\">\n      <created>1605886056504</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1605886056505</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"flag -S Done\">\n      <created>1606062129661</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1606062129661</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"start isatty\">\n      <created>1606068791914</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1606068791914</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"start isatty\">\n      <created>1606073714011</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1606073714011</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"new Makefile\">\n      <created>1606238411535</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1606238411535</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"flags U, u, c, S\">\n      <created>1606249396447</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1606249396447</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"7\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"add -f&#10;added if -f make -a positive&#10;Cf\" />\n    <MESSAGE value=\"flag -S Done\" />\n    <MESSAGE value=\"start isatty\" />\n    <MESSAGE value=\"new Makefile\" />\n    <MESSAGE value=\"flags U, u, c, S\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"flags U, u, c, S\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"740\" y=\"353\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1605979435740\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state x=\"740\" y=\"353\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605979435740\" />\n    <state x=\"1020\" y=\"529\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1606402231702\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1440\" />\n    </state>\n    <state x=\"1020\" y=\"529\" key=\"#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1440@0.0.2560.1440\" timestamp=\"1606402231702\" />\n    <state x=\"1039\" y=\"402\" key=\"#xdebugger.evaluate\" timestamp=\"1605986415809\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state x=\"1039\" y=\"402\" key=\"#xdebugger.evaluate/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986415809\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.bottom\" timestamp=\"1605986469730\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.bottom/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469730\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.center\" timestamp=\"1605986469729\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.center/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469729\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.left\" timestamp=\"1605986469729\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.left/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469729\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.right\" timestamp=\"1605986469729\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.0.right/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469729\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.bottom\" timestamp=\"1605986469730\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.bottom/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469730\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.center\" timestamp=\"1605986469730\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.center/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469730\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.left\" timestamp=\"1605986469730\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.left/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469730\" />\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.right\" timestamp=\"1605986469730\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state width=\"2510\" height=\"460\" key=\"GridCell.Tab.1.right/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1605986469730\" />\n    <state x=\"768\" y=\"368\" key=\"SettingsEditor\" timestamp=\"1606320975612\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1440\" />\n    </state>\n    <state x=\"768\" y=\"368\" key=\"SettingsEditor/0.0.2560.1440@0.0.2560.1440\" timestamp=\"1606320975612\" />\n    <state x=\"876\" y=\"439\" key=\"Vcs.Push.Dialog.v2\" timestamp=\"1606249407962\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1440\" />\n    </state>\n    <state x=\"876\" y=\"439\" key=\"Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440\" timestamp=\"1606249407962\" />\n    <state x=\"876\" y=\"431\" key=\"Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1606062141122\" />\n    <state width=\"600\" height=\"461\" key=\"javadoc.popup\" timestamp=\"1606578218411\">\n      <screen x=\"0\" y=\"0\" width=\"2560\" height=\"1440\" />\n    </state>\n    <state width=\"600\" height=\"461\" key=\"javadoc.popup/0.0.2560.1440@0.0.2560.1440\" timestamp=\"1606578218411\" />\n    <state width=\"600\" height=\"428\" key=\"javadoc.popup/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1606061004973\" />\n    <state x=\"978\" y=\"624\" width=\"597\" height=\"192\" key=\"makefile.clean.confirm.dialog\" timestamp=\"1606494432603\">\n      <screen x=\"0\" y=\"23\" width=\"2560\" height=\"1337\" />\n    </state>\n    <state x=\"978\" y=\"624\" width=\"597\" height=\"192\" key=\"makefile.clean.confirm.dialog/0.0.2560.1440@0.0.2560.1440\" timestamp=\"1606494403975\" />\n    <state x=\"978\" y=\"624\" width=\"596\" height=\"192\" key=\"makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337\" timestamp=\"1606494432603\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 58af8a2682421c425317befccde18ebb92964c25)
++++ .idea/workspace.xml	(date 1606604941000)
+@@ -34,6 +34,8 @@
+   <component name="ChangeListManager">
+     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -144,7 +146,7 @@
+       <workItem from="1606494595582" duration="31000" />
+       <workItem from="1606494640042" duration="5088000" />
+       <workItem from="1606595073387" duration="1385000" />
+-      <workItem from="1606596475035" duration="1743000" />
++      <workItem from="1606596475035" duration="5373000" />
+     </task>
+     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
+       <created>1605886056504</created>
+@@ -268,15 +270,19 @@
+     </state>
+     <state x="876" y="439" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606249407962" />
+     <state x="876" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1606062141122" />
++    <state x="1081" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606604941404">
++      <screen x="0" y="0" width="2560" height="1440" />
++    </state>
++    <state x="1081" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606604941404" />
+     <state width="600" height="461" key="javadoc.popup" timestamp="1606578218411">
+       <screen x="0" y="0" width="2560" height="1440" />
+     </state>
+     <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606578218411" />
+     <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
+-    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606494432603">
+-      <screen x="0" y="23" width="2560" height="1337" />
++    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606599452452">
++      <screen x="0" y="0" width="2560" height="1440" />
+     </state>
+-    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog/0.0.2560.1440@0.0.2560.1440" timestamp="1606494403975" />
++    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog/0.0.2560.1440@0.0.2560.1440" timestamp="1606599452452" />
+     <state x="978" y="624" width="596" height="192" key="makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337" timestamp="1606494432603" />
+   </component>
+ </project>
+\ No newline at end of file
