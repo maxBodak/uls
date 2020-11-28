@@ -44,9 +44,9 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/uls.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cf_flag_S.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flag_S.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_flags_F_and_p.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_F_and_p.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cf_flags_check.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_check.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_flags_num.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_num.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,9 +115,9 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="uls" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="uls" TARGET_NAME="uls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="uls" RUN_TARGET_NAME="uls">
@@ -284,10 +284,10 @@
     </state>
     <state x="876" y="439" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606249407962" />
     <state x="876" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1606062141122" />
-    <state width="600" height="461" key="javadoc.popup" timestamp="1606499894977">
+    <state width="600" height="461" key="javadoc.popup" timestamp="1606578218411">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606499894977" />
+    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606578218411" />
     <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
     <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606494432603">
       <screen x="0" y="23" width="2560" height="1337" />

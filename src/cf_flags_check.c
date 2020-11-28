@@ -16,7 +16,7 @@ void cf_flags_check (t_data *d, bool *fl) {
         cf_flag_c(d->dirs_path, d->dirs_amt, fl);
         cf_flag_Uu(d->files_path, d->files_amt, fl);
         cf_flag_Uu(d->dirs_path, d->dirs_amt, fl);
-//        cf_flag_F_and_p(d->files_path, d->files_amt, fl);
+        cf_flag_F_and_p(d->files_path, d->files_amt, fl);
         cf_flag_F_and_p(d->dirs_path, d->dirs_amt, fl);
     }
 }

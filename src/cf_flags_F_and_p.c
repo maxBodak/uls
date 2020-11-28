@@ -1,14 +1,5 @@
 #include "uls.h"
 
-static void cf_rename (t_obj *d, char c) {
-    char *new_name = d->s_name;
-    int i = mx_strlen(d->s_name) + 2;
-//    new_name = mx_strjoin(new_name, c);
-//    free(d->s_name);
-    mx_realloc(d->s_name, i);
-    d->s_name[i - 1] = c;
-//    return new_name;
-}
 static inline bool dir_type(struct stat sb) {
     if ((sb.st_mode & S_IWOTH) == S_IWOTH
         && (sb.st_mode & S_ISVTX) == S_ISVTX);
@@ -36,22 +27,22 @@ static inline bool file_type(struct stat sb) {
 static inline void cf_add_symvol(t_obj *d, const bool *fl) {
     if (d->type < perm_denied && d->type >= fifo) {
         if (d->type == fifo)
-            cf_rename (d, '|');
+            d->s_name = mx_strcat(d->s_name, "|");
 //        else if (d->type == chr)
 //            d->s_name = cf_rename (d, "*");
 //        else if (d->type == blk)
 //            d->s_name = cf_rename (d, "|");
         else if (d->type == lnk)
-            cf_rename (d, '@');
+            d->s_name = mx_strcat(d->s_name, "@");
         else if (d->type == sock)
-            cf_rename (d, '=');
+            d->s_name = mx_strcat(d->s_name, "=");
         else if (d->type == dir) {
             if (dir_type(d->st))
-                cf_rename(d, '/');
+                d->s_name = mx_strcat(d->s_name, "/");
         }
         else if (d->type == file && !fl[p])
             if(file_type(d->st))
-                cf_rename (d, '*');
+                d->s_name = mx_strcat(d->s_name, "*");
     }
 }
 
