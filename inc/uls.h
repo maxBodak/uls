@@ -53,6 +53,7 @@ typedef struct s_obj {
     int kids_amt;
     char type;
     bool is_root;
+    bool is_deadl;
 }              t_obj;
 typedef struct s_data {
     t_obj **dirs_path;
@@ -73,7 +74,21 @@ typedef struct s_lout {
 t_path *wc_getPaths(int argc, char *argv[], bool *fl);
 t_obj *wc_fetchDirInfo(char *p, bool *fl);
 t_obj *wc_fetchFileInfo(char *p, bool *fl);
+/*-----------Managers-----------------*/
+void wc_printResult(t_data *d, bool *flocktimeout);
 t_data *wc_fetchData(t_path *p, bool *fl);
+/*-----------Printers------------*/
+void wc_printName(t_obj *obj, bool *fl);
+void wc_printWithC(t_obj **fp, int fp_amt, bool *fl);
+void wc_printWithOne(t_obj **fp, int fp_amt, bool *fl);
+void wc_printWithM(t_obj **fp, int fp_amt, bool *fl);
+void wc_printWithL(t_obj **fp, int fp_amt, bool *fl, bool use_total);
+t_lout wc_getSizesForL(t_obj **fp, int fp_amt);
+void wc_printPerms(struct stat st, char *p);
+void wc_printStats(struct stat st, t_lout l, bool *fl);
+void wc_printTime(struct stat st, bool *fl);
+/*-----------Sorting--------------*/
+void wc_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
 /*-----------Utilities------------*/
 //void wc_printShortName(char *p);
 char *wc_getShortName(char *p);
@@ -85,22 +100,6 @@ void wc_printDouble(double n);
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
 void wc_freeData(t_data *d);
-/*-----------Printers------------*/
-void wc_printName(t_obj *obj, bool *fl);
-void wc_printWithC(t_obj **fp, int fp_amt, bool *fl);
-void wc_printWithOne(t_obj **fp, int fp_amt, bool *fl);
-void wc_printWithM(t_obj **fp, int fp_amt, bool *fl);
-void wc_printWithL(t_obj **fp, int fp_amt, bool *fl, bool use_total);
-t_lout wc_getSizesForL(t_obj **fp, int fp_amt);
-void wc_printPerms(struct stat st, char *p);
-void wc_printStats(struct stat st, t_lout l, bool *fl);
-void wc_printTime(struct stat st, bool *fl);
-/*-----------Print Manager-----------------*/
-void wc_printResult(t_data *d, bool *flocktimeout);
-void wc_printDir(t_obj *obj, bool *fl);
-void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl, bool use_total);
-/*-----------Sorting--------------*/
-void wc_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
 /*-----------Errors---------------*/
 void wc_errorNoPath(char *path);
 void wc_errorPermDenied(char *name_of_dir);

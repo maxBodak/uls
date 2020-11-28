@@ -1,6 +1,11 @@
 #include "uls.h"
-
-void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl, bool use_total) {
+static inline void printErrorsForDeadLinks(t_obj **fp, int fp_amt, bool *fl) {
+    if (fl[L])
+        for (int i = 0; i < fp_amt; i++)
+           if (fp[i]->is_deadl)
+                wc_errorNoPath(fp[i]->s_name);
+}/*--------------------------------------------------------------------------*/
+static inline void printObjArr(t_obj **fp, int fp_amt, bool *fl, bool use_t) {
     if (!fp_amt)
         return;
     if (fl[one])
@@ -8,20 +13,20 @@ void wc_printObjArr(t_obj **fp, int fp_amt, bool *fl, bool use_total) {
     else if (fl[m])
         wc_printWithM(fp, fp_amt, fl);
     else if (fl[l]) {
-        wc_printWithL(fp, fp_amt, fl, use_total);
+        wc_printWithL(fp, fp_amt, fl, use_t);
     } else {
         wc_printWithC(fp, fp_amt, fl);
     }
 }/*--------------------------------------------------------------------------*/
-void wc_printDir(t_obj *obj, bool *fl) {
-    wc_printObjArr(obj->kids, obj->kids_amt, fl, 1); 
+static inline void printDir(t_obj *obj, bool *fl) {
+    printObjArr(obj->kids, obj->kids_amt, fl, 1); 
     if (fl[R])
         for (int i = 0; i < obj->kids_amt; i++) {
             if (obj->kids[i]->type == dir) {
                 mx_printstr("\n");
                 mx_printstr(obj->kids[i]->path_name);
                 mx_printstr(":\n");
-                wc_printDir(obj->kids[i], fl);
+                printDir(obj->kids[i], fl);
             } else if (obj->kids[i]->type == perm_denied) {
                 mx_printstr("\n");
                 mx_printstr(obj->kids[i]->path_name);
@@ -34,8 +39,8 @@ void wc_printResult(t_data *d, bool *fl) {
     if (d == NULL)
         return;
 
-    wc_printObjArr(d->files_path, d->files_amt, fl, 0);
-
+    printObjArr(d->files_path, d->files_amt, fl, 0);
+    printErrorsForDeadLinks(d->files_path, d->files_amt, fl);
     if (d->dirs_amt > 1 || d->files_amt) {
 
         mx_printstr(d->files_amt && d->dirs_amt ? "\n" : "");
@@ -45,7 +50,7 @@ void wc_printResult(t_data *d, bool *fl) {
             mx_printstr(": \n");
 
             if (d->dirs_path[i]->type != perm_denied)
-                wc_printDir(d->dirs_path[i], fl);
+                printDir(d->dirs_path[i], fl);
             else
                 wc_errorPermDenied(d->dirs_path[i]->path_name);
 
@@ -56,6 +61,6 @@ void wc_printResult(t_data *d, bool *fl) {
         if (d->dirs_path[0]->type == perm_denied)
             wc_errorPermDenied(d->dirs_path[0]->path_name);
         else
-            wc_printDir(d->dirs_path[0], fl);
+            printDir(d->dirs_path[0], fl);
     }
 }
