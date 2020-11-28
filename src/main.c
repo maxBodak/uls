@@ -15,5 +15,5 @@ int main(int argc, char ** argv) {
     wc_freeData(d);
     free(fl);
 //    system("leaks -q uls");
-    return 0;
+    return fl[err] ? 1 : 0;
 }

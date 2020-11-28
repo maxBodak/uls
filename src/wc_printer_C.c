@@ -17,6 +17,7 @@ static inline void printMultiCols(t_obj **fp, int fp_amt, int max_len, int win,
     for (int i = 0; i < rows; mx_printchar(10)) {
         for (int j = i++; j < fp_amt; j += rows) {
             wc_printName(fp[j], fl);
+            //mx_printint(mx_strlen(fp[j]->s_name));
             if (fl[G])
                 tmp = (max_len + 1 - mx_strlen(fp[j]->s_name));
             else {
@@ -30,8 +31,9 @@ static inline void printMultiCols(t_obj **fp, int fp_amt, int max_len, int win,
 static inline void printInOneRow(t_obj **fp, int fp_amt, int max_len, 
                                                             bool *fl) {
     for (int i = 0; i < fp_amt; i++) {
-            wc_printName(fp[i], fl);
-        for (int j = mx_strlen(fp[i]->s_name); j < max_len + fl[G]; j++)
+        wc_printName(fp[i], fl);
+        //mx_printint(mx_strlen(fp[i]->s_name));
+        for (int j = mx_strlen(fp[i]->s_name); j < max_len+fl[G]+(fl[p]||fl[F]); j++)
             mx_printchar(' ');
     }
     fp_amt > 0 ? mx_printchar(10) : mx_printstr("");
@@ -39,7 +41,6 @@ static inline void printInOneRow(t_obj **fp, int fp_amt, int max_len,
 void wc_printWithC(t_obj **fp, int fp_amt, bool *fl) {
     struct winsize w;
     int max_len = findMaxLenName(fp, fp_amt, fl);
-
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &w);
     w.ws_col = fl[tty] ? 79 : w.ws_col;
 

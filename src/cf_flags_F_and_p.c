@@ -27,22 +27,22 @@ static inline bool file_type(struct stat sb) {
 static inline void cf_add_symvol(t_obj *d, const bool *fl) {
     if (d->type < perm_denied && d->type >= fifo) {
         if (d->type == fifo)
-            d->s_name = mx_strcat(d->s_name, "|");
+            d->s_name[mx_strlen(d->s_name)] = '|';
 //        else if (d->type == chr)
 //            d->s_name = cf_rename (d, "*");
 //        else if (d->type == blk)
 //            d->s_name = cf_rename (d, "|");
         else if (d->type == lnk)
-            d->s_name = mx_strcat(d->s_name, "@");
+            d->s_name[mx_strlen(d->s_name)] = '@';
         else if (d->type == sock)
-            d->s_name = mx_strcat(d->s_name, "=");
+            d->s_name[mx_strlen(d->s_name)] = '=';
         else if (d->type == dir) {
             if (dir_type(d->st))
-                d->s_name = mx_strcat(d->s_name, "/");
+                d->s_name[mx_strlen(d->s_name)] = '/';
         }
         else if (d->type == file && !fl[p])
             if(file_type(d->st))
-                d->s_name = mx_strcat(d->s_name, "*");
+                d->s_name[mx_strlen(d->s_name)] = '*';
     }
 }
 

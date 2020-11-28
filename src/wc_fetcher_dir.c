@@ -14,7 +14,8 @@ static inline t_obj *initDir(char *p, bool *fl) {
     struct stat stats;
 
     d = (t_obj *)malloc(sizeof(t_obj));
-    d->path_name = mx_strdup(p);
+    d->path_name = mx_strjoin(p, " ");
+    d->path_name[mx_strlen(d->path_name) - 1] = '\0';
     d->s_name = wc_getShortName(d->path_name);
 
     dp = opendir (p);
@@ -22,6 +23,8 @@ static inline t_obj *initDir(char *p, bool *fl) {
         d->kids_amt = 0;
         d->kids = NULL;
         d->type = perm_denied;
+        d->is_root = false;
+        fl[err] = true;
     } else {
         while ((ep = readdir(dp)))
             if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name)))
@@ -30,6 +33,7 @@ static inline t_obj *initDir(char *p, bool *fl) {
         d->kids_amt = count;
         lstat(p, &stats);
         d->type = wc_getType(stats);
+        d->is_root = false;
         closedir(dp);
     }
     return d;
@@ -42,10 +46,16 @@ static inline char *addPrefix(char *prefix, char *str) {
         t1 = mx_strjoin(prefix, "/");
         t2 = mx_strjoin(t1, str);
         free(t1);
-    }
-    else
+        t1 = mx_strjoin(t2, " ");
+        t1[mx_strlen(t1) - 1] = '\0';
+        free(t2);
+    } else {
         t2 = mx_strjoin(prefix, str);
-    return t2;
+        t1 = mx_strjoin(t2, " ");
+        t1[mx_strlen(t1) - 1] = '\0';
+        free(t2);
+    }
+    return t1;
 
 }/*==========================================================================*/
 t_obj *wc_fetchDirInfo(char *p, bool *fl) {
@@ -71,6 +81,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                     res->kids[i]->kids_amt = 0;
                     res->kids[i]->kids = NULL;
                 }
+                res->kids[i]->is_root = false;
                 lstat(res->kids[i]->path_name, &(res->kids[i]->st));
                 if (res->kids[i]->type != perm_denied)
                     res->kids[i]->type = wc_getType(res->kids[i]->st);
@@ -78,6 +89,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
             }
         }
         closedir(dp);
-    } 
+    } else
+        fl[err] = true;
     return res;
 }

@@ -52,7 +52,7 @@ typedef struct s_obj {
     struct stat st;
     int kids_amt;
     char type;
-    bool use_pname;
+    bool is_root;
 }              t_obj;
 typedef struct s_data {
     t_obj **dirs_path;

@@ -21,7 +21,7 @@ static void colorFile(struct stat sb) {
         mx_printstr(RESET);
 }//*--------------------------------------------------------------------------*/
 static void colorLink(t_obj *obj, bool *fl) {
-    if (fl[l] || !obj->use_pname)
+    if (fl[l] || !obj->is_root)
         mx_printstr(MAG);
     else {
         struct stat stats;
@@ -52,8 +52,8 @@ void wc_printName(t_obj *obj, bool *fl) {
             colorDir(obj->st);
         else if (S_ISREG(obj->st.st_mode))
             colorFile(obj->st);
-        mx_printstr(obj->use_pname ? obj->path_name : obj->s_name);
+        mx_printstr(obj->s_name);
         mx_printstr(RESET);
     } else
-        mx_printstr(obj->use_pname ? obj->path_name : obj->s_name);
+        mx_printstr(obj->s_name);
 }

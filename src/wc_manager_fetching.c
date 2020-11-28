@@ -29,13 +29,17 @@ t_data *wc_fetchData(t_path *p, bool *fl) {
         for (int i = 0, j = 0, k = 0; k < p->amt; k++) {
             if (p->isdir[k]) {
                 res->dirs_path[j++] = wc_fetchDirInfo(p->path[k], fl);
-                if (usePathName(p->path[k]))
-                    res->dirs_path[j - 1]->use_pname = true;
+                if (usePathName(p->path[k])) {
+                    res->dirs_path[j - 1]->s_name = res->dirs_path[j - 1]->path_name;
+                    res->dirs_path[j - 1]->is_root = true;
+                }
             }
             else {
                 res->files_path[i++] = wc_fetchFileInfo(p->path[k]);
-                if (usePathName(p->path[k]))
-                    res->files_path[i - 1]->use_pname = true;
+                if (usePathName(p->path[k])) {
+                    res->files_path[i - 1]->s_name = res->files_path[i - 1]->path_name;
+                    res->files_path[i - 1]->is_root = true;
+                }
             }
         }
     }

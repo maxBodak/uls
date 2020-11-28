@@ -25,6 +25,7 @@ enum flags {
     h,
     T,
     tty,
+    err,
     ALL_FLAGS,
 };
 

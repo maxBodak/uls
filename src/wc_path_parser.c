@@ -32,7 +32,7 @@ static inline t_path *CurDirPath() {
     return p;
 }/*--------------------------------------------------------------------------*/
 static inline t_path *initPaths(int argc, char *argv[], char *status,
-                                                int flags, int fakes) {
+                                            int flags, int fakes, bool *fl) {
     t_path *p = NULL;
 
     if (argc - flags - fakes) {
@@ -47,18 +47,19 @@ static inline t_path *initPaths(int argc, char *argv[], char *status,
             p->path[i++] = mx_strdup(argv[j + flags]);
             if (p->path[i - 1][mx_strlen(p->path[i - 1])] == '/')
                 p->path[i - 1][mx_strlen(p->path[i - 1])] = '\0';
-        }
-        else if(status[j] == 2) {
+        } else if(status[j] == 2) {
             p->isdir[i] = false;
             p->path[i++] = mx_strdup(argv[j + flags]);
-        }
-        else
+        } else {
             wc_errorNoPath(argv[j + flags]);
+            fl[err] = true;
+        }
     }
+
     free(status);
     return p;
 }/*==========================================================================*/
-t_path *wc_getPaths(int argc, char *argv[], bool*fl) {
+t_path *wc_getPaths(int argc, char *argv[], bool *fl) {
     int fakes = 0;
     int flags = 1;
     char *status = NULL;
@@ -76,5 +77,5 @@ t_path *wc_getPaths(int argc, char *argv[], bool*fl) {
         status[i - flags] = checkPath(argv[i], fl);
         fakes += !status[i - flags];
     }
-    return initPaths(argc, argv, status, flags, fakes);
+    return initPaths(argc, argv, status, flags, fakes, fl);
 }
