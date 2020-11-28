@@ -319,9 +319,6 @@
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_err_illegal_option.c">
 			<Option target="uls"/>
 		</Unit>
-		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_F.c">
-			<Option target="uls"/>
-		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/cf_flag_S.c">
 			<Option target="uls"/>
 		</Unit>
@@ -355,16 +352,34 @@
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/main.c">
 			<Option target="uls"/>
 		</Unit>
-		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c">
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_colorer.c">
 			<Option target="uls"/>
 		</Unit>
-		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_data.c">
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_errors.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_dir.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_fetcher_file.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_get_spacing.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_perms.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_stats.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_l_print_time.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_fetching.c">
+			<Option target="uls"/>
+		</Unit>
+		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_manager_printing.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_mem_cleaner.c">
@@ -376,13 +391,7 @@
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_C.c">
 			<Option target="uls"/>
 		</Unit>
-		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_color.c">
-			<Option target="uls"/>
-		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l.c">
-			<Option target="uls"/>
-		</Unit>
-		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_l_sizer.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_printer_m.c">
@@ -392,9 +401,6 @@
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_quicksort_obj.c">
-			<Option target="uls"/>
-		</Unit>
-		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_temp.c">
 			<Option target="uls"/>
 		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/src/wc_utilities.c">

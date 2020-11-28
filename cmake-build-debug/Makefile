@@ -2195,33 +2195,6 @@ src/cf_err_illegal_option.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_err_illegal_option.c.s
 .PHONY : src/cf_err_illegal_option.c.s
 
-src/cf_flag_F.o: src/cf_flag_F.c.o
-
-.PHONY : src/cf_flag_F.o
-
-# target to build an object file
-src/cf_flag_F.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_F.c.o
-.PHONY : src/cf_flag_F.c.o
-
-src/cf_flag_F.i: src/cf_flag_F.c.i
-
-.PHONY : src/cf_flag_F.i
-
-# target to preprocess a source file
-src/cf_flag_F.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_F.c.i
-.PHONY : src/cf_flag_F.c.i
-
-src/cf_flag_F.s: src/cf_flag_F.c.s
-
-.PHONY : src/cf_flag_F.s
-
-# target to generate assembly for a file
-src/cf_flag_F.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/cf_flag_F.c.s
-.PHONY : src/cf_flag_F.c.s
-
 src/cf_flag_S.o: src/cf_flag_S.c.o
 
 .PHONY : src/cf_flag_S.o
@@ -2519,6 +2492,33 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/wc_colorer.o: src/wc_colorer.c.o
+
+.PHONY : src/wc_colorer.o
+
+# target to build an object file
+src/wc_colorer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_colorer.c.o
+.PHONY : src/wc_colorer.c.o
+
+src/wc_colorer.i: src/wc_colorer.c.i
+
+.PHONY : src/wc_colorer.i
+
+# target to preprocess a source file
+src/wc_colorer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_colorer.c.i
+.PHONY : src/wc_colorer.c.i
+
+src/wc_colorer.s: src/wc_colorer.c.s
+
+.PHONY : src/wc_colorer.s
+
+# target to generate assembly for a file
+src/wc_colorer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_colorer.c.s
+.PHONY : src/wc_colorer.c.s
+
 src/wc_errors.o: src/wc_errors.c.o
 
 .PHONY : src/wc_errors.o
@@ -2545,33 +2545,6 @@ src/wc_errors.s: src/wc_errors.c.s
 src/wc_errors.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_errors.c.s
 .PHONY : src/wc_errors.c.s
-
-src/wc_fetcher_data.o: src/wc_fetcher_data.c.o
-
-.PHONY : src/wc_fetcher_data.o
-
-# target to build an object file
-src/wc_fetcher_data.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_fetcher_data.c.o
-.PHONY : src/wc_fetcher_data.c.o
-
-src/wc_fetcher_data.i: src/wc_fetcher_data.c.i
-
-.PHONY : src/wc_fetcher_data.i
-
-# target to preprocess a source file
-src/wc_fetcher_data.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_fetcher_data.c.i
-.PHONY : src/wc_fetcher_data.c.i
-
-src/wc_fetcher_data.s: src/wc_fetcher_data.c.s
-
-.PHONY : src/wc_fetcher_data.s
-
-# target to generate assembly for a file
-src/wc_fetcher_data.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_fetcher_data.c.s
-.PHONY : src/wc_fetcher_data.c.s
 
 src/wc_fetcher_dir.o: src/wc_fetcher_dir.c.o
 
@@ -2626,6 +2599,168 @@ src/wc_fetcher_file.s: src/wc_fetcher_file.c.s
 src/wc_fetcher_file.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_fetcher_file.c.s
 .PHONY : src/wc_fetcher_file.c.s
+
+src/wc_l_get_spacing.o: src/wc_l_get_spacing.c.o
+
+.PHONY : src/wc_l_get_spacing.o
+
+# target to build an object file
+src/wc_l_get_spacing.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_get_spacing.c.o
+.PHONY : src/wc_l_get_spacing.c.o
+
+src/wc_l_get_spacing.i: src/wc_l_get_spacing.c.i
+
+.PHONY : src/wc_l_get_spacing.i
+
+# target to preprocess a source file
+src/wc_l_get_spacing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_get_spacing.c.i
+.PHONY : src/wc_l_get_spacing.c.i
+
+src/wc_l_get_spacing.s: src/wc_l_get_spacing.c.s
+
+.PHONY : src/wc_l_get_spacing.s
+
+# target to generate assembly for a file
+src/wc_l_get_spacing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_get_spacing.c.s
+.PHONY : src/wc_l_get_spacing.c.s
+
+src/wc_l_print_perms.o: src/wc_l_print_perms.c.o
+
+.PHONY : src/wc_l_print_perms.o
+
+# target to build an object file
+src/wc_l_print_perms.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_perms.c.o
+.PHONY : src/wc_l_print_perms.c.o
+
+src/wc_l_print_perms.i: src/wc_l_print_perms.c.i
+
+.PHONY : src/wc_l_print_perms.i
+
+# target to preprocess a source file
+src/wc_l_print_perms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_perms.c.i
+.PHONY : src/wc_l_print_perms.c.i
+
+src/wc_l_print_perms.s: src/wc_l_print_perms.c.s
+
+.PHONY : src/wc_l_print_perms.s
+
+# target to generate assembly for a file
+src/wc_l_print_perms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_perms.c.s
+.PHONY : src/wc_l_print_perms.c.s
+
+src/wc_l_print_stats.o: src/wc_l_print_stats.c.o
+
+.PHONY : src/wc_l_print_stats.o
+
+# target to build an object file
+src/wc_l_print_stats.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_stats.c.o
+.PHONY : src/wc_l_print_stats.c.o
+
+src/wc_l_print_stats.i: src/wc_l_print_stats.c.i
+
+.PHONY : src/wc_l_print_stats.i
+
+# target to preprocess a source file
+src/wc_l_print_stats.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_stats.c.i
+.PHONY : src/wc_l_print_stats.c.i
+
+src/wc_l_print_stats.s: src/wc_l_print_stats.c.s
+
+.PHONY : src/wc_l_print_stats.s
+
+# target to generate assembly for a file
+src/wc_l_print_stats.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_stats.c.s
+.PHONY : src/wc_l_print_stats.c.s
+
+src/wc_l_print_time.o: src/wc_l_print_time.c.o
+
+.PHONY : src/wc_l_print_time.o
+
+# target to build an object file
+src/wc_l_print_time.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_time.c.o
+.PHONY : src/wc_l_print_time.c.o
+
+src/wc_l_print_time.i: src/wc_l_print_time.c.i
+
+.PHONY : src/wc_l_print_time.i
+
+# target to preprocess a source file
+src/wc_l_print_time.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_time.c.i
+.PHONY : src/wc_l_print_time.c.i
+
+src/wc_l_print_time.s: src/wc_l_print_time.c.s
+
+.PHONY : src/wc_l_print_time.s
+
+# target to generate assembly for a file
+src/wc_l_print_time.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_l_print_time.c.s
+.PHONY : src/wc_l_print_time.c.s
+
+src/wc_manager_fetching.o: src/wc_manager_fetching.c.o
+
+.PHONY : src/wc_manager_fetching.o
+
+# target to build an object file
+src/wc_manager_fetching.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_manager_fetching.c.o
+.PHONY : src/wc_manager_fetching.c.o
+
+src/wc_manager_fetching.i: src/wc_manager_fetching.c.i
+
+.PHONY : src/wc_manager_fetching.i
+
+# target to preprocess a source file
+src/wc_manager_fetching.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_manager_fetching.c.i
+.PHONY : src/wc_manager_fetching.c.i
+
+src/wc_manager_fetching.s: src/wc_manager_fetching.c.s
+
+.PHONY : src/wc_manager_fetching.s
+
+# target to generate assembly for a file
+src/wc_manager_fetching.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_manager_fetching.c.s
+.PHONY : src/wc_manager_fetching.c.s
+
+src/wc_manager_printing.o: src/wc_manager_printing.c.o
+
+.PHONY : src/wc_manager_printing.o
+
+# target to build an object file
+src/wc_manager_printing.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_manager_printing.c.o
+.PHONY : src/wc_manager_printing.c.o
+
+src/wc_manager_printing.i: src/wc_manager_printing.c.i
+
+.PHONY : src/wc_manager_printing.i
+
+# target to preprocess a source file
+src/wc_manager_printing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_manager_printing.c.i
+.PHONY : src/wc_manager_printing.c.i
+
+src/wc_manager_printing.s: src/wc_manager_printing.c.s
+
+.PHONY : src/wc_manager_printing.s
+
+# target to generate assembly for a file
+src/wc_manager_printing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_manager_printing.c.s
+.PHONY : src/wc_manager_printing.c.s
 
 src/wc_mem_cleaner.o: src/wc_mem_cleaner.c.o
 
@@ -2708,33 +2843,6 @@ src/wc_printer_C.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_C.c.s
 .PHONY : src/wc_printer_C.c.s
 
-src/wc_printer_color.o: src/wc_printer_color.c.o
-
-.PHONY : src/wc_printer_color.o
-
-# target to build an object file
-src/wc_printer_color.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_color.c.o
-.PHONY : src/wc_printer_color.c.o
-
-src/wc_printer_color.i: src/wc_printer_color.c.i
-
-.PHONY : src/wc_printer_color.i
-
-# target to preprocess a source file
-src/wc_printer_color.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_color.c.i
-.PHONY : src/wc_printer_color.c.i
-
-src/wc_printer_color.s: src/wc_printer_color.c.s
-
-.PHONY : src/wc_printer_color.s
-
-# target to generate assembly for a file
-src/wc_printer_color.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_color.c.s
-.PHONY : src/wc_printer_color.c.s
-
 src/wc_printer_l.o: src/wc_printer_l.c.o
 
 .PHONY : src/wc_printer_l.o
@@ -2761,33 +2869,6 @@ src/wc_printer_l.s: src/wc_printer_l.c.s
 src/wc_printer_l.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l.c.s
 .PHONY : src/wc_printer_l.c.s
-
-src/wc_printer_l_sizer.o: src/wc_printer_l_sizer.c.o
-
-.PHONY : src/wc_printer_l_sizer.o
-
-# target to build an object file
-src/wc_printer_l_sizer.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.o
-.PHONY : src/wc_printer_l_sizer.c.o
-
-src/wc_printer_l_sizer.i: src/wc_printer_l_sizer.c.i
-
-.PHONY : src/wc_printer_l_sizer.i
-
-# target to preprocess a source file
-src/wc_printer_l_sizer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.i
-.PHONY : src/wc_printer_l_sizer.c.i
-
-src/wc_printer_l_sizer.s: src/wc_printer_l_sizer.c.s
-
-.PHONY : src/wc_printer_l_sizer.s
-
-# target to generate assembly for a file
-src/wc_printer_l_sizer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_printer_l_sizer.c.s
-.PHONY : src/wc_printer_l_sizer.c.s
 
 src/wc_printer_m.o: src/wc_printer_m.c.o
 
@@ -2869,33 +2950,6 @@ src/wc_quicksort_obj.s: src/wc_quicksort_obj.c.s
 src/wc_quicksort_obj.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_quicksort_obj.c.s
 .PHONY : src/wc_quicksort_obj.c.s
-
-src/wc_temp.o: src/wc_temp.c.o
-
-.PHONY : src/wc_temp.o
-
-# target to build an object file
-src/wc_temp.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp.c.o
-.PHONY : src/wc_temp.c.o
-
-src/wc_temp.i: src/wc_temp.c.i
-
-.PHONY : src/wc_temp.i
-
-# target to preprocess a source file
-src/wc_temp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp.c.i
-.PHONY : src/wc_temp.c.i
-
-src/wc_temp.s: src/wc_temp.c.s
-
-.PHONY : src/wc_temp.s
-
-# target to generate assembly for a file
-src/wc_temp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/uls.dir/build.make CMakeFiles/uls.dir/src/wc_temp.c.s
-.PHONY : src/wc_temp.c.s
 
 src/wc_utilities.o: src/wc_utilities.c.o
 
@@ -3161,9 +3215,6 @@ help:
 	@echo "... src/cf_err_illegal_option.o"
 	@echo "... src/cf_err_illegal_option.i"
 	@echo "... src/cf_err_illegal_option.s"
-	@echo "... src/cf_flag_F.o"
-	@echo "... src/cf_flag_F.i"
-	@echo "... src/cf_flag_F.s"
 	@echo "... src/cf_flag_S.o"
 	@echo "... src/cf_flag_S.i"
 	@echo "... src/cf_flag_S.s"
@@ -3197,18 +3248,36 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/wc_colorer.o"
+	@echo "... src/wc_colorer.i"
+	@echo "... src/wc_colorer.s"
 	@echo "... src/wc_errors.o"
 	@echo "... src/wc_errors.i"
 	@echo "... src/wc_errors.s"
-	@echo "... src/wc_fetcher_data.o"
-	@echo "... src/wc_fetcher_data.i"
-	@echo "... src/wc_fetcher_data.s"
 	@echo "... src/wc_fetcher_dir.o"
 	@echo "... src/wc_fetcher_dir.i"
 	@echo "... src/wc_fetcher_dir.s"
 	@echo "... src/wc_fetcher_file.o"
 	@echo "... src/wc_fetcher_file.i"
 	@echo "... src/wc_fetcher_file.s"
+	@echo "... src/wc_l_get_spacing.o"
+	@echo "... src/wc_l_get_spacing.i"
+	@echo "... src/wc_l_get_spacing.s"
+	@echo "... src/wc_l_print_perms.o"
+	@echo "... src/wc_l_print_perms.i"
+	@echo "... src/wc_l_print_perms.s"
+	@echo "... src/wc_l_print_stats.o"
+	@echo "... src/wc_l_print_stats.i"
+	@echo "... src/wc_l_print_stats.s"
+	@echo "... src/wc_l_print_time.o"
+	@echo "... src/wc_l_print_time.i"
+	@echo "... src/wc_l_print_time.s"
+	@echo "... src/wc_manager_fetching.o"
+	@echo "... src/wc_manager_fetching.i"
+	@echo "... src/wc_manager_fetching.s"
+	@echo "... src/wc_manager_printing.o"
+	@echo "... src/wc_manager_printing.i"
+	@echo "... src/wc_manager_printing.s"
 	@echo "... src/wc_mem_cleaner.o"
 	@echo "... src/wc_mem_cleaner.i"
 	@echo "... src/wc_mem_cleaner.s"
@@ -3218,15 +3287,9 @@ help:
 	@echo "... src/wc_printer_C.o"
 	@echo "... src/wc_printer_C.i"
 	@echo "... src/wc_printer_C.s"
-	@echo "... src/wc_printer_color.o"
-	@echo "... src/wc_printer_color.i"
-	@echo "... src/wc_printer_color.s"
 	@echo "... src/wc_printer_l.o"
 	@echo "... src/wc_printer_l.i"
 	@echo "... src/wc_printer_l.s"
-	@echo "... src/wc_printer_l_sizer.o"
-	@echo "... src/wc_printer_l_sizer.i"
-	@echo "... src/wc_printer_l_sizer.s"
 	@echo "... src/wc_printer_m.o"
 	@echo "... src/wc_printer_m.i"
 	@echo "... src/wc_printer_m.s"
@@ -3236,9 +3299,6 @@ help:
 	@echo "... src/wc_quicksort_obj.o"
 	@echo "... src/wc_quicksort_obj.i"
 	@echo "... src/wc_quicksort_obj.s"
-	@echo "... src/wc_temp.o"
-	@echo "... src/wc_temp.i"
-	@echo "... src/wc_temp.s"
 	@echo "... src/wc_utilities.o"
 	@echo "... src/wc_utilities.i"
 	@echo "... src/wc_utilities.s"
