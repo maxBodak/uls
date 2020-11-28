@@ -34,6 +34,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_flags_F_and_p.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_F_and_p.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,6 +105,11 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -144,7 +152,7 @@
       <workItem from="1606494595582" duration="31000" />
       <workItem from="1606494640042" duration="5088000" />
       <workItem from="1606595073387" duration="1385000" />
-      <workItem from="1606596475035" duration="1743000" />
+      <workItem from="1606596475035" duration="7750000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -268,15 +276,23 @@
     </state>
     <state x="876" y="439" key="Vcs.Push.Dialog.v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606249407962" />
     <state x="876" y="431" key="Vcs.Push.Dialog.v2/0.23.2560.1337@0.23.2560.1337" timestamp="1606062141122" />
-    <state width="600" height="461" key="javadoc.popup" timestamp="1606578218411">
+    <state x="1081" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606604941404">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606578218411" />
-    <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
-    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606494432603">
-      <screen x="0" y="23" width="2560" height="1337" />
+    <state x="1081" y="641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1440@0.0.2560.1440" timestamp="1606604941404" />
+    <state x="981" y="352" width="598" height="735" key="find.popup" timestamp="1606605836039">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog/0.0.2560.1440@0.0.2560.1440" timestamp="1606494403975" />
+    <state x="981" y="352" width="598" height="735" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606605836039" />
+    <state width="600" height="461" key="javadoc.popup" timestamp="1606607327716">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606607327716" />
+    <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
+    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606599452452">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog/0.0.2560.1440@0.0.2560.1440" timestamp="1606599452452" />
     <state x="978" y="624" width="596" height="192" key="makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337" timestamp="1606494432603" />
   </component>
 </project>

@@ -1,0 +1,14 @@
+<changelist name="Uncommitted_changes_before_Update_at_11_29_20,_1_09_AM_[Default_Changelist]" date="1606604944549" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_20,_1_09_AM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 11/29/20, 1:09 AM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="uls" />
+    <option name="AFTER_PATH" value="uls" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_20,_1_09_AM_[Default_Changelist]/uls" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/uls" />
+    <option name="AFTER_PATH" value="cmake-build-debug/uls" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_20,_1_09_AM_[Default_Changelist]/uls1" />
+  </binary>
+</changelist>
