@@ -1,7 +1,7 @@
 #pragma once
 
 #include "uls.h"
-#define FLAG_LIST "ACFGHLRSTUacdefghilmnoprtu1@"
+#define FLAG_LIST "ACFGHLRSTUacdefghlmnoprtu1@"
 enum flags {
     G,
     U,
@@ -30,7 +30,6 @@ enum flags {
     n,
     o,
     g,
-    ii,
     tty,
     err,
     ALL_FLAGS,
