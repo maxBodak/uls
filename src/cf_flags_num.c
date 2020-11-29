@@ -32,23 +32,30 @@ static inline void cmp_flags(char *flags_char, bool *flags, int i) {
             char_cmp(C, j, flags_char, flags);
         else if (flags_char[j] == '1')
             char_cmp(one, j, flags_char, flags);
+        else if (flags_char[j] == 'g')
+            char_cmp(g, j, flags_char, flags);
+        else if (flags_char[j] == 'n')
+            char_cmp(n, j, flags_char, flags);
     }
 }
 
 static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
     for (int i = count_flags - 1; i >= 0; i--) {
         if (flags_char[i] == 'm' || flags_char[i] == 'C')
-            for (int j = i - 1; j >= 0; j-- ) {
-                if (flags_char[j] == 'l' || flags_char[j] == '1')
-                    break;
-                if (flags_char[j] == 'C')
-                    cmp_flags(flags_char, flags, j - 1);
+            for (int j = i - 1; j >= 0; j--) {
+                if (flags_char[j] == 'l' || flags_char[j] == '1' ||
+                    flags_char[j] == 'g' || flags_char[j] == 'n') {
+                    cmp_flags(flags_char, flags, j);
+                }
+                if (flags_char[j] == 'C' || flags_char[j] == 'm') {
+                    cmp_flags(flags_char, flags, j);
+                    flags[m] = true;
+                }
             }
         else if(flags_char[i] == 'l' || flags_char[i] == 'm' ||
                 flags_char[i] == 'C' || flags_char[i] == '1' ||
                 flags_char[i] == 'g' || flags_char[i] == 'n')
             cmp_flags(flags_char, flags, i - 1);
-
         else if(flags_char[i] == 'u' || flags_char[i] == 'c')
             for (int j = i - 1; j >= 0; j--) {
                 if (flags_char[j] == 'u') {
@@ -95,6 +102,8 @@ bool *cf_flags_num (int argc, char *argv[]) {
     cf_err_illegal_option(flags_char);
     fill_bool(flags_char, flags, count_flags);
     check_perm(flags_char, flags, count_flags);
+//    mx_printstr(flags_char);
+//    mx_printstr("\n");
     free(flags_char);
     return flags;
 }

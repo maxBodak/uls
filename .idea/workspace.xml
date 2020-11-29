@@ -33,7 +33,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_flags_num.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_num.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +152,7 @@
       <workItem from="1606596475035" duration="7750000" />
       <workItem from="1606610482781" duration="612000" />
       <workItem from="1606664113543" duration="1163000" />
-      <workItem from="1606667016520" duration="6982000" />
+      <workItem from="1606667016520" duration="8134000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -296,5 +296,9 @@
     <state x="1223" y="803" key="makefile.clean.confirm.dialog/0.0.3200.1800@0.0.3200.1800" timestamp="1606664137608" />
     <state x="978" y="624" width="596" height="192" key="makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337" timestamp="1606494432603" />
     <state x="1223" y="780" key="makefile.clean.confirm.dialog/0.23.3200.1697@0.23.3200.1697" timestamp="1606664128069" />
+    <state x="945" y="331" key="search.everywhere.popup" timestamp="1606675124062">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="945" y="331" key="search.everywhere.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606675124062" />
   </component>
 </project>
