@@ -32,9 +32,9 @@ static inline void printInOneRow(t_obj **fp, int fp_amt, int max_len,
                                                             bool *fl) {
     for (int i = 0; i < fp_amt; i++) {
             wc_printName(fp[i], fl);
-            //mx_printint(mx_strlen(fp[i]->s_name));
-            for (int j = mx_strlen(fp[i]->s_name); j < max_len+fl[G]+(fl[p]||fl[F]); j++)
-                mx_printchar(' ');
+            if (i + 1 < fp_amt)
+                for (int j = mx_strlen(fp[i]->s_name); j < max_len+fl[G]+(fl[p]||fl[F]); j++)
+                    mx_printchar(' ');
     }
     fp_amt > 0 ? mx_printchar(10) : mx_printstr("");
 }/*==========================================================================*/
