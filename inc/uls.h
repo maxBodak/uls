@@ -15,6 +15,7 @@
 #define FLAG_LIST "ACFGHLRSTUacdefghlmnoprtu1@"
 #define INT_MAX 2147483647
 #define PATH_MAX 1024
+#define BIBYTE 1024
 
 #define RED       "\x1B[31m"
 #define GRN       "\x1B[32m"
@@ -28,8 +29,8 @@
 #define CHR "\x1B[0;34;43m"
 #define DIR_T "\x1B[0;30;42m"
 #define DIR_X "\033[0;30;43m"
-#define BIBYTE 1024
 
+//----------------------------------Enums------------------------------------//
 enum flags {
     G,
     U,
@@ -62,7 +63,6 @@ enum flags {
     err,
     ALL_FLAGS,
 };
-
 enum types {
     fifo,
     chr,
@@ -74,6 +74,7 @@ enum types {
     dot_dir,
     perm_denied,
 };
+//----------------------------------Structs----------------------------------//
 typedef struct s_path {
     char **path;
     bool *isdir;
@@ -104,14 +105,14 @@ typedef struct s_lout {
     bool d_minor;
 }               t_lout;
 
-/*-----------Fetchers-------------*/
+//----------------------------------Fetchers---------------------------------//
 t_path *wc_getPaths(int argc, char *argv[], bool *fl);
 t_obj *wc_fetchDirInfo(char *p, bool *fl);
 t_obj *wc_fetchFileInfo(char *p, bool *fl);
-/*-----------Managers-----------------*/
-void wc_printResult(t_data *d, bool *flocktimeout);
+//----------------------------------Managers---------------------------------//
 t_data *wc_fetchData(t_path *p, bool *fl);
-/*-----------Printers------------*/
+void wc_printResult(t_data *d, bool *flocktimeout);
+//----------------------------------Printers---------------------------------//
 void wc_printName(t_obj *obj, bool *fl);
 void wc_printWithC(t_obj **fp, int fp_amt, bool *fl);
 void wc_printWithOne(t_obj **fp, int fp_amt, bool *fl);
@@ -121,36 +122,34 @@ t_lout wc_getSizesForL(t_obj **fp, int fp_amt, bool *fl);
 void wc_printPerms(struct stat st, char *p);
 void wc_printStats(struct stat st, t_lout l, bool *fl);
 void wc_printTime(struct stat st, bool *fl);
-/*-----------Sorting--------------*/
+//----------------------------------Sorter-----------------------------------//
 void wc_quicksortObj(t_obj **arr, int l, int r, bool cmp(t_obj *, t_obj *));
-/*-----------Utilities------------*/
-//void wc_printShortName(char *p);
+//----------------------------------Utilities---------------------------------//
 char *wc_getShortName(char *p);
 short wc_getBitDepth(int a);
 char wc_getType(struct stat st);
 void wc_printDouble(double n);
-//char *getStatName(char *name);
-/*-----------Cleaners------------*/
+//----------------------------------Cleaners---------------------------------//
 void wc_cutDeadLinks(t_obj **dir, int dir_amt, bool *fl);
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
 void wc_freeData(t_data *d);
-/*-----------Errors---------------*/
+//----------------------------------Errors-----------------------------------//
 void wc_errorNoPath(char *path);
 void wc_errorPermDenied(char *name_of_dir);
 void wc_printTime(struct stat st, bool *fl);
-/*-----------Ckif----------------*/
+/*----------------------------------Ckif-------------------------------------*/
 bool *cf_flags_num (int argc, char *argv[]);
 bool *cf_cmp_flags(bool *fls);
 void cf_err_illegal_option(char *flags_char);
 bool *cf_isatty(bool *fls);
 bool *cf_bool_manip(int argc, char **argv);
-void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
+void cf_flags_check (t_data *d, bool *fl);
 void cf_flag_r(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_S(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_t(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_u(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_c(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_Uu(t_obj **d, int d_amt, const bool *fl);
-void cf_flags_check (t_data *d, bool *fl);
+void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_F_and_p(t_obj **d, int d_amt, const bool *fl);

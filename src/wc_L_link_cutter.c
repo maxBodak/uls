@@ -2,7 +2,7 @@
 
 
 void wc_cutDeadLinks(t_obj **dir, int dir_amt, bool *fl) {
-    if (fl[L] && (fl[G] || fl[l]))
+    if (fl[L] && (fl[G] || fl[l] || fl[p] || fl[F] || fl[g] || fl[R] || fl[t]))
         for (int i = 0; i < dir_amt; i++)
             for (int j = 0; j < dir[i]->kids_amt; j++)
                 if (dir[i]->kids[j]->is_deadl) {
