@@ -88,5 +88,6 @@ void wc_printStats(struct stat st, t_lout l, bool *fl) {
                 mx_printchar(' ');
         }
     }
+    mx_printstr(fl[g] && fl[o] ? " " : "");
     printSize(st, l, fl);
 }
