@@ -1,0 +1,69 @@
+total 0
+drwxr-xr-x  6 mbodak  wheel  204 Oct 21 09:12 A
+drwxr-xr-x  6 mbodak  wheel  204 Oct 21 09:12 Current
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A:
+total 1144
+drwxr-xr-x  3 mbodak  wheel     102 Oct 21 09:12 Headers
+drwxr-xr-x  5 mbodak  wheel     170 Oct 21 09:12 Resources
+drwxr-xr-x  3 mbodak  wheel     102 Oct 21 09:12 _CodeSignature
+-rwxr-xr-x@ 1 mbodak  wheel  583888 Oct 21 09:12 webp
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Headers:
+total 0
+drwxr-xr-x  7 mbodak  wheel  238 Oct 21 09:12 webp
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Headers/webp:
+total 152
+-rw-r--r--@ 1 mbodak  wheel  23805 Oct 21 09:12 decode.h
+-rw-r--r--@ 1 mbodak  wheel  15603 Oct 21 09:12 demux.h
+-rw-r--r--@ 1 mbodak  wheel  27478 Oct 21 09:12 encode.h
+-rw-r--r--@ 1 mbodak  wheel   3147 Oct 21 09:12 mux_types.h
+-rw-r--r--@ 1 mbodak  wheel   1662 Oct 21 09:12 types.h
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Resources:
+total 16
+drwxr-xr-x  3 mbodak  wheel   102 Oct 21 09:12 English.lproj
+-rw-r--r--@ 1 mbodak  wheel   707 Oct 21 09:12 Info.plist
+-rw-r--r--@ 1 mbodak  wheel  1619 Oct 21 09:12 LICENSE.webp.txt
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Resources/English.lproj:
+total 8
+-rw-r--r--@ 1 mbodak  wheel  492 Oct 21 09:12 InfoPlist.strings
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/_CodeSignature:
+total 8
+-rw-r--r--@ 1 mbodak  wheel  3773 Oct 21 09:12 CodeResources
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current:
+total 1144
+drwxr-xr-x  3 mbodak  wheel     102 Oct 21 09:12 Headers
+drwxr-xr-x  5 mbodak  wheel     170 Oct 21 09:12 Resources
+drwxr-xr-x  3 mbodak  wheel     102 Oct 21 09:12 _CodeSignature
+-rwxr-xr-x@ 1 mbodak  wheel  583888 Oct 21 09:12 webp
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Headers:
+total 0
+drwxr-xr-x  7 mbodak  wheel  238 Oct 21 09:12 webp
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Headers/webp:
+total 152
+-rw-r--r--@ 1 mbodak  wheel  23805 Oct 21 09:12 decode.h
+-rw-r--r--@ 1 mbodak  wheel  15603 Oct 21 09:12 demux.h
+-rw-r--r--@ 1 mbodak  wheel  27478 Oct 21 09:12 encode.h
+-rw-r--r--@ 1 mbodak  wheel   3147 Oct 21 09:12 mux_types.h
+-rw-r--r--@ 1 mbodak  wheel   1662 Oct 21 09:12 types.h
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Resources:
+total 16
+drwxr-xr-x  3 mbodak  wheel   102 Oct 21 09:12 English.lproj
+-rw-r--r--@ 1 mbodak  wheel   707 Oct 21 09:12 Info.plist
+-rw-r--r--@ 1 mbodak  wheel  1619 Oct 21 09:12 LICENSE.webp.txt
+
+/Users/mbodak/Desktop/Top-down-Shootie-McpwdTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Resources/English.lproj:
+total 8
+-rw-r--r--@ 1 mbodak  wheel  492 Oct 21 09:12 InfoPlist.strings
+
+/Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/_CodeSignature:
+total 8
+-rw-r--r--@ 1 mbodak  wheel  3773 Oct 21 09:12 CodeResources

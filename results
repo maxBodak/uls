@@ -1,0 +1,48 @@
+5c5
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/A:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A:
+12c12
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/A/Headers:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Headers:
+16c16
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/A/Headers/webp:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Headers/webp:
+24c24
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/A/Resources:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Resources:
+30c30
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/A/Resources/English.lproj:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/Resources/English.lproj:
+34c34
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/A/_CodeSignature:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//A/_CodeSignature:
+38c38
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/Current:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current:
+45c45
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/Current/Headers:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Headers:
+49c49
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/Current/Headers/webp:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Headers/webp:
+57c57
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/Current/Resources:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Resources:
+63c63
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/Current/Resources/English.lproj:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/Resources/English.lproj:
+67c67
+< /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions/Current/_CodeSignature:
+---
+> /Users/mbodak/Desktop/Top-down-Shootie-McTankie/resource/framework/SDL2_image.framework/Frameworks/webp.framework/Versions//Current/_CodeSignature:

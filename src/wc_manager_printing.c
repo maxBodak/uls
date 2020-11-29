@@ -19,23 +19,29 @@ static inline void printObjArr(t_obj **fp, int fp_amt, bool *fl, bool use_t) {
     }
 }/*--------------------------------------------------------------------------*/
 static inline void printDir(t_obj *obj, bool *fl) {
+    int len;
+
     printObjArr(obj->kids, obj->kids_amt, fl, 1); 
     if (fl[R])
         for (int i = 0; i < obj->kids_amt; i++) {
+            len = mx_strlen(obj->kids[i]->path_name);
             if (obj->kids[i]->type == dir) {
                 mx_printstr("\n");
-                mx_printstr(obj->kids[i]->path_name);
+                fl[F] || fl[p] ? write(1, obj->kids[i]->path_name, len - 1) :
+                                 write(1, obj->kids[i]->path_name, len);
                 mx_printstr(":\n");
                 printDir(obj->kids[i], fl);
             } else if (obj->kids[i]->type == perm_denied) {
                 mx_printstr("\n");
-                mx_printstr(obj->kids[i]->path_name);
+                fl[F] || fl[p] ? write(1, obj->kids[i]->path_name, len - 1) :
+                                 write(1, obj->kids[i]->path_name, len);
                 mx_printstr(":\n");
                 wc_errorPermDenied(obj->kids[i]->path_name);
             }
         }
 }/*--------------------------------------------------------------------------*/
 void wc_printResult(t_data *d, bool *fl) {
+    int len;
     if (d == NULL)
         return;
 
@@ -46,7 +52,9 @@ void wc_printResult(t_data *d, bool *fl) {
         mx_printstr(d->files_amt && d->dirs_amt ? "\n" : "");
     
         for (int i = 0; i < d->dirs_amt; i++) {
-            mx_printstr(d->dirs_path[i]->path_name);
+            len = mx_strlen(d->dirs_path[i]->path_name);
+            fl[F] || fl[p] ? write(1, d->dirs_path[i]->path_name, len - 1) :
+                             write(1, d->dirs_path[i]->path_name, len);
             mx_printstr(":\n");
 
             if (d->dirs_path[i]->type != perm_denied)

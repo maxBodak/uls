@@ -24,7 +24,7 @@ static inline void printMultiCols(t_obj **fp, int fp_amt, int max_len, int win,
                     tmp = (max_len - mx_strlen(fp[j]->s_name)) / 8;
                     (max_len - mx_strlen(fp[j]->s_name)) % 8 != 0 ? tmp++ : tmp;
                 }
-                for (int k = 0; k++ < tmp; mx_printchar(tab));
+                for (int k = 0; k++ < tmp && j + rows < fp_amt; mx_printchar(tab));
         }
     }
 }/*--------------------------------------------------------------------------*/
