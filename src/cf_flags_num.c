@@ -36,6 +36,8 @@ static inline void cmp_flags(char *flags_char, bool *flags, int i) {
             char_cmp(g, j, flags_char, flags);
         else if (flags_char[j] == 'n')
             char_cmp(n, j, flags_char, flags);
+        else if (flags_char[j] == 'o')
+            char_cmp(o, j, flags_char, flags);
     }
 }
 
@@ -44,7 +46,8 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
         if (flags_char[i] == 'm' || flags_char[i] == 'C')
             for (int j = i - 1; j >= 0; j--) {
                 if (flags_char[j] == 'l' || flags_char[j] == '1' ||
-                    flags_char[j] == 'g' || flags_char[j] == 'n') {
+                    flags_char[j] == 'g' || flags_char[j] == 'n' ||
+                    flags_char[j] == 'o') {
                     cmp_flags(flags_char, flags, j);
                 }
                 if (flags_char[j] == 'C' || flags_char[j] == 'm') {
@@ -54,7 +57,8 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
             }
         else if(flags_char[i] == 'l' || flags_char[i] == 'm' ||
                 flags_char[i] == 'C' || flags_char[i] == '1' ||
-                flags_char[i] == 'g' || flags_char[i] == 'n')
+                flags_char[i] == 'g' || flags_char[i] == 'n' ||
+                flags_char[i] == 'o')
             cmp_flags(flags_char, flags, i - 1);
         else if(flags_char[i] == 'u' || flags_char[i] == 'c')
             for (int j = i - 1; j >= 0; j--) {
