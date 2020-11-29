@@ -66,6 +66,12 @@ void wc_printResult(t_data *d, bool *fl) {
         }
     }
     else {
+        if(fl[err]) {
+            len = mx_strlen(d->dirs_path[0]->path_name);
+            fl[F] || fl[p] ? write(1, d->dirs_path[0]->path_name, len - 1) :
+                            write(1, d->dirs_path[0]->path_name, len);
+            mx_printstr(":\n");
+        }
         if (d->dirs_path[0]->type == perm_denied)
             wc_errorPermDenied(d->dirs_path[0]->path_name);
         else
