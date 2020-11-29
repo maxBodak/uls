@@ -6,7 +6,9 @@ int main(int argc, char ** argv) {
     t_path *p = wc_getPaths(argc, argv, fl);
 //Fetching
     t_data *d = wc_fetchData(p, fl);
-    wc_cutDeadLinks(d->dirs_path, d->dirs_amt, fl);
+//Kostyl dla L
+    if (d)
+        wc_cutDeadLinks(d->dirs_path, d->dirs_amt, fl);
 //Sorting
     cf_flags_check (d, fl);
 //Printing
