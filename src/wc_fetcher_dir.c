@@ -26,7 +26,8 @@ static inline t_obj *initDir(char *p, bool *fl) {
         d->is_root = false;
         d->is_deadl = false;
         fl[err] = true;
-    } else {
+    } 
+    else {
         while ((ep = readdir(dp)))
             if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name)))
                 count++;
@@ -69,8 +70,7 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
 
     dp = opendir (p);
     if (dp) {
-        for (int i = 0; (ep = readdir(dp));) {
-            //mx_printerr("general loop start\n");
+        for (int i = 0; (ep = readdir(dp));)
             if (!isHidden(ep->d_name) || fl[a] || (fl[A] && !isDot(ep->d_name))) {
                 if (fl[R] && ep->d_type == DT_DIR && !isDot(ep->d_name)) {
                     buf = addPrefix(p, ep->d_name);
@@ -85,16 +85,15 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                 }
                 res->kids[i]->is_root = false;
 
-                e = fl[L] ? stat(ep->d_name, &(res->kids[i]->st)) :
-                            lstat(ep->d_name, &(res->kids[i]->st));
+                e = fl[L] ? stat(res->kids[i]->path_name, &(res->kids[i]->st)) :
+                            lstat(res->kids[i]->path_name, &(res->kids[i]->st));
                 res->kids[i]->is_deadl = e ? true : false;
-                e = e ? lstat(ep->d_name, &(res->kids[i]->st)) : e;
+                e = e ? lstat(res->kids[i]->path_name, &(res->kids[i]->st)) : e;
                 if (res->kids[i]->type != perm_denied)
                     res->kids[i]->type = wc_getType(res->kids[i]->st);
                 res->kids[i]->type = isDot(ep->d_name) ? dot_dir : res->kids[i]->type;
                 i++;
             }
-        }
         closedir(dp);
     } else
         fl[err] = true;
