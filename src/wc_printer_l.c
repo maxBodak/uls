@@ -29,7 +29,8 @@ void wc_printWithL(t_obj **fp, int fp_amt, bool *fl, bool use_total) {
         wc_printName(fp[i], fl);
         if (fp[i]->type == lnk) {
             char ln[1024];
-            fp[i]->path_name[mx_strlen(fp[i]->path_name) - 1] = '\0';
+            if (fl[F])
+                fp[i]->path_name[mx_strlen(fp[i]->path_name) - 1] = '\0';
             int lnl = readlink(fp[i]->path_name, ln, 1024);
 
             ln[lnl] = '\0';

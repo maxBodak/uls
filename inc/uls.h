@@ -39,7 +39,8 @@ enum types {
     sock,
     dir,
     file,
-    perm_denied
+    perm_denied,
+    dot_dir
 };
 typedef struct s_path {
     char **path;

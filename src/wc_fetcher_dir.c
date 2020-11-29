@@ -91,6 +91,8 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                 e = e ? lstat(res->kids[i]->path_name, &(res->kids[i]->st)) : e;
                 if (res->kids[i]->type != perm_denied)
                     res->kids[i]->type = wc_getType(res->kids[i]->st);
+                if (isDot(ep->d_name))
+                    res->kids[i]->type = dot_dir;
                 i++;
             }
         }
