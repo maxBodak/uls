@@ -304,9 +304,6 @@
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/Libmx/src/mx_toupper.c">
 			<Option target="uls"/>
 		</Unit>
-		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/inc/cf_uls.h">
-			<Option target="uls"/>
-		</Unit>
 		<Unit filename="/Users/mtsyfir/Desktop/Sprints/St_2/uls/inc/uls.h">
 			<Option target="uls"/>
 		</Unit>

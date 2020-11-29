@@ -1,8 +1,6 @@
 #pragma once
 
 #include "libmx.h"
-
-#include "cf_uls.h"
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/errno.h>
@@ -14,6 +12,7 @@
 #include <sys/ioctl.h>
 #include <time.h>
 
+#define FLAG_LIST "ACFGHLRSTUacdefghlmnoprtu1@"
 #define INT_MAX 2147483647
 #define PATH_MAX 1024
 
@@ -30,6 +29,39 @@
 #define DIR_T "\x1B[0;30;42m"
 #define DIR_X "\033[0;30;43m"
 #define BIBYTE 1024
+
+enum flags {
+    G,
+    U,
+    F,
+    f,
+    a,
+    A,
+    R,
+    l,
+    one,
+    m,
+    C,
+    S,
+    t,
+    r,
+    p,
+    u,
+    c,
+    dog,
+    e,
+    h,
+    T,
+    d,
+    L,
+    H,
+    n,
+    o,
+    g,
+    tty,
+    err,
+    ALL_FLAGS,
+};
 
 enum types {
     fifo,
@@ -108,6 +140,11 @@ void wc_errorNoPath(char *path);
 void wc_errorPermDenied(char *name_of_dir);
 void wc_printTime(struct stat st, bool *fl);
 /*-----------Ckif----------------*/
+bool *cf_flags_num (int argc, char *argv[]);
+bool *cf_cmp_flags(bool *fls);
+void cf_err_illegal_option(char *flags_char);
+bool *cf_isatty(bool *fls);
+bool *cf_bool_manip(int argc, char **argv);
 void cf_not_flag_f(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_r(t_obj **d, int d_amt, const bool *fl);
 void cf_flag_S(t_obj **d, int d_amt, const bool *fl);
