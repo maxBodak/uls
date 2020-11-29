@@ -31,7 +31,7 @@ void wc_printDouble(double n) {
     int i = mx_pow(10, wc_getBitDepth((int)n));
     
     n += temp % 10 > 4 ? .1 : 0;
-    n += i > 100 && temp % 100 > 50 ? 1 : 0;
+    n += i > 10 && temp % 100 > 50 ? 1 : 0;
     mx_printstr(i == 100 ? " " : "");
     mx_printint((int)n % i);
     if (i < 100) {
