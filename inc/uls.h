@@ -99,6 +99,7 @@ char wc_getType(struct stat st);
 void wc_printDouble(double n);
 //char *getStatName(char *name);
 /*-----------Cleaners------------*/
+void wc_cutDeadLinks(t_obj **dir, int dir_amt, bool *fl);
 void wc_freePath(t_path *p);
 void wc_freeObj(t_obj *o);
 void wc_freeData(t_data *d);

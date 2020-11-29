@@ -85,14 +85,13 @@ t_obj *wc_fetchDirInfo(char *p, bool *fl) {
                 }
                 res->kids[i]->is_root = false;
 
-                e = fl[L] ? stat(res->kids[i]->path_name, &(res->kids[i]->st)) :
-                            lstat(res->kids[i]->path_name, &(res->kids[i]->st));
+                e = fl[L] ? stat(ep->d_name, &(res->kids[i]->st)) :
+                            lstat(ep->d_name, &(res->kids[i]->st));
                 res->kids[i]->is_deadl = e ? true : false;
-                e = e ? lstat(res->kids[i]->path_name, &(res->kids[i]->st)) : e;
+                e = e ? lstat(ep->d_name, &(res->kids[i]->st)) : e;
                 if (res->kids[i]->type != perm_denied)
                     res->kids[i]->type = wc_getType(res->kids[i]->st);
-                if (isDot(ep->d_name))
-                    res->kids[i]->type = dot_dir;
+                res->kids[i]->type = isDot(ep->d_name) ? dot_dir : res->kids[i]->type;
                 i++;
             }
         }

@@ -6,6 +6,7 @@ int main(int argc, char ** argv) {
     t_path *p = wc_getPaths(argc, argv, fl);
 //Fetching
     t_data *d = wc_fetchData(p, fl);
+    wc_cutDeadLinks(d->dirs_path, d->dirs_amt, fl);
 //Sorting
     cf_flags_check (d, fl);
 //Printing
@@ -14,6 +15,6 @@ int main(int argc, char ** argv) {
     wc_freePath(p);
     wc_freeData(d);
     free(fl);
-//    system("leaks -q uls");
+    system("leaks -q uls");
     return fl[err] ? 1 : 0;
 }
