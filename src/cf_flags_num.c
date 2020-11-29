@@ -46,7 +46,7 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
             }
         else if(flags_char[i] == 'l' || flags_char[i] == 'm' ||
                 flags_char[i] == 'C' || flags_char[i] == '1' ||
-                flags_char[i] == 'g' )
+                flags_char[i] == 'g' || flags_char[i] == 'n')
             cmp_flags(flags_char, flags, i - 1);
 
         else if(flags_char[i] == 'u' || flags_char[i] == 'c')
