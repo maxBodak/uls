@@ -33,7 +33,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
-      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/cf_uls.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/uls.h" beforeDir="false" afterPath="$PROJECT_DIR$/inc/uls.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +155,7 @@
       <workItem from="1606596475035" duration="7750000" />
       <workItem from="1606610482781" duration="612000" />
       <workItem from="1606664113543" duration="1163000" />
-      <workItem from="1606667016520" duration="10548000" />
+      <workItem from="1606667016520" duration="14327000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -284,10 +287,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="981" y="352" width="598" height="735" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606605836039" />
-    <state width="600" height="461" key="javadoc.popup" timestamp="1606607327716">
+    <state width="600" height="461" key="javadoc.popup" timestamp="1606680234743">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606607327716" />
+    <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606680234743" />
     <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
     <state x="1223" y="803" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606664137608">
       <screen x="0" y="0" width="3200" height="1800" />

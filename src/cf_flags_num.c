@@ -22,7 +22,7 @@ static void char_cmp(int i, int j, char *flags_char, bool *flags) {
     flags[i] = false;
 }
 
-static inline void cmp_flags(char *flags_char, bool *flags, int i) {
+static inline void cmp_flags(char *flags_char, bool *flags, int i, int k) {
     for (int j = i; j >= 0; j--) {
         if (flags_char[j] == 'l')
             char_cmp(l, j, flags_char, flags);
@@ -32,6 +32,14 @@ static inline void cmp_flags(char *flags_char, bool *flags, int i) {
             char_cmp(C, j, flags_char, flags);
         else if (flags_char[j] == '1')
             char_cmp(one, j, flags_char, flags);
+        else if (k == 1) {
+            if (flags_char[j] == 'o')
+                char_cmp(o, j, flags_char, flags);
+            else if (flags_char[j] == 'n')
+                char_cmp(n, j, flags_char, flags);
+            else if (flags_char[j] == 'g')
+                char_cmp(g, j, flags_char, flags);
+        }
     }
 }
 
@@ -40,15 +48,18 @@ static inline void check_perm(char *flags_char, bool *flags, int count_flags) {
         if (flags_char[i] == 'm' || flags_char[i] == 'C')
             for (int j = i - 1; j >= 0; j--) {
                 if (flags_char[j] == 'l' || flags_char[j] == '1')
-                    cmp_flags(flags_char, flags, j);
+                    cmp_flags(flags_char, flags, j, 0);
                 if (flags_char[j] == 'C' || flags_char[j] == 'm') {
-                    cmp_flags(flags_char, flags, j);
+                    cmp_flags(flags_char, flags, j, 0);
                     flags[m] = true;
                 }
             }
         else if(flags_char[i] == 'l' || flags_char[i] == 'm' ||
                 flags_char[i] == 'C' || flags_char[i] == '1')
-            cmp_flags(flags_char, flags, i - 1);
+            cmp_flags(flags_char, flags, i - 1, 1);
+        else if(flags_char[i] == 'o' || flags_char[i] == 'n' ||
+                flags_char[i] == 'g')
+            cmp_flags(flags_char, flags, i - 1, 0);
         else if(flags_char[i] == 'u' || flags_char[i] == 'c')
             for (int j = i - 1; j >= 0; j--) {
                 if (flags_char[j] == 'u') {
