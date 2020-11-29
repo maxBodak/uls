@@ -24,8 +24,8 @@ static inline void cf_add_symvol(t_obj *d, const bool *fl) {
             d->s_name[mx_strlen(d->s_name)] = '=';
         else if (d->type == lnk && !fl[p])
             d->s_name[mx_strlen(d->s_name)] = '@';
-        else if (d->type == dir) {
-            if (dir_type(d->st))
+        else if (d->type == dir || d->type == dot_dir) {
+            if (dir_type(d->st) || d->type == dot_dir)
                 d->s_name[mx_strlen(d->s_name)] = '/';
         }
         else if (d->type == file && !fl[p])
