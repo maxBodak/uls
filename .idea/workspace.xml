@@ -34,6 +34,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cf_cmp_flags.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_cmp_flags.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +103,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -114,6 +111,11 @@
     <configuration name="uls" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-r" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="uls" TARGET_NAME="uls" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="uls" RUN_TARGET_NAME="uls">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -149,6 +151,9 @@
       <workItem from="1606494640042" duration="5088000" />
       <workItem from="1606595073387" duration="1385000" />
       <workItem from="1606596475035" duration="7750000" />
+      <workItem from="1606610482781" duration="612000" />
+      <workItem from="1606664113543" duration="1163000" />
+      <workItem from="1606667016520" duration="2173000" />
     </task>
     <task id="LOCAL-00001" summary="add -f&#10;added if -f make -a positive&#10;Cf">
       <created>1605886056504</created>
@@ -285,10 +290,12 @@
     </state>
     <state width="600" height="461" key="javadoc.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1606607327716" />
     <state width="600" height="428" key="javadoc.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1606061004973" />
-    <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606599452452">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state x="1223" y="803" width="597" height="192" key="makefile.clean.confirm.dialog" timestamp="1606664137608">
+      <screen x="0" y="0" width="3200" height="1800" />
     </state>
     <state x="978" y="624" width="597" height="192" key="makefile.clean.confirm.dialog/0.0.2560.1440@0.0.2560.1440" timestamp="1606599452452" />
+    <state x="1223" y="803" key="makefile.clean.confirm.dialog/0.0.3200.1800@0.0.3200.1800" timestamp="1606664137608" />
     <state x="978" y="624" width="596" height="192" key="makefile.clean.confirm.dialog/0.23.2560.1337@0.23.2560.1337" timestamp="1606494432603" />
+    <state x="1223" y="780" key="makefile.clean.confirm.dialog/0.23.3200.1697@0.23.3200.1697" timestamp="1606664128069" />
   </component>
 </project>
