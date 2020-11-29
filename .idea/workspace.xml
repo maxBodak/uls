@@ -34,9 +34,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e74735da-0891-4273-8db4-5030d486b30d" name="Default Changelist" comment="flags U, u, c, S">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/uls.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/uls" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/uls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cf_flags_F_and_p.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/cf_flags_F_and_p.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uls" beforeDir="false" afterPath="$PROJECT_DIR$/uls" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
