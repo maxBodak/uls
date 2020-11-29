@@ -15,6 +15,6 @@ int main(int argc, char ** argv) {
     wc_freePath(p);
     wc_freeData(d);
     free(fl);
-    system("leaks -q uls");
+//    system("leaks -q uls");
     return fl[err] ? 1 : 0;
 }
