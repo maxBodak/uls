@@ -15,7 +15,5 @@ bool * cf_cmp_flags(bool *fls) {
         flags[C] = false;
     if (flags[n] == true || flags[g] || flags[o]) 
         flags[l] = true;
-    if (flags[g] == true)
-        flags[l] = true;
     return flags;
 }
